@@ -14,6 +14,24 @@ body {
     background: #2A4067;
     height:100vh;
 }
+
+.game-name{
+    background-color: white;
+    color: black;
+    display:block;
+    margin:0 auto;
+}
+
+.game-name h2 {
+    padding: 10px;
+    text-align: center
+}
+
+.game-name h5 {
+    padding: 5px;
+    text-align: center
+}
+
 h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -26,17 +44,20 @@ h1 {
 
   
   h2 {
-    font-family: 'Inter 400', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     letter-spacing: 1px;
   }
   
   h3, h4 {
-    font-family: 'Inter 400', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     letter-spacing: 1px; 
   }
   
   p {
-    font-family: 'Inter 400', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     font-size: smaller;
   }
 
