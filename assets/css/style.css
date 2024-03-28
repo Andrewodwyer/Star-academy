@@ -32,11 +32,13 @@ body {
     text-align: center
 }
 
+/*game section gradient */
 #game-board {
     background-image: linear-gradient(#5B7AB1, #2A4067);
     padding: 1rem 0;
 }
 
+/* container within the game board to allow for a gradient behind */
 .game-area {
     width: 85%;
     /*height: 65vh;*/
@@ -46,6 +48,7 @@ body {
     padding: 1%;
 }
 
+/*container for player image, text/message and score*/
 .player-cards {
     background-color: whitesmoke;
     border: solid 5px orange;
@@ -53,11 +56,6 @@ body {
     box-shadow: 0 6px 4px gray;
     margin: 5%;
     display: flex;
-}
-.player-card {
-    display: flex;
-    flex-direction: row;
-    background-color: whitesmoke;
 }
 
 .players {
@@ -67,6 +65,14 @@ body {
     align-items: center;
 }
 
+.comp {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex reverse so computer image is on right*/
 .comp-reverse {
     flex-direction: row-reverse;
 }
@@ -77,23 +83,26 @@ body {
     /*width: 80%;*/
 }
 
+/* container for the 3 buttons*/
 .buttons{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+/* rock, paper, scissors buttons*/
 .btn {
-    border: 10px solid;
+    border: 10px solid silver;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    /*width: 100px;*/
+    /*height: 100px; without the height you get a 3d effect*/
     /*margin: 0 30px;*/
     padding: 10px;
     transition: all .03s;
     
 }
 
+/*This is the text above and below the 3 buttons for Rock, paper, scissors*/
 .btn-inst {
     color: #064159;
     text-align: center;
@@ -105,7 +114,13 @@ body {
 .image-size {
     width: 10rem;
     display: flex;
-    flex-grow: 1; /* Adjusts the image to cover the container */
+    flex: auto; /* Adjusts the image to cover the container */
+}
+
+.btn-image-size {
+    width: 5rem;
+    display: flex;
+    flex: auto; /* Adjusts the image to cover the container */
 }
 
 .player-hand {
@@ -114,6 +129,11 @@ body {
     flex-grow: 1; /* Adjusts the image to cover the container */
 }
 
+.win-or-loose {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid silver;
+}
 
 .text-box {
     flex-grow: 1.5;
