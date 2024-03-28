@@ -36,6 +36,16 @@ body {
     background-image: linear-gradient(#5B7AB1, #2A4067);
     padding: 1rem 0;
 }
+
+.game-area {
+    width: 85%;
+    height: 65vh;
+    /*max-height: 450px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
 .player-cards {
     background-color: whitesmoke;
     border: solid 5px orange;
@@ -57,8 +67,27 @@ body {
     align-items: center;
 }
 
-.reverse {
+.comp-reverse {
     flex-direction: row-reverse;
+}
+
+.player-choice {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+}
+
+.btn {
+    border: 10px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 30px;
+    padding: 10px;
+    transition: all .03s;
 }
 
 /* to keep the image from taking up more then 50% of the screen */
