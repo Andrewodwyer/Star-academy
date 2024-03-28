@@ -57,6 +57,10 @@ body {
     align-items: center;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 /* to keep the image from taking up more then 50% of the screen */
 .image-size {
     width: 80%;
