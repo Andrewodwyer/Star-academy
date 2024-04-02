@@ -258,7 +258,7 @@ a {
 }
 
 .container{
-    width: 1600px;
+    /*width: 1600px;*/
     margin: auto;
 }
 
@@ -346,11 +346,38 @@ a {
     }
 }
 
+/*Larger devices (1024px and up)*/
+@media screen and (min-width: 1024px) {
+    main {
+      margin-top: 82px;
+    }  
+    #menu {
+      font-size: 100%;
+    }
+    #menu > li {
+      padding-left: 3rem;
+    } 
+  
+    h1, h2, h3, h4 {
+      font-size: 120%;
+    }
+    /* make the first 4 form inputs flex*/
+    .form-input {
+      flex: 0 1 48%; /* Make each input take up 48% width on larger screens */
+    }
+} 
+
+/*Larger devices (1440px and up)*/
+@media screen and (min-width: 1440px) {
+    footer {
+        position: relative; /*footer goes to bottom on laptop*/
+    }
+}
 
 @media(max-width:1600px){
-    .container{
+    /*.container{
         width: 100%;
-    }
+    }*/
 }
 
 /* menu 
