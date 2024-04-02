@@ -9,11 +9,14 @@
 }
 
 /* body */
+/* General styles */
 body {
-    position: relative;
-    background: #2A4067;
-    height:100vh;
-}
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    /* Generic project style*/
+    font-family: 'Inter', sans-serif;
+  }
 
 .game-name{
     background-color: white;
@@ -40,7 +43,7 @@ body {
 
 /* container within the game board to allow for a gradient behind */
 .game-area {
-    width: 85%;
+    width: 90%;
     /*height: 65vh;*/
     /*max-height: 450px;*/
     margin-left: auto;
@@ -51,7 +54,7 @@ body {
 /*container for player image, text/message and score*/
 .player-cards {
     background-color: whitesmoke;
-    border: solid 5px orange;
+    border: solid 2px orange;
     border-radius: 5px;
     box-shadow: 0 6px 4px gray;
     margin: 5%;
@@ -61,15 +64,15 @@ body {
 .players {
     display:flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
 }
 
 .comp {
-    display:flex;
+    /*display:flex;
     flex: 1;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 
 /* flex reverse so computer image is on right*/
@@ -99,7 +102,7 @@ body {
     /*width: 100px;*/
     /*height: 100px; without the height you get a 3d effect*/
     /*margin: 0 30px;*/
-    padding: 10px;
+    padding: 5px;
     transition: all .03s;
     
 }
@@ -114,7 +117,7 @@ body {
 
 /* to keep the image from taking up more then 50% of the screen */
 .image-size {
-    width: 10rem;
+    width: 100px;
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
 }
@@ -210,10 +213,16 @@ p {
 /* header*/
 header {
     position: fixed;
+    z-index: 99;
     top: 0;
     width: 100%;
     background-color: white;
 
+}
+
+/*main*/
+main {
+    margin-top: 74px;
 }
 
 /* footer */
@@ -346,8 +355,8 @@ a {
     }
 }
 
-/*Larger devices (1024px and up)*/
-@media screen and (min-width: 1024px) {
+/*Larger devices (768px and up)*/
+@media screen and (min-width: 768px) {
     main {
       margin-top: 82px;
     }  
@@ -357,7 +366,9 @@ a {
     #menu > li {
       padding-left: 3rem;
     } 
-  
+    .game-area {
+        max-width: 600px;
+    }
     h1, h2, h3, h4 {
       font-size: 120%;
     }
