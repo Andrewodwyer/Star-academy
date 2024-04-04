@@ -11,3 +11,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }))
+
+const playerScore = 0;
+const compScore = 0;
+const playerScore_div = document.getElementById("player-score"); //_div to show its in a div
+const compScore_div = document.getElementById("comp-score");
