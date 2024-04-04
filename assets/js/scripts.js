@@ -24,9 +24,11 @@ const scissors_button = document.getElementById("scissors");
 
 function getComputerChoice(){
     let choices = ['rock', 'paper', 'scissors']; // an arrey with the 3 options
-    console.log(Math.floor(Math.random()*3)); // round down (math.floor) as array starts at 0 
+    let randomNumber = Math.floor(Math.random() * 3); // round down (math.floor) as array starts at 0 
+    return choices[randomNumber]; // random number links to the array
 }
-getComputerChoice();
+
+console.log(getComputerChoice());
 
 // game function, to see what player selects and their result
 function game(playerChoice){
