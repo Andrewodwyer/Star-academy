@@ -61,6 +61,7 @@ body {
     display: flex;
 }
 
+
 .players {
     display:flex;
     flex: 1;
@@ -149,10 +150,13 @@ body {
 .score-box {
     flex: 1;
     align-self: center;
+    font-size: 2.5rem;
+    color: #575757;
+    margin-right: 5px;
 }
 
 .center-text {
-    padding: 10%;
+    /*padding: 10%;*/
     text-align: center;
 }
 
@@ -194,7 +198,7 @@ h1 {
 
 h2 {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
