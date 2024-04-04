@@ -33,8 +33,23 @@ console.log(getComputerChoice()); // check to see if function getComputerChoice 
 // game function, to see what player selects and their result
 function game(playerChoice) {
     let computerChoice = getComputerChoice();
-    console.log("player choice =>" + playerChoice);
-    console.log("computer choice =>" + computerChoice);
+    switch (playerChoice + computerChoice) {
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+            console.log("player wins");
+            break;
+        case "paperscissors":
+        case "rockpaper":
+        case "scissorsrock":
+            console.log("player loses.");
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+            console.log("it's a draw");
+            break;
+    }
 
 }
 
