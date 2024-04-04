@@ -344,13 +344,13 @@ a {
     .nav-menu{
         position: fixed;
         /* menu not visible when positioned off the screen */
-        left: -100%;
+        right: -100%;
         top: 70px;
         gap: 20px;
         flex-direction: column;
         background-color: rgba(241,241,241, 0.92); /* 0.98 make the colour only slightly transparent*/
         width: 40%;
-        border-radius: 0% 10% 20% 0%; /* slightly different corner radius*/
+        border-radius: 10% 0% 0% 20%; /* slightly different corner radius*/
         text-align: center;
         /* menu will move/slide into position */
         transition: 0.3s;
@@ -362,7 +362,7 @@ a {
     }
 
     .nav-menu.active{
-        left: 0;
+        right: 0;
     }
 }
 
