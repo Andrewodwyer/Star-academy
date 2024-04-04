@@ -104,7 +104,11 @@ body {
     /*margin: 0 30px;*/
     padding: 5px;
     transition: all .03s;
-    
+}
+
+.btn:hover {
+    transform: scale(1.1); 
+    background: radial-gradient(#55D0C9, #2C586A );
 }
 
 /*This is the text above and below the 3 buttons for Rock, paper, scissors*/
