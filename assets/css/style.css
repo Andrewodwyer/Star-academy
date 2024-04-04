@@ -340,19 +340,21 @@ a {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
+    /*size of nav-bar on hamburger click*/
     .nav-menu{
         position: fixed;
         /* menu not visible when positioned off the screen */
         left: -100%;
         top: 70px;
-        gap: 0;
+        gap: 20px;
         flex-direction: column;
-        background-color: white;
-        width: 100%;
+        background-color: rgba(241,241,241, 0.92); /* 0.98 make the colour only slightly transparent*/
+        width: 40%;
+        border-radius: 0% 10% 20% 0%; /* slightly different corner radius*/
         text-align: center;
         /* menu will move/slide into position */
         transition: 0.3s;
+        padding: 10px;
     }
 
     .nav-items{
