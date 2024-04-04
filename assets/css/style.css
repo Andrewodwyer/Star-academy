@@ -109,10 +109,11 @@ body {
     /*height: 100px; without the height you get a 3d effect*/
     /*margin: 0 30px;*/
     padding: 5px;
-    transition: all .03s;
+    transition: all .03s ease; /*ease is to have a slowly change in transition*/ 
 }
 
 .btn:hover {
+    cursor: pointer;
     transform: scale(1.1); 
     background: radial-gradient(#55D0C9, #2C586A );
     transition: .03s;
