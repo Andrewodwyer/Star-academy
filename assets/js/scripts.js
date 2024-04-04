@@ -27,8 +27,19 @@ function getComputerChoice(){
     let randomNumber = Math.floor(Math.random() * 3); // round down (math.floor) as array starts at 0 
     return choices[randomNumber]; // random number links to the array
 }
-
 console.log(getComputerChoice()); // check to see if function getComputerChoice works
+
+function playerWins(){
+    console.log("win");
+}
+
+function computerWins(){
+    console.log("lose");
+}
+
+function draw(){
+    console.log("draw");
+}
 
 // game function, to see what player selects and their result
 function game(playerChoice) {
@@ -37,17 +48,17 @@ function game(playerChoice) {
         case "rockscissors":
         case "paperrock":
         case "scissorspaper":
-            console.log("player wins");
+            playerWins();
             break;
         case "paperscissors":
         case "rockpaper":
         case "scissorsrock":
-            console.log("player loses.");
+            computerWins();
             break;
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
-            console.log("it's a draw");
+            draw();
             break;
     }
 
