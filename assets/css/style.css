@@ -362,7 +362,7 @@ a {
     }
 
     .nav-menu.active{
-        right: 0;
+        right: 0; /*menu is off screen when not active -100%. active brings it back to the screen.*/ 
     }
 }
 
