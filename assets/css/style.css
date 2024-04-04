@@ -358,6 +358,10 @@ a {
 
 /*Larger devices (768px and up)*/
 @media screen and (min-width: 768px) {
+    /*footer {
+        position: relative; /*footer goes to bottom on laptop
+    }
+    */
     main {
       margin-top: 82px;
     }  
@@ -397,9 +401,7 @@ a {
 
 /*Larger devices (1440px and up)*/
 @media screen and (min-width: 1440px) {
-    footer {
-        position: relative; /*footer goes to bottom on laptop*/
-    }
+
     h1, h2, h3, h4 {
         font-size: 140%;
       }
