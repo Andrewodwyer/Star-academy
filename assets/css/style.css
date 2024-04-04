@@ -358,10 +358,10 @@ a {
 
 /*Larger devices (768px and up)*/
 @media screen and (min-width: 768px) {
-    /*footer {
-        position: relative; /*footer goes to bottom on laptop
+    footer {
+        position: relative; /*footer goes to bottom on laptop*/
     }
-    */
+    
     main {
       margin-top: 82px;
     }  
