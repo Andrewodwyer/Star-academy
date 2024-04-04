@@ -28,12 +28,17 @@ function getComputerChoice(){
     return choices[randomNumber]; // random number links to the array
 }
 
-console.log(getComputerChoice());
+console.log(getComputerChoice()); // check to see if function getComputerChoice works
 
 // game function, to see what player selects and their result
-function game(playerChoice){
-    console.log("does it work" + playerChoice);
+function game(playerChoice) {
+    let computerChoice = getComputerChoice();
+    console.log("player choice =>" + playerChoice);
+    console.log("computer choice =>" + computerChoice);
+
 }
+
+game("c");
 
 function main(){
     rock_button.addEventListener('click', function() {
