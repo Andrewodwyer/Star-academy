@@ -25,3 +25,12 @@ const scissors_button = document.getElementById("scissors");
 rock_button.addEventListener('click', function() {
     console.log("it works, you clicked rock");
 })
+
+paper_button.addEventListener('click', function() {
+    console.log("it works, you clicked paper");
+})
+
+scissors_button.addEventListener('click', function() {
+    console.log("it works, you clicked scissors");
+})
+
