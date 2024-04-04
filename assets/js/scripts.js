@@ -22,15 +22,32 @@ const rock_button = document.getElementById("rock");
 const paper_button = document.getElementById("paper");
 const scissors_button = document.getElementById("scissors");
 
-rock_button.addEventListener('click', function() {
-    console.log("it works, you clicked rock");
-})
+function getComputerChoice(){
+    let choices = ['rock', 'paper', 'scissors']; // an arrey with the 3 options
+    console.log(Math.floor(Math.random()*3)); // round down (math.floor) as array starts at 0 
+}
+getComputerChoice();
 
-paper_button.addEventListener('click', function() {
-    console.log("it works, you clicked paper");
-})
+// game function, to see what player selects and their result
+function game(playerChoice){
+    console.log("does it work" + playerChoice);
+}
 
-scissors_button.addEventListener('click', function() {
-    console.log("it works, you clicked scissors");
-})
+function main(){
+    rock_button.addEventListener('click', function() {
+        game("rock");
+        console.log("it works, you clicked rock");
+    })
 
+    paper_button.addEventListener('click', function() {
+        game("paper");
+        console.log("it works, you clicked paper");
+    })
+
+    scissors_button.addEventListener('click', function() {
+        game("scissors");
+        console.log("it works, you clicked scissors");
+    })
+}
+
+main();
