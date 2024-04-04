@@ -98,6 +98,7 @@ body {
 .btn {
     border: 10px solid silver;
     border-radius: 50%;
+    background: radial-gradient(#55ACD0, #2C586A);
     /*width: 100px;*/
     /*height: 100px; without the height you get a 3d effect*/
     /*margin: 0 30px;*/
@@ -172,23 +173,6 @@ body {
     object-fit: cover; /* Adjusts the image to cover the container */
 }
 
-
-/* container holding the our-guides cards
-#guide-section {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 260px;
-} */
-
-/* Meet our Guides */
-.our-guides {
-    background: #e3e3dc;
-    border: solid 1px #3a3a3a;
-    border-radius: 5px;
-    box-shadow: 0 6px 4px gray;
-    margin: 1rem;
-    transition: all 0.3s ease-in-out; /* transition for movement between screen sizes */
-}
 
 h1 {
     font-family: 'Inter', sans-serif;
@@ -322,6 +306,7 @@ a {
     height: 100vh;
 }
 
+/* for nav hamburger under 768px. for mobile*/
 @media(max-width:768px){
     /* menu changes to links instead of burgermenu at 768px */
     .hamburger{
