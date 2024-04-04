@@ -70,10 +70,8 @@ body {
 }
 
 .comp {
-    /*display:flex;
+    display: flex;
     flex: 1;
-    justify-content: center;
-    align-items: center;*/
 }
 
 /* flex reverse so computer image is on right*/
@@ -118,13 +116,20 @@ body {
 
 /* to keep the image from taking up more then 50% of the screen */
 .image-size {
-    width: 100px;
+    width: 5rem;
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
+    object-fit: cover; /* Adjusts the image to fit in the container */
 }
 
 .btn-image-size {
     width: 5rem;
+    display: flex;
+    flex: auto; /* Adjusts the image to cover the container */
+}
+
+.choice-image-size {
+    width: 7rem;
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
 }
@@ -156,7 +161,7 @@ body {
 }
 
 .center-text {
-    /*padding: 10%;*/
+    padding: 5px;
     text-align: center;
 }
 
@@ -374,12 +379,28 @@ a {
         max-width: 600px;
     }
     h1, h2, h3, h4 {
-      font-size: 120%;
+      font-size: 130%;
+    }
+    /*score number*/
+    h2.center-text {
+        font-size: 200%;
     }
     /* make the first 4 form inputs flex*/
     .form-input {
       flex: 0 1 48%; /* Make each input take up 48% width on larger screens */
     }
+    .btn-image-size {
+        width: 8rem;
+    }
+
+    .image-size {
+        width: 12rem;
+    }
+
+    .choice-image-size {
+        width: 12rem;
+    }
+
 } 
 
 /*Larger devices (1440px and up)*/
@@ -387,12 +408,18 @@ a {
     footer {
         position: relative; /*footer goes to bottom on laptop*/
     }
+    h1, h2, h3, h4 {
+        font-size: 140%;
+      }
 }
 
 @media(max-width:1600px){
     /*.container{
         width: 100%;
     }*/
+    h1, h2, h3, h4 {
+        font-size: 160%;
+      }
 }
 
 /* menu 
