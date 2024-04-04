@@ -135,7 +135,7 @@ body {
 }
 
 .choice-image-size {
-    width: 7rem;
+    width: 6rem;
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
 }
@@ -166,8 +166,13 @@ body {
     margin-right: 5px;
 }
 
+.winning-text {
+    flex: 1;
+    width: 6rem;
+}
+
 .center-text {
-    padding: 5px;
+    /*padding: 5px;*/
     text-align: center;
 }
 
@@ -198,7 +203,7 @@ h2 {
 
 h3, h4 {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px; 
 }
 
@@ -407,7 +412,7 @@ a {
       }
 }
 
-@media(max-width:1600px){
+@media(min-width:1600px){
     /*.container{
         width: 100%;
     }*/
