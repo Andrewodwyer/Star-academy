@@ -36,6 +36,8 @@ function playerWins(playerChoice, computerChoice){
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
     winner_h4.innerHTML = `WIN`;
+    document.getElementById("players-hand").classList.add('green-highlight');
+    document.getElementById("computers-hand").classList.add('red-highlight');
     //playerMessage_p.innerHTML = `I choose  ${(playerChoice)}`;
 }
 
@@ -44,11 +46,15 @@ function computerWins(playerChoice, computerChoice){
     compScore_div.innerHTML = compScore;
     playersScore_div.innerHTML = playersScore;
     winner_h4.innerHTML = `LOOSE`;
+    document.getElementById("players-hand").classList.add('red-highlight');
+    document.getElementById("computers-hand").classList.add('green-highlight');
     //compMessage_p.innerHTML = `I choose ${(computerChoice)}`;
 }
 
 function draw(playerChoice, computerChoice){
     winner_h4.innerHTML = `DRAW`;
+    document.getElementById("players-hand").classList.add('gray-highlight');
+    document.getElementById("computers-hand").classList.add('gray-highlight');
     console.log("draw");
 }
 

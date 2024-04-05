@@ -147,16 +147,31 @@ body {
     flex: auto; /* Adjusts the image to cover the container */
 }
 
-.player-hand {
-    width: 10rem;
+#players-hand {
+    /*width: 10rem;
     display: flex;
-    flex-grow: 1; /* Adjusts the image to cover the container */
+    flex-grow: 1; Adjusts the image to cover the container */
 }
-
+/*div holding the selected choices, hands*/
 .win-or-loose {
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 50%;
     border: 2px solid silver;
+}
+
+.green-highlight{
+    background-color: green;
+    border-radius: 50%;
+}
+
+.red-highlight{
+    background-color: red;
+    border-radius: 50%;
+}
+
+.gray-highlight{
+    background-color: silver;
+    border-radius: 50%;
 }
 
 .text-box {
