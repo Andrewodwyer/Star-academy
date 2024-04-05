@@ -36,8 +36,10 @@ function playerWins(playerChoice, computerChoice){
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
     winner_h4.innerHTML = `WIN`;
-    document.getElementById("players-hand").classList.add('green-highlight');
-    document.getElementById("computers-hand").classList.add('red-highlight');
+    document.getElementById("players-hand").classList.add("green-highlight");
+    document.getElementById("computers-hand").classList.add("red-highlight");
+    setTimeout(function() { document.getElementById("players-hand").classList.remove("green-highlight")}, 1000);
+    setTimeout(function() { document.getElementById("computers-hand").classList.remove("red-highlight")}, 1000);
     //playerMessage_p.innerHTML = `I choose  ${(playerChoice)}`;
 }
 
@@ -48,13 +50,19 @@ function computerWins(playerChoice, computerChoice){
     winner_h4.innerHTML = `LOOSE`;
     document.getElementById("players-hand").classList.add('red-highlight');
     document.getElementById("computers-hand").classList.add('green-highlight');
+    setTimeout(function() { document.getElementById("players-hand").classList.remove("red-highlight")}, 1000);
+    setTimeout(function() { document.getElementById("computers-hand").classList.remove("green-highlight")}, 1000);
     //compMessage_p.innerHTML = `I choose ${(computerChoice)}`;
 }
+
+
 
 function draw(playerChoice, computerChoice){
     winner_h4.innerHTML = `DRAW`;
     document.getElementById("players-hand").classList.add('gray-highlight');
     document.getElementById("computers-hand").classList.add('gray-highlight');
+    setTimeout(function() { document.getElementById("players-hand").classList.remove("gray-highlight")}, 1000);
+    setTimeout(function() { document.getElementById("computers-hand").classList.remove("gray-highlight")}, 1000);
     console.log("draw");
 }
 
