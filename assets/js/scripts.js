@@ -17,7 +17,7 @@ let compScore = 0;
 const playersScore_div = document.getElementById("players-score"); //_div to show its in a div
 const compScore_div = document.getElementById("comp-score");
 const scoreBox_div = document.querySelector(".score-box");
-const winner_h4 = document.getElementById("announce-winner"); //_h4 to show its in a h4
+let winner_h4 = document.querySelector(".announce-winner > h4"); //_h4 to show its in a h4
 let playerMessage_p = document.querySelector(".player-message > p"); // >p because in a p inside an id element
 let compMessage_p = document.querySelector(".comp-message > p");
 const rock_button = document.getElementById("rock");
@@ -35,20 +35,20 @@ function playerWins(playerChoice, computerChoice){
     playersScore++;
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
-    playerMessage_p.innerHTML = `I choose  ${(playerChoice)}`;
+    winner_h4.innerHTML = `WIN`;
+    //playerMessage_p.innerHTML = `I choose  ${(playerChoice)}`;
 }
 
 function computerWins(playerChoice, computerChoice){
     compScore++;
     compScore_div.innerHTML = compScore;
     playersScore_div.innerHTML = playersScore;
-    compMessage_p.innerHTML = `I choose ${(computerChoice)}`;
+    winner_h4.innerHTML = `LOOSE`;
+    //compMessage_p.innerHTML = `I choose ${(computerChoice)}`;
 }
 
 function draw(playerChoice, computerChoice){
-    playersScore++;
-    playersScore_div.innerHTML = playersScore;
-    compScore_div.innerHTML = compScore;
+    winner_h4.innerHTML = `DRAW`;
     console.log("draw");
 }
 
@@ -72,27 +72,28 @@ function game(playerChoice) {
             draw();
             break;
     }
-    playerMessage_p.innerHTML = `I choose  ${(playerChoice)}`; // text to be added on R, P, S selection
-    compMessage_p.innerHTML = `I choose ${(computerChoice)}`;
-
+    playerMessage_p.innerHTML = `I choose  ${(playerChoice)} !`; // text to be added on R, P, S selection
+    compMessage_p.innerHTML = `I choose ${(computerChoice)} !`;
 }
 
-game("c");
+game("p");
+
+
 
 function main(){
     rock_button.addEventListener('click', function() {
         game("rock");
-        console.log("it works, you clicked rock");
+        //console.log("it works, you clicked rock");
     })
 
     paper_button.addEventListener('click', function() {
         game("paper");
-        console.log("it works, you clicked paper");
+        //console.log("it works, you clicked paper");
     })
 
     scissors_button.addEventListener('click', function() {
         game("scissors");
-        console.log("it works, you clicked scissors");
+        //console.log("it works, you clicked scissors");
     })
 }
 
