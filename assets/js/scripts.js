@@ -17,7 +17,9 @@ let compScore = 0;
 const playersScore_div = document.getElementById("players-score"); //_div to show its in a div
 const compScore_div = document.getElementById("comp-score");
 const scoreBox_div = document.querySelector(".score-box");
-const winner_h4 = document.getElementById("announce-winner");
+const winner_h4 = document.getElementById("announce-winner"); //_h4 to show its in a h4
+let playerMessage_p = document.querySelector(".player-message > p"); // >p because in a p inside an id element
+let compMessage_p = document.querySelector("comp-message  > p");
 const rock_button = document.getElementById("rock");
 const paper_button = document.getElementById("paper");
 const scissors_button = document.getElementById("scissors");
@@ -29,14 +31,16 @@ function getComputerChoice(){
 }
 console.log(getComputerChoice()); // check to see if function getComputerChoice works
 
-function playerWins(){
+function playerWins(playerChoice, computerChoice){
     playersScore++;
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
+    playerMessage_p.innerHTML = " I choose " + playerChoice;
 }
 
 function computerWins(){
     compScore++;
+    compMessage_p.innerHTML = " I choose " + computerChoice;
 }
 
 function draw(){
