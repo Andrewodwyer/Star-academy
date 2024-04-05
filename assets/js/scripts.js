@@ -12,9 +12,9 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove("active");
     }))
 
-const playerScore = 0;
-const compScore = 0;
-const playerScore_div = document.getElementById("player-score"); //_div to show its in a div
+let playersScore = 0;
+let compScore = 0;
+const playersScore_div = document.getElementById("players-score"); //_div to show its in a div
 const compScore_div = document.getElementById("comp-score");
 const scoreBox_div = document.querySelector(".score-box");
 const winner_h4 = document.getElementById("announce-winner");
@@ -30,11 +30,13 @@ function getComputerChoice(){
 console.log(getComputerChoice()); // check to see if function getComputerChoice works
 
 function playerWins(){
+    playersScore++;
     console.log("win");
+    console.log(playersScore);
 }
 
 function computerWins(){
-    console.log("lose");
+    compScore++;
 }
 
 function draw(){
