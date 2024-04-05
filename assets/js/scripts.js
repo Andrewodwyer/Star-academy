@@ -31,8 +31,8 @@ console.log(getComputerChoice()); // check to see if function getComputerChoice 
 
 function playerWins(){
     playersScore++;
-    console.log("win");
-    console.log(playersScore);
+    playersScore_div.innerHTML = playersScore;
+    compScore_div.innerHTML = compScore;
 }
 
 function computerWins(){
