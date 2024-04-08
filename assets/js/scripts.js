@@ -24,7 +24,8 @@ const rock_button = document.getElementById("rock");
 const paper_button = document.getElementById("paper");
 const scissors_button = document.getElementById("scissors");
 let playerChoice_div = document.getElementById("players-hand"); // user in playerWins & computerWins & draw functions,
-let computerChoice_div = document.getElementById("computers-hand") // global variables
+let computerChoice_div = document.getElementById("computers-hand"); // global variables
+let computerChoice = getComputerChoice();
 
 function getComputerChoice(){
     let choices = ['rock', 'paper', 'scissors']; // an arrey with the 3 options
@@ -88,11 +89,12 @@ function game(playerChoice) {
             draw();
             break;
     }
-    playerMessage_p.innerHTML = `I choose  ${(playerChoice)} !`; // text to be added on R, P, S selection
-    compMessage_p.innerHTML = `I choose ${(computerChoice)} !`;
+
+    playerMessage_p.textContent = `I choose  ${playerChoice} !`; // text to be added on R, P, S selection
+    compMessage_p.innerHTML = `I choose ${computerChoice} !`;
 }
 
-game("p");
+//game("...", "...");
 
 
 
