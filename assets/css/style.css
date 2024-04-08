@@ -53,6 +53,7 @@ body {
 
 /*container for player image, text/message and score*/
 .player-cards {
+    max-width: 600px;
     background-color: whitesmoke;
     border: solid 2px orange;
     border-radius: 3px;
@@ -98,6 +99,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 3%;
 }
 
 /* rock, paper, scissors buttons*/
@@ -130,7 +132,7 @@ body {
 /* to keep the image from taking up more then 50% of the screen */
 .image-size {
     width: 4rem;
-    max-width: 6rem;
+    /*max-width: 6rem;*/
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
     object-fit: cover; /* Adjusts the image to fit in the container */
@@ -143,7 +145,7 @@ body {
 }
 
 .choice-image-size {
-    width: 6rem;
+    width: 5rem;
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
 }
