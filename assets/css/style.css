@@ -195,6 +195,8 @@ body {
 .winning-text {
    /*flex: 1;*/
     width: 6rem;
+    color: white;
+    font-weight: 500;
 }
 
 .center-text {

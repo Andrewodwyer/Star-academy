@@ -1,3 +1,5 @@
+//HAMBURGER MENU
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -11,6 +13,12 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }))
+
+// CHARACTER SELECTION
+
+
+
+// GAME PAGE
 
 let playersScore = 0;
 let compScore = 0;
@@ -41,7 +49,7 @@ function playerWins(playerChoice, computerChoice){
     playersScore++;
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
-    winner_h4.innerHTML = `WIN`;
+    winner_h4.innerHTML = `YOU WIN`;
     //rock_button.src = 'assets/images/circle_paper_left.png'
     //*playerHand_img.src = 'assets/images/circle_paper_left.png';
     playerChoice_div.classList.add("green-highlight");
@@ -55,7 +63,7 @@ function computerWins(playerChoice, computerChoice){
     compScore++;
     compScore_div.innerHTML = compScore;
     playersScore_div.innerHTML = playersScore;
-    winner_h4.innerHTML = `LOOSE`;
+    winner_h4.innerHTML = `YOU LOOSE`;
     playerChoice_div.classList.add('red-highlight');
     computerChoice_div.classList.add('green-highlight'); //global variable
     setTimeout(function() { playerChoice_div.classList.remove("red-highlight")}, 1000);
@@ -66,7 +74,7 @@ function computerWins(playerChoice, computerChoice){
 
 
 function draw(playerChoice, computerChoice){
-    winner_h4.innerHTML = `DRAW`;
+    winner_h4.innerHTML = `IT'S A DRAW`;
     playerChoice_div.classList.add('gray-highlight');
     computerChoice_div.classList.add('gray-highlight');
     setTimeout(function() { playerChoice_div.classList.remove("gray-highlight")}, 1000); // length of time 1 second
