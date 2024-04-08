@@ -70,7 +70,7 @@ header {
 /*home page*/
 .home-page-background {
     /* Set the background image */
-    background-image: url('../assets/images/starfox_arwing.jpg');
+    background-image: url('../images/starfox_arwing.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -128,7 +128,7 @@ header {
 /*home page*/
 .pilot-page-background {
     /* Set the background image */
-    background-image: url('../assets/images/arwing_up_blueprints.jpg');
+    background-image: url('../images/arwing_up_blueprints.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
