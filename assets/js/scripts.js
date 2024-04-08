@@ -29,6 +29,7 @@ let computerChoice = getComputerChoice();
 let playerHand_img = document.getElementById("player-hand");
 let computerHand_img = document.getElementById("computer-hand");
 
+
 function getComputerChoice(){
     let choices = ['rock', 'paper', 'scissors']; // an arrey with the 3 options
     let randomNumber = Math.floor(Math.random() * 3); // round down (math.floor) as array starts at 0 
@@ -96,7 +97,8 @@ function game(playerChoice) {
 
     playerMessage_p.textContent = `I choose  ${playerChoice} !`; // text to be added on R, P, S selection
     compMessage_p.textContent = `I choose ${computerChoice} !`;
-    //playerHand_img.src = "playerChoice";
+    computerHand_img.src = `assets/images/circle_${computerChoice}_left.png`;
+
 }
 
 //game("...", "...");
