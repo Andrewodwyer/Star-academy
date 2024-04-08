@@ -125,7 +125,7 @@ header {
 
 /*Pilot section*/
 
-/*home page*/
+/*pilot page*/
 .pilot-page-background {
     /* Set the background image */
     background-image: url('../images/arwing_up_blueprints.jpg');
@@ -144,6 +144,16 @@ header {
     padding: 1rem;
     margin: 60vh auto;
 }
+
+.text-input {
+    background: transparent;
+    color: #4b4b4b;
+    width: 100%;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    /*padding: 0 5px;*/
+  }
 
 /*game*/
 .game-name{
