@@ -17,7 +17,113 @@ body {
     /* Generic project style*/
     font-family: 'Inter', sans-serif;
   }
+  header h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:#4b4b4b;
+    font-size: 140%;
+}
 
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px; 
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: smaller;
+}
+
+/* header*/
+header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    background-color: white;
+
+}
+
+/*main*/
+.margin-top {
+    margin-top: 74px;
+}
+
+/*home page*/
+.home-page-background {
+    /* Set the background image */
+    background-image: url('/assets/images/starfox_arwing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    height: 92vh ;
+}
+
+.info {
+    background-color: whitesmoke;
+    max-width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    margin: 60vh auto;
+}
+
+.info > h4 {
+    margin-bottom: 1rem;
+}
+
+.small-text {
+    font-size: 60%;
+}
+/* center the button in a div*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles */
+.start-btn {
+    padding: 5px 10px;
+    margin-top: 1rem;
+    background-image: linear-gradient(#FFDC73, #FFBF00);
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: .2em;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.start-btn:hover {
+    background-image: linear-gradient(#D95105, #F7873F);
+    color: white; 
+    border-left: 1px solid #DF9A5C;
+    border-right: 1px solid #DF9A5C;
+}
+
+/*game*/
 .game-name{
     background-color: white;
     color: black;
@@ -70,6 +176,7 @@ body {
     align-items: center;*/
 }
 
+/*computer image*/
 .comp {
     display: flex;
     flex: 1;
@@ -80,6 +187,7 @@ body {
     flex-direction: row-reverse;
 }
 
+/*hand showing player choice*/
 .player-choice {
     background-color: white;
     min-height: 200px;
@@ -212,59 +320,10 @@ body {
 }
 
 
-header h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color:#4b4b4b;
-    font-size: 140%;
-}
-
-
-h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-h4 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px; 
-}
-
-p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: smaller;
-}
-
-/* header*/
-header {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    width: 100%;
-    background-color: white;
-
-}
-
-/*main*/
-main {
-    margin-top: 74px;
-}
 
 /* footer */
 footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     min-height: 40px;
     background-color: #032855;
@@ -275,6 +334,10 @@ footer {
     align-items: center; /** Y-axis align **/
     justify-content: center; /** X-axis align **/
     text-transform: uppercase;
+}
+
+.position-absolute {
+    position: absolute;
 }
 
 .copyright{
