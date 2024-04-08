@@ -55,9 +55,9 @@ body {
 .player-cards {
     background-color: whitesmoke;
     border: solid 2px orange;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 6px 4px gray;
-    margin: 5%;
+    margin: 3%;
     display: flex;
 }
 
@@ -129,7 +129,8 @@ body {
 
 /* to keep the image from taking up more then 50% of the screen */
 .image-size {
-    width: 5rem;
+    width: 4rem;
+    max-width: 6rem;
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
     object-fit: cover; /* Adjusts the image to fit in the container */
@@ -176,6 +177,7 @@ body {
 
 .text-box {
     flex-grow: 1.5;
+    width: 130px;
     /*min-height: 260px; */
     align-self:center;
 }
@@ -185,7 +187,7 @@ body {
     align-self: center;
     font-size: 2.5rem;
     color: #575757;
-    margin-right: 5px;
+    margin: 5px;
 }
 
 .winning-text {
@@ -402,7 +404,7 @@ a {
         max-width: 600px;
     }
     h1, h2, h3, h4 {
-      font-size: 130%;
+      font-size: 110%;
     }
     /*score number*/
     h2.center-text {
@@ -413,15 +415,15 @@ a {
       flex: 0 1 48%; /* Make each input take up 48% width on larger screens */
     }
     .btn-image-size {
-        width: 8rem;
+        width: 6rem;
     }
 
     .image-size {
-        width: 12rem;
+        width: 8rem;
     }
 
     .choice-image-size {
-        width: 12rem;
+        width: 8rem;
     }
 
 } 
