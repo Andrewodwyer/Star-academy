@@ -70,7 +70,7 @@ header {
 /*home page*/
 .home-page-background {
     /* Set the background image */
-    background-image: url('/assets/images/starfox_arwing.jpg');
+    background-image: url('../assets/images/starfox_arwing.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -121,6 +121,28 @@ header {
     color: white; 
     border-left: 1px solid #DF9A5C;
     border-right: 1px solid #DF9A5C;
+}
+
+/*Pilot section*/
+
+/*home page*/
+.pilot-page-background {
+    /* Set the background image */
+    background-image: url('../assets/images/arwing_up_blueprints.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+    height: 92vh ;
+}
+
+.pilot-info {
+    background-color: rgba(245, 245, 245, 0.9); /*transparent 0.9*/
+    max-width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    margin: 60vh auto;
 }
 
 /*game*/
@@ -477,6 +499,10 @@ a {
         max-width: 600px;
     }
     p {
+        font-size: 100%;
+    }
+
+    .info > p {
         font-size: 100%;
     }
 
