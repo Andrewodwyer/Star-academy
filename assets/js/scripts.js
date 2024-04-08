@@ -26,6 +26,8 @@ const scissors_button = document.getElementById("scissors");
 let playerChoice_div = document.getElementById("players-hand"); // user in playerWins & computerWins & draw functions,
 let computerChoice_div = document.getElementById("computers-hand"); // global variables
 let computerChoice = getComputerChoice();
+let playerHand_img = document.getElementById("player-hand");
+let computerHand_img = document.getElementById("computer-hand");
 
 function getComputerChoice(){
     let choices = ['rock', 'paper', 'scissors']; // an arrey with the 3 options
@@ -39,6 +41,7 @@ function playerWins(playerChoice, computerChoice){
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
     winner_h4.innerHTML = `WIN`;
+    //playerHand_img.src = 'assets/images/circle_paper_left.png';
     playerChoice_div.classList.add("green-highlight");
     computerChoice_div.classList.add("red-highlight");
     setTimeout(function() { playerChoice_div.classList.remove("green-highlight")}, 1000);
@@ -91,7 +94,8 @@ function game(playerChoice) {
     }
 
     playerMessage_p.textContent = `I choose  ${playerChoice} !`; // text to be added on R, P, S selection
-    compMessage_p.innerHTML = `I choose ${computerChoice} !`;
+    compMessage_p.textContent = `I choose ${computerChoice} !`;
+    //playerHand_img.src = playerChoice;
 }
 
 //game("...", "...");
@@ -100,8 +104,8 @@ function game(playerChoice) {
 
 function main(){
     rock_button.addEventListener('click', function() {
+        document.rock_button.src = 'assets/images/circle_paper_left.png';
         game("rock");
-        //console.log("it works, you clicked rock");
     })
 
     paper_button.addEventListener('click', function() {
