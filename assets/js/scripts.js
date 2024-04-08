@@ -41,7 +41,8 @@ function playerWins(playerChoice, computerChoice){
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
     winner_h4.innerHTML = `WIN`;
-    //playerHand_img.src = 'assets/images/circle_paper_left.png';
+    //rock_button.src = 'assets/images/circle_paper_left.png'
+    //*playerHand_img.src = 'assets/images/circle_paper_left.png';
     playerChoice_div.classList.add("green-highlight");
     computerChoice_div.classList.add("red-highlight");
     setTimeout(function() { playerChoice_div.classList.remove("green-highlight")}, 1000);
@@ -95,7 +96,7 @@ function game(playerChoice) {
 
     playerMessage_p.textContent = `I choose  ${playerChoice} !`; // text to be added on R, P, S selection
     compMessage_p.textContent = `I choose ${computerChoice} !`;
-    //playerHand_img.src = playerChoice;
+    //playerHand_img.src = "playerChoice";
 }
 
 //game("...", "...");
@@ -104,16 +105,19 @@ function game(playerChoice) {
 
 function main(){
     rock_button.addEventListener('click', function() {
-        document.rock_button.src = 'assets/images/circle_paper_left.png';
+        //rock_button.src = 'assets/images/circle_paper_left.png';
+        playerHand_img.src = 'assets/images/circle_rock_left.png';
         game("rock");
     })
 
     paper_button.addEventListener('click', function() {
         game("paper");
+        playerHand_img.src = 'assets/images/circle_paper_left.png';
         //console.log("it works, you clicked paper");
     })
 
     scissors_button.addEventListener('click', function() {
+        playerHand_img.src = 'assets/images/circle_scissors_left.png';
         game("scissors");
         //console.log("it works, you clicked scissors");
     })
