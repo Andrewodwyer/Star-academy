@@ -135,7 +135,9 @@ header {
     background-position: center;
     background-attachment: fixed;
     padding: 20px;
-    height: 92vh ;
+    height: 92vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .pilot-info {
@@ -156,6 +158,49 @@ header {
     border-radius: 2px;
     /*padding: 0 5px;*/
   }
+
+#player-container {
+    height: 80%;
+    width: 100%;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.pilot-container {
+    /*background-color: white;
+    border-radius: 5px;*/
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.large-pilot-img {
+    margin-top: 10px;
+    height: auto;
+    max-width: 650px;
+
+}
+
+#controls {
+    width: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-box {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.character-img {
+    width: 6rem;
+    display: flex;
+    flex: auto; /* Adjusts the image to cover the container */
+    object-fit: cover; /* Adjusts the image to fit in the container */
+}
 
 /* game section*/
 
