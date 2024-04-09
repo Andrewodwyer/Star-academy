@@ -179,12 +179,20 @@ header {
     margin-top: 10px;
     height: auto;
     max-width: 650px;
+}
 
+.pilot-name {
+    position: absolute;
+    z-index: 99;
+    font-size: 300%;
+    left: 25%;
+    bottom: 0%;
+    Color: white;
+    font-weight: 500;
 }
 
 #controls {
     width: 80%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
