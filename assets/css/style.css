@@ -105,9 +105,10 @@ header {
 .start-btn {
     padding: 5px 10px;
     margin-top: 1rem;
-    background-image: linear-gradient(#FFDC73, #FFBF00);
-    color: black;
-    border: 1px solid black;
+    background-image: linear-gradient(#FFE9A8, #FFBF00);
+    box-shadow: 0 0 10px #FFDC73, rgba(200, 208, 231, .5) 2.2px 2.2px 4px 0px inset, rgba(255, 255, 255, .5) -2.2px -2.2px 4px 0px inset;
+    color: #363737;
+    border: .5px solid silver;
     border-radius: 5px;
     font-size: 14px;
     letter-spacing: .2em;
@@ -281,7 +282,7 @@ header {
 }
 
 .btn-image-size {
-    width: 5rem;
+    width: 4.5rem;
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
 }
