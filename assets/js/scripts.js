@@ -105,7 +105,7 @@ function game(playerChoice) {
 
     playerMessage_p.textContent = `I choose  ${playerChoice} !`; // text to be added on R, P, S selection
     compMessage_p.textContent = `I choose ${computerChoice} !`;
-    computerHand_img.src = `assets/images/circle_${computerChoice}_left.png`;
+    computerHand_img.src = `assets/images/circle_${computerChoice}_right.png`;
 
 }
 
