@@ -140,64 +140,68 @@ const falco_button = document.getElementById("falco");
 const wolf_button = document.getElementById("wolf");
 const peppy_button = document.getElementById("peppy");
 const slippy_button = document.getElementById("slippy");
-let playerChoice_div = document.getElementById("players-hand"); // user in playerWins & computerWins & draw functions,
-let computerChoice_div = document.getElementById("computers-hand"); // global variables
-let computerChoice = getComputerChoice();
+let computerPilotChoice = getComputerPilotChoice();
 let playersPilot_img = document.getElementById("players-pilot");
-let computerHand_img = document.getElementById("computer-hand");
+let computerPilot_img = document.getElementById("computer-pilot");
+
+function getComputerPilotChoice(){
+    let choices = ['fox', 'falco', 'wolf', 'peppy', 'slippy']; // an arrey with the 5 options
+    let randomNumber = Math.floor(Math.random() * 5); // round down (math.floor) as array starts at 0 
+    return choices[randomNumber]; // random number links to the array
+}
+console.log(getComputerPilotChoice()); // check to see if function getComputerChoice works
 
 
 function changePilot(pilot){
 
     switch(pilot){
         case "fox":
-            document.getElementById("img").src = "assets/images/Fox_full_length.webp";
-            document.getElementById("name").innerHTML = "Fox";
+            document.getElementById("players-pilot").src = "assets/images/Fox_full_length.webp";
+            document.getElementById("pilot-name").innerHTML = "Fox";
             break;
         case "falco":
-            document.getElementById("img").src = "assets/images/Falco_full_length.webp";
-            document.getElementById("name").innerHTML = "Falco";
+            document.getElementById("players-pilot").src = "assets/images/Falco_full_length.webp";
+            document.getElementById("pilot-name").innerHTML = "Falco";
             break;
         case "wolf":
-            document.getElementById("img").src = "assets/images/Wolf_full_length.webp";
-            document.getElementById("name").innerHTML = "Wolf";
+            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.webp";
+            document.getElementById("pilot-name").innerHTML = "Wolf";
             break;
         case "peppy":
-            document.getElementById("img").src = "assets/images/Peppy_full_length.webp";
-            document.getElementById("name").innerHTML = "Peppy";
+            document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.webp";
+            document.getElementById("pilot-name").innerHTML = "Peppy";
             break;
         case "slippy":
-            document.getElementById("img").src = "assets/images/Slippy_full_length.webp";
-            document.getElementById("name").innerHTML = "Slippy";
+            document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.webp";
+            document.getElementById("pilot-name").innerHTML = "Slippy";
             break;
             
     }
-    playerMessage_p.textContent
 }
 
 function pilotSelect(){
     fox_button.addEventListener('click', function() {
-        playerHand_img.src = 'assets/images/circle_rock_left.png';
+        playersPilot_img.src = 'assets/images/Fox_full_length.webp';
         changePilot("fox");
     })
 
     falco_button.addEventListener('click', function() {
         changePilot("falco");
-        playerHand_img.src = 'assets/images/circle_paper_left.png';
+        playersPilot_img.src = 'assets/images/Falco_full_length1.png';
     })
 
     wolf_button.addEventListener('click', function() {
-        playerHand_img.src = 'assets/images/circle_scissors_left.png';
+        playersPilot_img.src = 'assets/images/Wolf_full_length.png';
         changePilot("wolf");
     })
 
     peppy_button.addEventListener('click', function() {
-        playerHand_img.src = 'assets/images/circle_scissors_left.png';
+        playersPilot_img.src = 'assets/images/Peppy_full_length.webp';
         changePilot("peppy");
     })
 
     slippy_button.addEventListener('click', function() {
-        playerHand_img.src = 'assets/images/circle_scissors_left.png';
+        playersPilot_img.src = 'assets/images/Slippy_full_length.png';
         changePilot("slippy");
     })
 }
