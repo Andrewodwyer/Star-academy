@@ -156,7 +156,7 @@ header {
     border-radius: 5px;
     text-align: center;
     padding: 1rem;
-    margin: 5rem auto;
+    margin: 1rem auto;
 }
 
 .text-input {
@@ -199,6 +199,7 @@ header {
 #controls {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
@@ -206,7 +207,6 @@ header {
 
 .character-box {
     display: flex;
-    flex-direction: row;
 }
 
 .character-img {
@@ -641,7 +641,7 @@ a {
       flex: 0 1 48%; /* Make each input take up 48% width on larger screens */
     }
     .btn-image-size {
-        width: 6rem;
+        width: 7rem;
     }
 
    /* .image-size {
