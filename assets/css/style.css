@@ -205,8 +205,8 @@ header {
 }
 
 .character-box {
-    max-width: 50px;
-    max-height: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
 .character-img {
