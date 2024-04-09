@@ -132,3 +132,60 @@ function mainGame(){
 }
 
 mainGame();
+
+
+//Pilot Select
+
+const fox_button = document.getElementById("fox");
+const falco_button = document.getElementById("falco");
+const wolf_button = document.getElementById("wolf");
+const peppy_button = document.getElementById("peppy");
+const slippy_button = document.getElementById("slippy");
+
+
+function Changepilot(pilot){
+
+    switch(pilot){
+        case "fox":
+            document.getElementById("img").src = "assets/images/Fox_full_length.webp";
+            document.getElementById("name").innerHTML = "Fox";
+            break;
+        case "falco":
+            document.getElementById("img").src = "assets/images/Falco_full_length.webp";
+            document.getElementById("name").innerHTML = "Falco";
+            break;
+        case "wolf":
+            document.getElementById("img").src = "assets/images/Wolf_full_length.webp";
+            document.getElementById("name").innerHTML = "Wolf";
+            break;
+        case "peppy":
+            document.getElementById("img").src = "assets/images/Peppy_full_length.webp";
+            document.getElementById("name").innerHTML = "Peppy";
+            break;
+        case "slippy":
+            document.getElementById("img").src = "assets/images/Slippy_full_length.webp";
+            document.getElementById("name").innerHTML = "Slippy";
+            break;
+            
+    }
+}
+
+function pilotSelect(){
+    rock_button.addEventListener('click', function() {
+        //rock_button.src = 'assets/images/circle_paper_left.png';
+        playerHand_img.src = 'assets/images/circle_rock_left.png';
+        game("rock");
+    })
+
+    paper_button.addEventListener('click', function() {
+        game("paper");
+        playerHand_img.src = 'assets/images/circle_paper_left.png';
+        //console.log("it works, you clicked paper");
+    })
+
+    scissors_button.addEventListener('click', function() {
+        playerHand_img.src = 'assets/images/circle_scissors_left.png';
+        game("scissors");
+        //console.log("it works, you clicked scissors");
+    })
+}

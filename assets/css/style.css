@@ -146,6 +146,14 @@ header {
     height: 92vh;
 }
 
+.pilot-selection-text {
+    background-color: rgba(255, 255, 255, .8);
+    color: #032855;
+    border-radius: 5px;
+    padding: 4px 10px;
+   /* width: 100%;*/
+}
+
 .transparent {
     background-color: rgba(255, 255, 255, .5);
 }
@@ -155,15 +163,15 @@ header {
     max-width: 400px;
     border-radius: 5px;
     text-align: center;
-    padding: 1rem;
-    margin: 1rem auto;
+    padding: 10px;
+    margin: auto;
 }
 
 .text-input {
     background: transparent;
     color: #4b4b4b;
     width: 100%;
-    margin: 5px 0 20px 0;
+    /*margin: 5px 0 20px 0;*/
     border: 1px solid #fafafa;
     border-radius: 2px;
     /*padding: 0 5px;*/
@@ -187,6 +195,7 @@ header {
 
 .pilot-name {
     Color: white;
+    margin: 10px 0;
 }
 
 /*   position: absolute;
@@ -203,10 +212,6 @@ header {
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-}
-
-.character-box {
-    display: flex;
 }
 
 .character-img {
@@ -238,7 +243,7 @@ header {
 .right-text-on-card {
     display: flex;
     flex: 1;
-    min-height: 260px;
+    min-height: 200px;
     background-color: rgba(200, 208, 231, .8);
     border-radius: 5%;
 }
@@ -255,11 +260,26 @@ header {
 }
 
 .pilot-center-text {
-padding: 10%;
-text-align: center;
-display: flex;
-flex-direction: column;
-align-self:center;
+    padding: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+}
+
+/* rock, paper, scissors buttons*/
+.pilot-btn {
+    border: solid 2px whitesmoke;
+    padding: 2px;
+    transition: all .03s ease; /*ease is to have a slowly change in transition*/ 
+    margin: 2px;
+}
+
+.pilot-btn:hover {
+    border: solid 2px #FFCF40;
+    cursor: pointer;
+    transform: scale(1.1); 
+    transition: .03s;
 }
 
 /* game section*/
@@ -632,6 +652,12 @@ a {
     h1, h2, h3, h4 {
       font-size: 120%;
     }
+
+    /* large image on pilot page*/
+    .left-image-on-card > img {
+        height: 40vh;
+    }
+
     /*score number*/
     h2.center-text {
         font-size: 200%;
@@ -641,7 +667,7 @@ a {
       flex: 0 1 48%; /* Make each input take up 48% width on larger screens */
     }
     .btn-image-size {
-        width: 7rem;
+        width: 6rem;
     }
 
    /* .image-size {
