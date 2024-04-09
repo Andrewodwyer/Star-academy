@@ -113,7 +113,6 @@ function game(playerChoice) {
 
 function mainGame(){
     rock_button.addEventListener('click', function() {
-        //rock_button.src = 'assets/images/circle_paper_left.png';
         playerHand_img.src = 'assets/images/circle_rock_left.png';
         game("rock");
     })
@@ -141,9 +140,14 @@ const falco_button = document.getElementById("falco");
 const wolf_button = document.getElementById("wolf");
 const peppy_button = document.getElementById("peppy");
 const slippy_button = document.getElementById("slippy");
+let playerChoice_div = document.getElementById("players-hand"); // user in playerWins & computerWins & draw functions,
+let computerChoice_div = document.getElementById("computers-hand"); // global variables
+let computerChoice = getComputerChoice();
+let playersPilot_img = document.getElementById("players-pilot");
+let computerHand_img = document.getElementById("computer-hand");
 
 
-function Changepilot(pilot){
+function changePilot(pilot){
 
     switch(pilot){
         case "fox":
@@ -168,24 +172,32 @@ function Changepilot(pilot){
             break;
             
     }
+    playerMessage_p.textContent
 }
 
 function pilotSelect(){
-    rock_button.addEventListener('click', function() {
-        //rock_button.src = 'assets/images/circle_paper_left.png';
+    fox_button.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_rock_left.png';
-        game("rock");
+        changePilot("fox");
     })
 
-    paper_button.addEventListener('click', function() {
-        game("paper");
+    falco_button.addEventListener('click', function() {
+        changePilot("falco");
         playerHand_img.src = 'assets/images/circle_paper_left.png';
-        //console.log("it works, you clicked paper");
     })
 
-    scissors_button.addEventListener('click', function() {
+    wolf_button.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_scissors_left.png';
-        game("scissors");
-        //console.log("it works, you clicked scissors");
+        changePilot("wolf");
+    })
+
+    peppy_button.addEventListener('click', function() {
+        playerHand_img.src = 'assets/images/circle_scissors_left.png';
+        changePilot("peppy");
+    })
+
+    slippy_button.addEventListener('click', function() {
+        playerHand_img.src = 'assets/images/circle_scissors_left.png';
+        changePilot("slippy");
     })
 }
