@@ -491,7 +491,7 @@ header {
 
 /* footer */
 footer {
-    position: relative;
+    position:relative;
     width: 100%;
     min-height: 40px;
     background-color: #032855;

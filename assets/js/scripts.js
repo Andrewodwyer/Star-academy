@@ -164,7 +164,7 @@ function changePilot(pilot){
             document.getElementById("pilot-name").innerHTML = "Falco";
             break;
         case "wolf":
-            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
+            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.webp";
             document.getElementById("pilot-name").innerHTML = "Wolf";
             break;
         case "peppy":
