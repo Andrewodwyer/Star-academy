@@ -51,7 +51,6 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: smaller;
-    color: #363737;
 }
 
 /* header*/
@@ -516,7 +515,6 @@ a {
     }
     p {
         font-size: 100%;
-        color: #363737;
     }
 
     .info > p {
