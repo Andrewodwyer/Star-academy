@@ -193,9 +193,12 @@ header {
     margin:0 auto;
 }
 
-.pilot-name {
+#pilot-name {
     Color: white;
+    background: #5C74A4;
+    border: solid 1px white;
     margin: 10px 0;
+    padding: 0 50px;
 }
 
 /*   position: absolute;
