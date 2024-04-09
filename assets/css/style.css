@@ -166,12 +166,13 @@ header {
 
 .game-name h2 {
     padding: 10px;
-    text-align: center
+    text-align: center;
 }
 
 .game-name h5 {
     padding: 5px;
-    text-align: center
+    text-align: center;
+    color: #363737;
 }
 
 /*game section gradient */
@@ -513,6 +514,7 @@ a {
     }
     p {
         font-size: 100%;
+        color: #363737;
     }
 
     .info > p {
@@ -521,6 +523,7 @@ a {
 
     h1, h2, h3, h4 {
       font-size: 120%;
+      color: #363737;
     }
     /*score number*/
     h2.center-text {
