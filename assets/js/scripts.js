@@ -160,11 +160,11 @@ function changePilot(pilot){
             document.getElementById("pilot-name").innerHTML = "Fox";
             break;
         case "falco":
-            document.getElementById("players-pilot").src = "assets/images/Falco_full_length.webp";
+            document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
             document.getElementById("pilot-name").innerHTML = "Falco";
             break;
         case "wolf":
-            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.webp";
+            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Wolf";
             break;
         case "peppy":
@@ -172,36 +172,9 @@ function changePilot(pilot){
             document.getElementById("pilot-name").innerHTML = "Peppy";
             break;
         case "slippy":
-            document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.webp";
+            document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Slippy";
             break;
             
     }
-}
-
-function pilotSelect(){
-    fox_button.addEventListener('click', function() {
-        playersPilot_img.src = 'assets/images/Fox_full_length.webp';
-        changePilot("fox");
-    })
-
-    falco_button.addEventListener('click', function() {
-        changePilot("falco");
-        playersPilot_img.src = 'assets/images/Falco_full_length1.png';
-    })
-
-    wolf_button.addEventListener('click', function() {
-        playersPilot_img.src = 'assets/images/Wolf_full_length.png';
-        changePilot("wolf");
-    })
-
-    peppy_button.addEventListener('click', function() {
-        playersPilot_img.src = 'assets/images/Peppy_full_length.webp';
-        changePilot("peppy");
-    })
-
-    slippy_button.addEventListener('click', function() {
-        playersPilot_img.src = 'assets/images/Slippy_full_length.png';
-        changePilot("slippy");
-    })
 }
