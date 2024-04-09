@@ -134,10 +134,20 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 20px;
+    /*padding: 20px;*/
     height: 92vh;
     justify-content: center;
     align-items: center;
+}
+
+.transparent-color {
+    background-color: rgba(221, 221, 221, 0.393);
+    padding: 5%;
+    height: 92vh;
+}
+
+.transparent {
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .pilot-info {
@@ -146,7 +156,7 @@ header {
     border-radius: 5px;
     text-align: center;
     padding: 1rem;
-    margin: 60vh auto;
+    margin: 5rem auto;
 }
 
 .text-input {
@@ -170,32 +180,28 @@ header {
     /*background-color: white;
     border-radius: 5px;*/
     color: black;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     margin:0 auto;
 }
 
-.large-pilot-img {
-    margin-top: 10px;
-    height: auto;
-    max-width: 650px;
+.pilot-name {
+    Color: white;
 }
 
-.pilot-name {
-    position: absolute;
+/*   position: absolute;
     z-index: 99;
     font-size: 300%;
     left: 25%;
-    bottom: 0%;
-    Color: white;
     font-weight: 500;
-}
+*/
 
 #controls {
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem auto;
 }
 
 .character-box {
@@ -208,6 +214,52 @@ header {
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
     object-fit: cover; /* Adjusts the image to fit in the container */
+}
+
+#pilot-picture-info {
+    /*width: 80%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+    /*border: solid 2px whitesmoke;*/
+    transition: all 0.3s ease-in-out; /* transition for movement between screen sizes */
+  }
+
+.left-image-on-card {
+    flex: 1;
+    margin: auto;
+}
+
+.left-image-on-card > img {
+    height: 30vh;
+}
+
+.right-text-on-card {
+    display: flex;
+    flex: 1;
+    min-height: 260px;
+    background-color: rgba(200, 208, 231, .8);
+    border-radius: 5%;
+}
+
+.image-and-text {
+    display: flex;
+    flex-direction: row;
+}
+
+/* to keep the image from taking up more then 50% of the screen */
+.restrain-image {
+    display: flex;
+    flex: 1 /* Adjusts the image to cover the container */
+}
+
+.pilot-center-text {
+padding: 10%;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-self:center;
 }
 
 /* game section*/
@@ -300,7 +352,7 @@ header {
 
 /* rock, paper, scissors buttons*/
 .btn {
-    border: 10px solid rgba(241,241,241, 0.92);
+    /*border: 10px solid rgba(241,241,241, 0.92);*/
     border-radius: 50%;
     /*box-shadow: 0 0 15px #55D0C9;*/
     box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
@@ -400,6 +452,9 @@ header {
 .center-text {
     /*padding: 5px;*/
     text-align: center;
+}
+.text-white {
+    color: white;
 }
 
 .left-area img {
