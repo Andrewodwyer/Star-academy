@@ -14,42 +14,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove("active");
     }))
 
-// CHARACTER SELECTION
-
-function characterSelect(){
-    Fox_button.addEventListener('click', function() {
-        //rock_button.src = 'assets/images/circle_paper_left.png';
-        playerHand_img.src = 'assets/images/circle_rock_left.png';
-        game("rock");
-    })
-
-    Falco_button.addEventListener('click', function() {
-        game("paper");
-        playerHand_img.src = 'assets/images/circle_paper_left.png';
-        //console.log("it works, you clicked paper");
-    })
-
-    Wolf_button.addEventListener('click', function() {
-        playerHand_img.src = 'assets/images/circle_scissors_left.png';
-        game("scissors");
-        //console.log("it works, you clicked scissors");
-    })
-
-    Peppy_button.addEventListener('click', function() {
-        playerHand_img.src = 'assets/images/circle_scissors_left.png';
-        game("scissors");
-        //console.log("it works, you clicked scissors");
-    })
-
-    Peppy_button.addEventListener('click', function() {
-        playerHand_img.src = 'assets/images/circle_scissors_left.png';
-        game("scissors");
-        //console.log("it works, you clicked scissors");
-    })
-}
-
-characterSelect();
-
 
 
 // GAME PAGE
