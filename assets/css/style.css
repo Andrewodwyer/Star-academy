@@ -249,7 +249,7 @@ header {
     border: 10px solid rgba(241,241,241, 0.92);
     border-radius: 50%;
     /*box-shadow: 0 0 15px #55D0C9;*/
-    box-shadow: 0 0 15px #55D0C9, rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
+    box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
     background: radial-gradient(#55ACD0, #2C586A);
     /*width: 100px;*/
     /*height: 100px; without the height you get a 3d effect*/
