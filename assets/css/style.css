@@ -5,7 +5,6 @@
 *{
     padding: 0;
     margin: 0;
-
 }
 
 /* body */
@@ -23,33 +22,36 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color:#4b4b4b;
+    color:#363737;
     font-size: 140%;
 }
-
 
 h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
+    color: #363737;
 }
 
 h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
+    color: #363737;
 }
 
 h4 {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: 1px; 
+    color: #363737;
 }
 
 p {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: smaller;
+    color: #363737;
 }
 
 /* header*/
@@ -156,7 +158,9 @@ header {
     /*padding: 0 5px;*/
   }
 
-/*game*/
+/* game section*/
+
+/*game page*/
 .game-name{
     background-color: white;
     color: black;
@@ -172,7 +176,6 @@ header {
 .game-name h5 {
     padding: 5px;
     text-align: center;
-    color: #363737;
 }
 
 /*game section gradient */
@@ -201,7 +204,6 @@ header {
     margin: 3%;
     display: flex;
 }
-
 
 .players {
     display:flex;
@@ -307,17 +309,17 @@ header {
 }
 
 .green-highlight{
-    background-color: green;
+    background: radial-gradient(#13c11c, #0b870d);
     border-radius: 50%;
 }
 
 .red-highlight{
-    background-color: red;
+    background: radial-gradient(#f83b3b, #c3170a);
     border-radius: 50%;
 }
 
 .gray-highlight{
-    background-color: silver;
+    background: radial-gradient(#CFCFCF, #9C9B9B);
     border-radius: 50%;
 }
 
@@ -523,7 +525,6 @@ a {
 
     h1, h2, h3, h4 {
       font-size: 120%;
-      color: #363737;
     }
     /*score number*/
     h2.center-text {
