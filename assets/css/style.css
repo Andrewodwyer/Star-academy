@@ -159,20 +159,28 @@ header {
 }
 
 .pilot-info {
-    background-color: rgba(245, 245, 245, 0.9); /*transparent 0.9*/
+    display: flex;
+    flex-direction: row;
+    /*background-color: rgba(245, 245, 245, 0.9); /*transparent 0.9*/
     max-width: 400px;
     border-radius: 5px;
     text-align: center;
+    /*margin-bottom: 1.5px;
     padding: 10px;
-    margin: 10px auto;
+    margin: 10px auto;*/
+}
+
+label {
+    margin: auto 5px;
+    font-size: 1rem;
 }
 
 .text-input {
     background: transparent;
     color: #4b4b4b;
     width: 100%;
-    /*margin: 5px 0 20px 0;*/
-    border: 1px solid #fafafa;
+    margin: 2px;
+    /*border: 1px solid #fafafa;*/
     border-radius: 2px;
     /*padding: 0 5px;*/
   }
@@ -296,7 +304,7 @@ header {
 }
 
 .game-name h2 {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -351,8 +359,8 @@ header {
 .box-style {
     text-align: center;
     border-radius: 10px;
-    height: 30px;
-    font-size: 1.2rem;
+    /*height: 30px;*/
+    font-size: 1rem;
 }
 
 /*computer image*/
