@@ -178,7 +178,7 @@ function changePilot(pilot){
 
     switch(pilot){
         case "Fox":
-            document.getElementById("players-pilot").src = "assets/images/Fox_full_length.webp";
+            document.getElementById("players-pilot").src = "assets/images/Fox_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Fox";
             break;
         case "Falco":
@@ -186,11 +186,11 @@ function changePilot(pilot){
             document.getElementById("pilot-name").innerHTML = "Falco";
             break;
         case "Wolf":
-            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.webp";
+            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Wolf";
             break;
         case "Peppy":
-            document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.webp";
+            document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Peppy";
             break;
         case "Slippy":
