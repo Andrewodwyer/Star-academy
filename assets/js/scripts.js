@@ -118,6 +118,9 @@ function endGame() {
     compScore = 0;
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
+    winner_h4.innerHTML = `LET'S PLAY`;
+    playerMessage_p.textContent = `" Are you ready ! "`;
+    compMessage_p.textContent = `" Let's see what you got ! "`;
 }
 
 
@@ -153,7 +156,7 @@ const slippyButton = document.getElementById("Slippy");
 let computerPilotChoice = getComputerPilotChoice();
 let playersPilot_img = document.getElementById("players-pilot");
 let computerPilot_img = document.getElementById("computer-pilot");
-let computerPilot = document.getElementById("computer-pilot-btn");
+let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("pilot-name");
 
 
@@ -162,17 +165,17 @@ function getComputerPilotChoice(){
 
     let randomPilotNumber = Math.floor(Math.random() * pilots.length); // round down (math.floor) as array starts at 0 
 
-    //let computerPilot = pilots[randomPilotNumber];
+    //let computerPilotRandom = pilots[randomPilotNumber];
 
     return pilots[randomPilotNumber];
 }
 
 
-computerPilot.addEventListener("click", function() {
+computerPilotRandom.addEventListener("click", function() {
     console.log(computerPilotChoice);
     //computerPilotChoice; 
-    //computerPilot_img.src = `assets/images/${computerPilot}_full_length.png`;
-    //computerPilot.innerHTML = ` ${computerPilot}`;
+    //computerPilot_img.src = `assets/images/${computerPilotRandom}_full_length.png`;
+    //computerPilot.innerHTML = ` ${computerPilotRandom}`;
 
 })
 
