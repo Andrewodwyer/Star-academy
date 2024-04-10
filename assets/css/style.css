@@ -335,8 +335,16 @@ header {
 .players {
     display:flex;
     flex: 1;
+    position: relative;
     /*justify-content: center;
     align-items: center;*/
+}
+
+#game-pilot-name {
+    Color: white;
+    background: #5C74A4;
+    margin-bottom: 10px;
+    border-radius: 0 5px 5px 0; /* This will round only the right corners */
 }
 
 /*computer image*/
@@ -451,6 +459,8 @@ header {
 }
 
 .text-box {
+    /*display: flex;*/
+    /*flex-direction: column;*/
     flex-grow: 1.5;
     width: 130px;
     /*min-height: 260px; */

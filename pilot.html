@@ -88,15 +88,13 @@
                     </button>
                 </div>
 
-                <div class="pilot-info">
-                    <div class="form-input">
-                        <label for="codename">Enter a Codename</label>
-                        <input type="text" name="codename" id="codename" class="text-input box-height-25" required>
-                    </div>
-
-                    <div class="center">
-                        <a href="game.html" class="start-btn" aria-label="Go to our pilot page">let's get going</a>
-                    </div>
+                <form onsubmit="return validateName()" class="pilot-info form-input">
+                    <label for="codename">Enter a Codename</label>
+                    <input type="text" name="codename" id="codename" pattern="[A-Za-z]+" class="text-input box-height-25" required minlength="4"><br>
+                    <button type="submit" class="start-btn">READY TO START!</button>
+                </form>
+                <div class="center">
+                    <a id="gamePage" href="game.html" class="start-btn" aria-label="Go to our pilot page">let's get going</a>
                 </div>
             </div>
         </section>

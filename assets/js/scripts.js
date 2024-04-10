@@ -98,8 +98,8 @@ function game(playerChoice) {
             break;
     }
 
-    playerMessage_p.textContent = `I choose  ${playerChoice} !`; // text to be added on R, P, S selection
-    compMessage_p.textContent = `I choose ${computerChoice} !`;
+    playerMessage_p.textContent = `" I choose  ${playerChoice} ! "`; // text to be added on R, P, S selection
+    compMessage_p.textContent = `" I choose ${computerChoice} ! "`;
     computerHand_img.src = `assets/images/circle_${computerChoice}_right.png`;
 
     if (playersScore === winningScore || compScore === winningScore) {
@@ -187,4 +187,26 @@ function changePilot(pilot){
             break;
             
     }
+}
+
+function addData() {
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+
+    // Validate name and age
+    var nameRegex = /^[A-Za-z]{5,}$/;
+    var ageRegex = /^[0-9]+$/;
+
+    if (!nameRegex.test(name)) {
+        document.getElementById("error-msg").innerText = "Name should be letters and at least 5 characters long";
+        return;
+    }
+
+    if (!ageRegex.test(age)) {
+        document.getElementById("error-msg").innerText = "Age should be a number";
+        return;
+    }
+
+    // Redirect to next page and pass data as query parameters
+    window.location.href = "next-page.html?name=" + encodeURIComponent(name) + "&age=" + encodeURIComponent(age);
 }
