@@ -135,15 +135,15 @@ header {
     background-position: center;
     background-attachment: fixed;
     /*padding: 20px;*/
-    height: 92vh;
-    justify-content: center;
-    align-items: center;
+    /*height: 92vh;*/
+    /*justify-content: center;
+    align-items: center;*/
 }
 
 .transparent-color {
     background-color: rgba(221, 221, 221, 0.393);
     padding: 5%;
-    height: 92vh;
+    /*height: 92vh;*/
 }
 
 .pilot-selection-text {
@@ -164,7 +164,7 @@ header {
     border-radius: 5px;
     text-align: center;
     padding: 10px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .text-input {
