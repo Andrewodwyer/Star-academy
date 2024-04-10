@@ -27,9 +27,9 @@ const scoreBox_div = document.querySelector(".score-box");
 let winner_h4 = document.querySelector(".announce-winner > h4"); //_h4 to show its in a h4
 let playerMessage_p = document.querySelector(".player-message > p"); // >p because in a p inside an id element
 let compMessage_p = document.querySelector(".comp-message > p");
-const rock_button = document.getElementById("rock");
-const paper_button = document.getElementById("paper");
-const scissors_button = document.getElementById("scissors");
+const rockButton = document.getElementById("rock");
+const paperButton = document.getElementById("paper");
+const scissorsButton = document.getElementById("scissors");
 let playerChoice_div = document.getElementById("players-hand"); // user in playerWins & computerWins & draw functions,
 let computerChoice_div = document.getElementById("computers-hand"); // global variables
 let computerChoice = getComputerChoice();
@@ -122,18 +122,18 @@ function endGame() {
 
 
 function mainGame(){
-    rock_button.addEventListener('click', function() {
+    rockButton.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_rock_left.png';
         game("rock");
     })
 
-    paper_button.addEventListener('click', function() {
+    paperButton.addEventListener('click', function() {
         game("paper");
         playerHand_img.src = 'assets/images/circle_paper_left.png';
         //console.log("it works, you clicked paper");
     })
 
-    scissors_button.addEventListener('click', function() {
+    scissorsButton.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_scissors_left.png';
         game("scissors");
         //console.log("it works, you clicked scissors");
@@ -145,15 +145,16 @@ mainGame();
 
 //Pilot Select
 
-const Fox_button = document.getElementById("Fox");
-const Falco_button = document.getElementById("Falco");
-const Wolf_button = document.getElementById("Wolf");
-const Peppy_button = document.getElementById("Peppy");
-const Slippy_button = document.getElementById("Slippy");
+const foxButton = document.getElementById("Fox");
+const falcobutton = document.getElementById("Falco");
+const wolfButton = document.getElementById("Wolf");
+const peppyButton = document.getElementById("Peppy");
+const slippyButton = document.getElementById("Slippy");
 let computerPilotChoice = getComputerPilotChoice();
 let playersPilot_img = document.getElementById("players-pilot");
 let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilot = document.getElementById("computer-pilot-btn");
+let computerPilotName = document.getElementById("pilot-name");
 
 
 function getComputerPilotChoice(){
@@ -168,8 +169,10 @@ function getComputerPilotChoice(){
 
 
 computerPilot.addEventListener("click", function() {
-    computerPilotChoice; 
-    computerPilot_img.src = `assets/images/${computerPilot}_full_length.png`;
+    console.log(computerPilotChoice);
+    //computerPilotChoice; 
+    //computerPilot_img.src = `assets/images/${computerPilot}_full_length.png`;
+    //computerPilot.innerHTML = ` ${computerPilot}`;
 
 })
 
@@ -200,7 +203,6 @@ function changePilot(pilot){
             
     }
 }
-
 
 
 document.getElementById("codenameForm").addEventListener("submit", function(event) {
