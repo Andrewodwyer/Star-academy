@@ -3,13 +3,13 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", ()=> {
+hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("active"); 
     navMenu.classList.toggle("active"); 
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.
-    addEventListener("click", () => {
+    addEventListener("click", function() {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }))
@@ -145,49 +145,63 @@ mainGame();
 
 //Pilot Select
 
-const fox_button = document.getElementById("fox");
-const falco_button = document.getElementById("falco");
-const wolf_button = document.getElementById("wolf");
-const peppy_button = document.getElementById("peppy");
-const slippy_button = document.getElementById("slippy");
+const Fox_button = document.getElementById("Fox");
+const Falco_button = document.getElementById("Falco");
+const Wolf_button = document.getElementById("Wolf");
+const Peppy_button = document.getElementById("Peppy");
+const Slippy_button = document.getElementById("Slippy");
 let computerPilotChoice = getComputerPilotChoice();
 let playersPilot_img = document.getElementById("players-pilot");
 let computerPilot_img = document.getElementById("computer-pilot");
+let computerPilot = document.getElementById("computer-pilot-btn");
+
 
 function getComputerPilotChoice(){
-    let choices = ['fox', 'falco', 'wolf', 'peppy', 'slippy']; // an arrey with the 5 options
-    let randomNumber = Math.floor(Math.random() * 5); // round down (math.floor) as array starts at 0 
-    return choices[randomNumber]; // random number links to the array
+    let pilots = document.querySelectorAll('pilot-btn'); // an arrey with the 5 options
+
+    let randomPilotNumber = Math.floor(Math.random() * pilots.length); // round down (math.floor) as array starts at 0 
+
+    //let computerPilot = pilots[randomPilotNumber];
+
+    return pilot[randomPilotNumber];
 }
-console.log(getComputerPilotChoice()); // check to see if function getComputerChoice works
+
+
+computerPilot.addEventListener("click", function() {
+    getComputerPilotChoice(); 
+    computerPilot_img.src = `assets/images/${computerPilot}_full_length.png`;
+
+})
 
 
 function changePilot(pilot){
 
     switch(pilot){
-        case "fox":
+        case "Fox":
             document.getElementById("players-pilot").src = "assets/images/Fox_full_length.webp";
             document.getElementById("pilot-name").innerHTML = "Fox";
             break;
-        case "falco":
+        case "Falco":
             document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
             document.getElementById("pilot-name").innerHTML = "Falco";
             break;
-        case "wolf":
+        case "Wolf":
             document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.webp";
             document.getElementById("pilot-name").innerHTML = "Wolf";
             break;
-        case "peppy":
+        case "Peppy":
             document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.webp";
             document.getElementById("pilot-name").innerHTML = "Peppy";
             break;
-        case "slippy":
+        case "Slippy":
             document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Slippy";
             break;
             
     }
 }
+
+
 
 document.getElementById("codenameForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent form submission
