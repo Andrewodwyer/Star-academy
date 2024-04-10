@@ -148,6 +148,8 @@ mainGame();
 
 //Pilot Select
 
+const codename = document.getElementById("codename"); //input id in form
+const pilotCodename = document.getElementById("pilot-codename"); // id in game.html for codename
 const foxButton = document.getElementById("Fox");
 const falcobutton = document.getElementById("Falco");
 const wolfButton = document.getElementById("Wolf");
@@ -159,6 +161,13 @@ let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("pilot-name");
 
+// My attempt at code for form input codename to be used
+register.addEventListener("submit",function (event) {
+    event.preventDefault(); // Stop an events default action, screen refresh
+    pilotCodename.innerText = `${pilotCodename.value}`;
+
+});
+
 
 function getComputerPilotChoice(){
     let pilots = document.querySelectorAll('pilot-btn'); // an arrey with the 5 options
@@ -168,7 +177,7 @@ function getComputerPilotChoice(){
     //let computerPilotRandom = pilots[randomPilotNumber];
 
     return pilots[randomPilotNumber];
-}
+};
 
 
 computerPilotRandom.addEventListener("click", function() {
@@ -177,7 +186,7 @@ computerPilotRandom.addEventListener("click", function() {
     //computerPilot_img.src = `assets/images/${computerPilotRandom}_full_length.png`;
     //computerPilot.innerHTML = ` ${computerPilotRandom}`;
 
-})
+});
 
 
 function changePilot(pilot){
@@ -205,7 +214,7 @@ function changePilot(pilot){
             break;
             
     }
-}
+};
 
 
 document.getElementById("codenameForm").addEventListener("submit", function(event) {
