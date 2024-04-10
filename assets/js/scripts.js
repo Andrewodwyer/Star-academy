@@ -20,8 +20,9 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 
 let playersScore = 0;
 let compScore = 0;
-const playersScore_div = document.getElementById("players-score"); //_div to show its in a div
-const compScore_div = document.getElementById("comp-score");
+const winningScore = 5;
+let playersScore_div = document.getElementById("players-score"); //_div to show its in a div
+let compScore_div = document.getElementById("comp-score");
 const scoreBox_div = document.querySelector(".score-box");
 let winner_h4 = document.querySelector(".announce-winner > h4"); //_h4 to show its in a h4
 let playerMessage_p = document.querySelector(".player-message > p"); // >p because in a p inside an id element
@@ -48,13 +49,10 @@ function playerWins(playerChoice, computerChoice){
     playersScore_div.innerHTML = playersScore;
     compScore_div.innerHTML = compScore;
     winner_h4.innerHTML = `YOU WIN`;
-    //rock_button.src = 'assets/images/circle_paper_left.png'
-    //*playerHand_img.src = 'assets/images/circle_paper_left.png';
     playerChoice_div.classList.add("green-highlight");
     computerChoice_div.classList.add("red-highlight");
     setTimeout(function() { playerChoice_div.classList.remove("green-highlight")}, 1000);
     setTimeout(function() { computerChoice_div.classList.remove("red-highlight")}, 1000);
-    //playerMessage_p.innerHTML = `I choose  ${(playerChoice)}`;
 }
 
 function computerWins(playerChoice, computerChoice){
@@ -66,7 +64,6 @@ function computerWins(playerChoice, computerChoice){
     computerChoice_div.classList.add('green-highlight'); //global variable
     setTimeout(function() { playerChoice_div.classList.remove("red-highlight")}, 1000);
     setTimeout(function() { computerChoice_div.classList.remove("green-highlight")}, 1000);
-    //compMessage_p.innerHTML = `I choose ${(computerChoice)}`;
 }
 
 
@@ -105,10 +102,23 @@ function game(playerChoice) {
     compMessage_p.textContent = `I choose ${computerChoice} !`;
     computerHand_img.src = `assets/images/circle_${computerChoice}_right.png`;
 
+    if (playersScore === winningScore || compScore === winningScore) {
+        endGame();
+    }
+
 }
 
-//game("...", "...");
-
+function endGame() {
+    if (playersScore === winningScore) {
+        alert("You Win!");
+    } else {
+        alert("You loose!");
+    }
+    playersScore = 0;
+    compScore = 0;
+    playersScore_div.innerHTML = playersScore;
+    compScore_div.innerHTML = compScore;
+}
 
 
 function mainGame(){
