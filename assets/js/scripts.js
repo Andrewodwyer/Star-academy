@@ -163,12 +163,12 @@ function getComputerPilotChoice(){
 
     //let computerPilot = pilots[randomPilotNumber];
 
-    return pilot[randomPilotNumber];
+    return pilots[randomPilotNumber];
 }
 
 
 computerPilot.addEventListener("click", function() {
-    getComputerPilotChoice(); 
+    computerPilotChoice; 
     computerPilot_img.src = `assets/images/${computerPilot}_full_length.png`;
 
 })
