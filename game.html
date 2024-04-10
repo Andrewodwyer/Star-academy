@@ -56,6 +56,12 @@
             <h2>Rock, Paper, Scissors</h2>
             <h5>First to 5 wins!</h5>
         </div>
+        <!--form for name-->
+        <form autocomplete="off" method="get" id="codenameForm" class="pilot-info form-input">
+            <label for="codename">Enter a Codename</label>
+            <input type="text" name="codename" id="codename" pattern="[A-Za-z]+" class="text-input box-style" required minlength="4" placeholder="Codename"><br>
+            <button type="submit" class="start-btn">Submit</button>
+        </form>
         
         <!--game board section-->
         <section id="game-board">
