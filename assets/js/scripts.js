@@ -189,24 +189,20 @@ function changePilot(pilot){
     }
 }
 
-function addData() {
-    var name = document.getElementById("name").value;
-    var age = document.getElementById("age").value;
-
-    // Validate name and age
-    var nameRegex = /^[A-Za-z]{5,}$/;
-    var ageRegex = /^[0-9]+$/;
-
-    if (!nameRegex.test(name)) {
-        document.getElementById("error-msg").innerText = "Name should be letters and at least 5 characters long";
-        return;
-    }
-
-    if (!ageRegex.test(age)) {
-        document.getElementById("error-msg").innerText = "Age should be a number";
-        return;
-    }
-
-    // Redirect to next page and pass data as query parameters
-    window.location.href = "next-page.html?name=" + encodeURIComponent(name) + "&age=" + encodeURIComponent(age);
-}
+document.getElementById("codenameForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  // Get the codename input value
+  let codename = document.getElementById("codename").value.trim();
+  
+  // Check if codename meets requirements
+  if (codename.length > 4 && /^[a-zA-Z]+$/.test(codename)) {
+    // Save codename to localStorage (optional)
+    localStorage.setItem("codename", codename);
+    
+    // Redirect to game.html
+    window.location.href = "game.html";
+  } else {
+    alert("Codename must be more than 4 letters and contain only letters!");
+  }
+});

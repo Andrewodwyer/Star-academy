@@ -340,7 +340,7 @@ header {
     align-items: center;*/
 }
 
-#game-pilot-name {
+.game-pilot-name {
     Color: white;
     background: #5C74A4;
     margin-bottom: 10px;
