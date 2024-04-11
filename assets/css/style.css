@@ -271,7 +271,7 @@ label {
 }
 
 .pilot-center-text {
-    padding: 10%;
+    /*padding: 10%;*/
     text-align: center;
     display: flex;
     flex-direction: column;

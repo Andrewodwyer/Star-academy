@@ -157,60 +157,60 @@ function changePilot(pilot, isPlayer){
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Fox_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Fox";
-                pilotDetails.innerText = "Fox is some dude...";
+                PilotDetails.innerHTML = `<h4>Personality</h4><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Fox_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Fox";
-                computerPilotDetails.innerText = "Fox is some dude...";
+                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`
                 break;
             }
         case "Falco":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
                 document.getElementById("pilot-name").innerHTML = "Falco";
-                pilotDetails.innerText = "Filco is some dude...";
+                PilotDetails.innerHTML = `<h4>Personality</h4><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Falco_full_length1.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Falco";
-                computerPilotDetails.innerText = "Filco is some dude...";
+                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`
                 break;
             }
         case "Wolf":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Wolf";
-                pilotDetails.innerText = "Wolf is some dude...";
+                PilotDetails.innerHTML = `<h4>Personality</h4><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Wolf_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Wolf";
-                computerPilotDetails.innerText = "Wolf is some dude...";
+                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`
                 break;
             }
         case "Peppy":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Peppy";
-                pilotDetails.innerText = "Peppy is some dude...";
+                PilotDetails.innerHTML = `<p>Personality</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Peppy_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Peppy";
-                computerPilotDetails.innerText = "Peppy is some dude...";
+                computerPilotDetails.innerHTML = `<p>Personality</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`
                 break;
             }
         case "Slippy":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Slippy";
-                pilotDetails.innerHTML = `<h3>Slippy</h3><p>Slippy here does this and that</p><p>As well as...</p>`
+                pilotDetails.innerHTML = `<h4>Personality</h4><p>Intelligent,</p><p>Helpful,</p><p>Clumsy,</p>`
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Slippy_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Slippy";
-                computerPilotDetails.innerHTML = `<h3>Slippy</h3><p>Slippy here does this and that</p><p>As well as...</p>`
+                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Intelligent,</p><p>Helpful,</p><p>Clumsy,</p>`
                 break;
             }
     }
