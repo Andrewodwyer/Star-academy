@@ -95,7 +95,7 @@ function game(playerChoice) {
             draw();
             break;
     }
-    playerMessage_p.textContent = `" I choose  ${playerChoice} ! "`; // text to be added on R, P, S selection
+    playerMessage_p.textContent = `" I choose  ${playerChoice} ! "`; // text to be added on Rock, paper, Scissors selection
     compMessage_p.textContent = `" I choose ${computerChoice} ! "`;
     computerHand_img.src = `assets/images/circle_${computerChoice}_right.png`;
     pilotCodename.innerText = `${codename.value}`;
@@ -119,20 +119,20 @@ function endGame() {
     compMessage_p.textContent = `" Let's see what you got ! "`;
 }
 function mainGame(){
-    rockButton.addEventListener('click', function() {
+    rockButton.addEventListener("click", function() {
         playerHand_img.src = 'assets/images/circle_rock_left.png';
         game("rock");
     });
-    paperButton.addEventListener('click', function() {
+    paperButton.addEventListener("click", function() {
         game("paper");
         playerHand_img.src = 'assets/images/circle_paper_left.png';
     });
-    scissorsButton.addEventListener('click', function() {
+    scissorsButton.addEventListener("click", function() {
         playerHand_img.src = 'assets/images/circle_scissors_left.png';
         game("scissors");
     });
 }
-
+mainGame();
 //function playerCodename(){
   //  pilotCodename.innerText = `${codename.value}`;
 //}
@@ -150,6 +150,7 @@ let pilotName = document.getElementById("pilot-name");
 let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("computer-pilot-name");
+let codenameForm = document.getElementById("codename-form");
 
 
 computerPilotRandom.addEventListener("click", function() {
@@ -158,7 +159,7 @@ computerPilotRandom.addEventListener("click", function() {
     changePilot(pilotArray[randomNumber]);
 });
 
-function changePilot(pilot, isPlayer){
+function changePilot(pilot, isPlayer) {
     if(isPlayer) {
       playerSelected = pilot;
     } else {
@@ -228,8 +229,8 @@ function changePilot(pilot, isPlayer){
     }
 }
 
-document.getElementById("codename-form").addEventListener("submit", function(event) {
-  //event.preventDefault(); // Prevent form submission
+codenameForm.addEventListener("submit", function(event){
+  event.preventDefault(); // Prevent form submission
   
   // Get the codename input value
   let codename = document.getElementById("codename").value.trim();
@@ -250,4 +251,5 @@ function startGame() {
   const wrapper = document.getElementById("wrapper");
   wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`;
 }
+
 mainGame();
