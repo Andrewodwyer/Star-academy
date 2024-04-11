@@ -12,6 +12,21 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove("active");
     }));
 
+// Codename to start on typing
+document.addEventListener("DOMContentLoaded", function() {
+    let codename = document.getElementById('codename');
+    let pilotCodename = document.getElementById('pilot-codename');
+    
+    // Update the paragraph text when the input value changes
+    codename.addEventListener('input', function() {
+        pilotCodename.textContent = codename.value;
+    });
+    
+    // Set the initial text in the paragraph on load
+    pilotCodename.textContent = codename.value;
+    console.log(namepilot);
+    });
+
 // GAME PAGE
 // getters
 let codename = document.getElementById("codename"); //input id in form
