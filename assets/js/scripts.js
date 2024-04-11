@@ -37,6 +37,10 @@ let computerChoice_div = document.getElementById("computers-hand"); // global va
 let computerChoice = getComputerChoice();
 let playerHand_img = document.getElementById("player-hand");
 let computerHand_img = document.getElementById("computer-hand");
+let pilotDetails = document.getElementById("pilot-details");
+let computerPilotDetails = document.getElementById("computer-pilot-details");
+let playerSelected = "Fox";
+let computerSelected = "Wolf";
 
 
 function getComputerChoice(){
@@ -190,12 +194,17 @@ computerPilotRandom.addEventListener("click", function() {
 });
 
 
-function changePilot(pilot){
-
+function changePilot(pilot, isPlayer){
+    if(isPlayer){
+        playerSelected = pilot;
+    } else {
+        computerSelected = pilot;
+    }
     switch(pilot){
         case "Fox":
             document.getElementById("players-pilot").src = "assets/images/Fox_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Fox";
+            pilotDetails.innerText = "Fox is some dude...";
             break;
         case "Falco":
             document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
@@ -219,19 +228,19 @@ function changePilot(pilot){
 
 
 document.getElementById("codenameForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent form submission
-  
-  // Get the codename input value
-  let codename = document.getElementById("codename").value.trim();
-  
-  // Check if codename meets requirements
-  if (codename.length > 4 && /^[a-zA-Z]+$/.test(codename)) {
-    // Save codename to localStorage (optional)
-    localStorage.setItem("codename", codename);
+    event.preventDefault(); // Prevent form submission
     
-    // Redirect to game.html
-    window.location.href = "game.html";
-  } else {
-    alert("Codename must be more than 4 letters and contain only letters!");
-  }
+    // Get the codename input value
+    let codename = document.getElementById("codename").value.trim();
+    
+    // Check if codename meets requirements
+    if (codename.length > 4 && /^[a-zA-Z]+$/.test(codename)) {
+      // Save codename to localStorage (optional)
+      localStorage.setItem("codename", codename);
+      
+      // Redirect to game.html
+      window.location.href = "game.html";
+    } else {
+      alert("Codename must be more than 4 letters and contain only letters!");
+    }
 });
