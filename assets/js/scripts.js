@@ -1,23 +1,17 @@
 //HAMBURGER MENU
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
 hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("active"); 
     navMenu.classList.toggle("active"); 
 })
-
 document.querySelectorAll(".nav-link").forEach(n => n.
     addEventListener("click", function() {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }))
-
-
-
 // GAME PAGE
-
+// getters
 const codename = document.getElementById("codename"); //input id in form
 const pilotCodename = document.getElementById("pilot-codename"); // id in game.html for codename
 let playersScore = 0;
@@ -41,15 +35,16 @@ let pilotDetails = document.getElementById("pilot-details");
 let computerPilotDetails = document.getElementById("computer-pilot-details");
 let playerSelected = "Fox";
 let computerSelected = "Wolf";
-
-
+/**
+ * Dont forget your docstring...
+ * @returns a string from an array of choices
+ */
 function getComputerChoice(){
     let choices = ['rock', 'paper', 'scissors']; // an arrey with the 3 options
     let randomNumber = Math.floor(Math.random() * 3); // round down (math.floor) as array starts at 0 
     return choices[randomNumber]; // random number links to the array
 }
 console.log(getComputerChoice()); // check to see if function getComputerChoice works
-
 function playerWins(playerChoice, computerChoice){
     playersScore++;
     playersScore_div.innerHTML = playersScore;
@@ -60,7 +55,6 @@ function playerWins(playerChoice, computerChoice){
     setTimeout(function() { playerChoice_div.classList.remove("green-highlight")}, 1000);
     setTimeout(function() { computerChoice_div.classList.remove("red-highlight")}, 1000);
 }
-
 function computerWins(playerChoice, computerChoice){
     compScore++;
     compScore_div.innerHTML = compScore;
@@ -71,9 +65,6 @@ function computerWins(playerChoice, computerChoice){
     setTimeout(function() { playerChoice_div.classList.remove("red-highlight")}, 1000);
     setTimeout(function() { computerChoice_div.classList.remove("green-highlight")}, 1000);
 }
-
-
-
 function draw(playerChoice, computerChoice){
     winner_h4.innerHTML = `IT'S A DRAW`;
     playerChoice_div.classList.add('gray-highlight');
@@ -82,7 +73,6 @@ function draw(playerChoice, computerChoice){
     setTimeout(function() { computerChoice_div.classList.remove("gray-highlight")}, 1000);
     console.log("draw");
 }
-
 // game function, to see what player selects and their result
 function game(playerChoice) {
     let computerChoice = getComputerChoice();
@@ -103,18 +93,14 @@ function game(playerChoice) {
             draw();
             break;
     }
-
     playerMessage_p.textContent = `" I choose  ${playerChoice} ! "`; // text to be added on R, P, S selection
     compMessage_p.textContent = `" I choose ${computerChoice} ! "`;
     computerHand_img.src = `assets/images/circle_${computerChoice}_right.png`;
     pilotCodename.innerText = `${codename.value}`;
-
     if (playersScore === winningScore || compScore === winningScore) {
         endGame();
     }
-
 }
-
 function endGame() {
     if (playersScore === winningScore) {
         alert("You Win!");
@@ -129,45 +115,37 @@ function endGame() {
     playerMessage_p.textContent = `" Are you ready ! "`;
     compMessage_p.textContent = `" Let's see what you got ! "`;
 }
-
-
 function mainGame(){
     rockButton.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_rock_left.png';
         game("rock");
     })
-
     paperButton.addEventListener('click', function() {
         game("paper");
         playerHand_img.src = 'assets/images/circle_paper_left.png';
         //console.log("it works, you clicked paper");
     })
-
     scissorsButton.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_scissors_left.png';
         game("scissors");
         //console.log("it works, you clicked scissors");
     })
 }
-
 //Pilot Select
-
 const foxButton = document.getElementById("Fox");
 const falcobutton = document.getElementById("Falco");
 const wolfButton = document.getElementById("Wolf");
 const peppyButton = document.getElementById("Peppy");
 const slippyButton = document.getElementById("Slippy");
-let computerPilotChoice = getComputerPilotChoice();
 let playersPilot_img = document.getElementById("players-pilot");
 let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("pilot-name");
 computerPilotRandom.addEventListener("click", function() {
     let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
-    let randomNumber =  Math.floor(Math.random() * 5); // 5 pilots
+    let randomNumber =  Math.floor(Math.random() * 5);
     changePilot(pilotArray[randomNumber], false);
 });
-
 function changePilot(pilot, isPlayer){
     if(isPlayer) {
       playerSelected = pilot;
@@ -237,27 +215,26 @@ function changePilot(pilot, isPlayer){
             }
     }
 };
-
 document.getElementById("codenameForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
+  event.preventDefault(); // Prevent form submission
+  
+  // Get the codename input value
+  let codename = document.getElementById("codename").value.trim();
+  
+  // Check if codename meets requirements
+  if (codename.length > 4 && /^[a-zA-Z]+$/.test(codename)) {
+    // Save codename to localStorage (optional)
+    localStorage.setItem("codename", codename);
     
-    // Get the codename input value
-    let codename = document.getElementById("codename").value.trim();
-    
-    // Check if codename meets requirements
-    if (codename.length > 4 && /^[a-zA-Z]+$/.test(codename)) {
-      // Save codename to localStorage (optional)
-      localStorage.setItem("codename", codename);
-      
-      // Redirect to game.html
-      window.location.href = "game.html";
-    } else {
-      alert("Codename must be more than 4 letters and contain only letters!");
-    }
+    // Redirect to game.html
+    window.location.href = "game.html";
+  } else {
+    alert("Codename must be more than 4 letters and contain only letters!");
+  }
 });
 function startGame() {
-    console.log(playerSelected, computerSelected);
-    const wrapper = document.getElementById("wrapper");
-    wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`
+  console.log(playerSelected, computerSelected);
+  const wrapper = document.getElementById("wrapper");
+  wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`
 }
 mainGame();
