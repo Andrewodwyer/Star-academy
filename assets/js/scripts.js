@@ -166,12 +166,11 @@ let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("pilot-name");
 
-// My attempt at code for form input codename to be used
-//register.addEventListener("submit",function (event) {
-    //event.preventDefault(); // Stop an events default action, screen refresh
-    //pilotCodename.innerText = `${pilotCodename.value}`;
-
-//});
+computerPilotRandom.addEventListener("click", function() {
+    let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
+    let randomNumber =  Math.floor(Math.random() * 5); // 5 pilots
+    changePilot(pilotArray[randomNumber], false);
+});
 
 
 function getComputerPilotChoice(){
