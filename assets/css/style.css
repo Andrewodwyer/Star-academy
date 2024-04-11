@@ -125,6 +125,18 @@ header {
     border-right: 1px solid #DF9A5C;
 }
 
+/*submit button*/
+.submit{
+background-image: linear-gradient(#FFE9A8, #FFBF00);
+box-shadow: 0 0 10px #FFDC73, rgba(200, 208, 231, .5) 2.2px 2.2px 4px 0px inset, rgba(255, 255, 255, .5) -2.2px -2.2px 4px 0px inset;
+border: .5px solid silver;
+color: #363737;
+border-radius: 5px;
+padding: 5px 10px;
+text-align: center;
+letter-spacing: .05rem;
+}
+
 /*Pilot section*/
 
 /*pilot page*/

@@ -13,7 +13,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 // GAME PAGE
 // getters
 let codename = document.getElementById("codename"); //input id in form
-const pilotCodename = document.getElementById("pilot-codename"); // id in game.html for codename
+let pilotCodename = document.getElementById("pilot-codename"); // id in game.html for codename
 let playersScore = 0;
 let compScore = 0;
 const winningScore = 5;
@@ -96,7 +96,7 @@ function game(playerChoice) {
     playerMessage_p.textContent = `" I choose  ${playerChoice} ! "`; // text to be added on R, P, S selection
     compMessage_p.textContent = `" I choose ${computerChoice} ! "`;
     computerHand_img.src = `assets/images/circle_${computerChoice}_right.png`;
-    pilotCodename.innerText = `${codename.value}`;
+    
     if (playersScore === winningScore || compScore === winningScore) {
         endGame();
     }
@@ -130,6 +130,9 @@ function mainGame(){
         game("scissors");
         //console.log("it works, you clicked scissors");
     })
+}
+function playerCodename(){
+    pilotCodename.innerText = `${codename.value}`;
 }
 //Pilot Select
 const foxButton = document.getElementById("Fox");
