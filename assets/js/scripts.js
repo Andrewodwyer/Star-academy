@@ -209,18 +209,22 @@ function changePilot(pilot, isPlayer){
         case "Falco":
             document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
             document.getElementById("pilot-name").innerHTML = "Falco";
+            pilotDetails.innerText = "Filco is some dude...";
             break;
         case "Wolf":
             document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Wolf";
+            pilotDetails.innerText = "Wolf is some dude.. info";
             break;
         case "Peppy":
             document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Peppy";
+            pilotDetails.innerText = "Peppy is some dude.. info";
             break;
         case "Slippy":
             document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.png";
             document.getElementById("pilot-name").innerHTML = "Slippy";
+            pilotDetails.innerHTML = `<h3>Slippy</h3><p>Slippy here does this and that</p><p>As well as...</p>`
             break;
             
     }
