@@ -149,7 +149,7 @@ let playersPilot_img = document.getElementById("players-pilot");
 let pilotName = document.getElementById("pilot-name");
 let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
-let computerPilotName = document.getElementById("pilot-name");
+let computerPilotName = document.getElementById("computer-pilot-name");
 
 
 computerPilotRandom.addEventListener("click", function() {

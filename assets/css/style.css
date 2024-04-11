@@ -274,8 +274,13 @@ label {
     display: flex;
     flex: 1;
     min-height: 200px;
-    background-color: rgba(200, 208, 231, .8);
     border-radius: 5%;
+    Color: white;
+    background: rgba(92, 116, 164, .8);
+    border: solid 1px white;
+    margin: 10px 0;
+    padding: 0 25px;
+    text-align: center;
 }
 
 .image-and-text {
