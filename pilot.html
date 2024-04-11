@@ -6,13 +6,11 @@
     <!--meta tag for search engines -->
     <meta name="description" content="Starfox Squadron, rock paper scissors game, Starfox theme">
     <meta name="keywords" content="Rock paper scissors game, Starfox style game">
-
     <title>Starfox Squadron</title>
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-Star-fox-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-Star-fox-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-Star-fox-16x16.png">
-
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -42,12 +40,11 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-
                 </nav>
             </div>
         </div>
     </header> 
-
+    
     <main class="margin-top">
         <!--main centent-->
         <!--background image-->
@@ -69,26 +66,23 @@
                         </div>
                     </div>
                 </div> 
-
                 <div id="controls">
-                    <button id="fox" class="pilot-btn active" onclick="changePilot('Fox')">
+                    <button id="fox" class="pilot-btn active" onclick="changePilot('Fox', true)">
                         <img class="btn-image-size" src="assets/images/Fox_headshot.png" alt="Fox headshot">
                     </button>
-                    <button id="falco" class="pilot-btn" onclick="changePilot('Falco')">
+                    <button id="falco" class="pilot-btn" onclick="changePilot('Falco', true)">
                         <img class="btn-image-size"" src="assets/images/Falco_headshot.png" alt="Falco headshot">
                     </button>
-                    <button id="wolf" class="pilot-btn" onclick="changePilot('Wolf')">
+                    <button id="wolf" class="pilot-btn" onclick="changePilot('Wolf', true)">
                         <img class="btn-image-size" src="assets/images/Wolf_headshot.png" alt="Wolf headshot">
                     </button>
-                    <button id="peppy" class="pilot-btn" onclick="changePilot('Peppy')">
+                    <button id="peppy" class="pilot-btn" onclick="changePilot('Peppy', true)">
                         <img class="btn-image-size" src="assets/images/Peppy_headshot.png" alt="Peppy headshot">
                     </button>
-                    <button id="slippy" class="pilot-btn" onclick="changePilot('Slippy')">
+                    <button id="slippy" class="pilot-btn" onclick="changePilot('Slippy', true)">
                         <img class="btn-image-size" src="assets/images/Slippy_headshot.png" alt="Slippy headshot">
                     </button>
                 </div>
-
-
                 <!--computer choice area-->
                 <div id="pilot-picture-info">
                     <button id="computer-pilot-btn" class="pilot-selection-text">Select Random Character</button>
@@ -105,11 +99,11 @@
                     </div>
                 </div> 
                 <div class="center">
-                    <a id="gamePage" href="game.html" class="start-btn" aria-label="Go to our pilot page">let's get going</a>
+                    <a id="gamePage" onclick="startGame()" class="start-btn" aria-label="Go to our pilot page">let's get going</a>
                 </div>
             </div>
         </section>
-        </div>
+      </div>
     </main>
   <!--footer-->
   <footer>
@@ -117,7 +111,6 @@
       <p>©2024 Starfox Squadron</p>
     </div>
   </footer>
-
     <!-- Font Awesome kit -->
     <script src="assets/js/scripts.js"></script>
 </body>
