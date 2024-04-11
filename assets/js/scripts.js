@@ -150,9 +150,6 @@ function mainGame(){
     })
 }
 
-mainGame();
-
-
 //Pilot Select
 
 const foxButton = document.getElementById("Fox");
@@ -165,33 +162,11 @@ let playersPilot_img = document.getElementById("players-pilot");
 let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("pilot-name");
-
 computerPilotRandom.addEventListener("click", function() {
     let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
     let randomNumber =  Math.floor(Math.random() * 5); // 5 pilots
     changePilot(pilotArray[randomNumber], false);
 });
-
-
-function getComputerPilotChoice(){
-    let pilots = document.querySelectorAll('pilot-btn'); // an arrey with the 5 options
-
-    let randomPilotNumber = Math.floor(Math.random() * pilots.length); // round down (math.floor) as array starts at 0 
-
-    //let computerPilotRandom = pilots[randomPilotNumber];
-
-    return pilots[randomPilotNumber];
-};
-
-
-computerPilotRandom.addEventListener("click", function() {
-    console.log(computerPilotChoice);
-    //computerPilotChoice; 
-    //computerPilot_img.src = `assets/images/${computerPilotRandom}_full_length.png`;
-    //computerPilot.innerHTML = ` ${computerPilotRandom}`;
-
-});
-
 
 function changePilot(pilot, isPlayer){
     if(isPlayer) {
@@ -263,7 +238,6 @@ function changePilot(pilot, isPlayer){
     }
 };
 
-
 document.getElementById("codenameForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
     
@@ -281,3 +255,9 @@ document.getElementById("codenameForm").addEventListener("submit", function(even
       alert("Codename must be more than 4 letters and contain only letters!");
     }
 });
+function startGame() {
+    console.log(playerSelected, computerSelected);
+    const wrapper = document.getElementById("wrapper");
+    wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`
+}
+mainGame();
