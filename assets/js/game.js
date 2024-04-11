@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Set the initial text in the paragraph on load
     pilotCodename.textContent = codename.value;
-    console.log(namepilot);
     });
 
 // GAME PAGE
