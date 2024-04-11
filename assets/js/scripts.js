@@ -12,7 +12,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.
     }))
 // GAME PAGE
 // getters
-const codename = document.getElementById("codename"); //input id in form
+let codename = document.getElementById("codename"); //input id in form
 const pilotCodename = document.getElementById("pilot-codename"); // id in game.html for codename
 let playersScore = 0;
 let compScore = 0;
