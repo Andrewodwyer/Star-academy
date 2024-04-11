@@ -195,38 +195,72 @@ computerPilotRandom.addEventListener("click", function() {
 
 
 function changePilot(pilot, isPlayer){
-    if(isPlayer){
-        playerSelected = pilot;
+    if(isPlayer) {
+      playerSelected = pilot;
     } else {
-        computerSelected = pilot;
-    }
+      computerSelected = pilot;
+    }  
     switch(pilot){
         case "Fox":
-            document.getElementById("players-pilot").src = "assets/images/Fox_full_length.png";
-            document.getElementById("pilot-name").innerHTML = "Fox";
-            pilotDetails.innerText = "Fox is some dude...";
-            break;
+            if (isPlayer) {
+                document.getElementById("players-pilot").src = "assets/images/Fox_full_length.png";
+                document.getElementById("pilot-name").innerHTML = "Fox";
+                pilotDetails.innerText = "Fox is some dude...";
+                break;
+            } else {
+                document.getElementById("computer-pilot").src = "assets/images/Fox_full_length.png";
+                document.getElementById("computer-pilot-name").innerHTML = "Fox";
+                computerPilotDetails.innerText = "Fox is some dude...";
+                break;
+            }
         case "Falco":
-            document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
-            document.getElementById("pilot-name").innerHTML = "Falco";
-            pilotDetails.innerText = "Filco is some dude...";
-            break;
+            if (isPlayer) {
+                document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
+                document.getElementById("pilot-name").innerHTML = "Falco";
+                pilotDetails.innerText = "Filco is some dude...";
+                break;
+            } else {
+                document.getElementById("computer-pilot").src = "assets/images/Falco_full_length1.png";
+                document.getElementById("computer-pilot-name").innerHTML = "Falco";
+                computerPilotDetails.innerText = "Filco is some dude...";
+                break;
+            }
         case "Wolf":
-            document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
-            document.getElementById("pilot-name").innerHTML = "Wolf";
-            pilotDetails.innerText = "Wolf is some dude.. info";
-            break;
+            if (isPlayer) {
+                document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
+                document.getElementById("pilot-name").innerHTML = "Wolf";
+                pilotDetails.innerText = "Wolf is some dude...";
+                break;
+            } else {
+                document.getElementById("computer-pilot").src = "assets/images/Wolf_full_length.png";
+                document.getElementById("computer-pilot-name").innerHTML = "Wolf";
+                computerPilotDetails.innerText = "Wolf is some dude...";
+                break;
+            }
         case "Peppy":
-            document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.png";
-            document.getElementById("pilot-name").innerHTML = "Peppy";
-            pilotDetails.innerText = "Peppy is some dude.. info";
-            break;
+            if (isPlayer) {
+                document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.png";
+                document.getElementById("pilot-name").innerHTML = "Peppy";
+                pilotDetails.innerText = "Peppy is some dude...";
+                break;
+            } else {
+                document.getElementById("computer-pilot").src = "assets/images/Peppy_full_length.png";
+                document.getElementById("computer-pilot-name").innerHTML = "Peppy";
+                computerPilotDetails.innerText = "Peppy is some dude...";
+                break;
+            }
         case "Slippy":
-            document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.png";
-            document.getElementById("pilot-name").innerHTML = "Slippy";
-            pilotDetails.innerHTML = `<h3>Slippy</h3><p>Slippy here does this and that</p><p>As well as...</p>`
-            break;
-            
+            if (isPlayer) {
+                document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.png";
+                document.getElementById("pilot-name").innerHTML = "Slippy";
+                pilotDetails.innerHTML = `<h3>Slippy</h3><p>Slippy here does this and that</p><p>As well as...</p>`
+                break;
+            } else {
+                document.getElementById("computer-pilot").src = "assets/images/Slippy_full_length.png";
+                document.getElementById("computer-pilot-name").innerHTML = "Slippy";
+                computerPilotDetails.innerHTML = `<h3>Slippy</h3><p>Slippy here does this and that</p><p>As well as...</p>`
+                break;
+            }
     }
 };
 
