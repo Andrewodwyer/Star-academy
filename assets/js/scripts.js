@@ -157,66 +157,66 @@ function changePilot(pilot, isPlayer){
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Fox_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Fox";
-                PilotDetails.innerHTML = `<h4>Personality</h4><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`
+                PilotDetails.innerHTML = `<p>Personality:</p><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Fox_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Fox";
-                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`
+                computerPilotDetails.innerHTML = `<p>Personality:</p><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`;
                 break;
             }
         case "Falco":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
                 document.getElementById("pilot-name").innerHTML = "Falco";
-                PilotDetails.innerHTML = `<h4>Personality</h4><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`
+                PilotDetails.innerHTML = `<p>Personality:</p><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Falco_full_length1.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Falco";
-                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`
+                computerPilotDetails.innerHTML = `<p>Personality:</p><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`;
                 break;
             }
         case "Wolf":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Wolf";
-                PilotDetails.innerHTML = `<h4>Personality</h4><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`
+                PilotDetails.innerHTML = `<p>Personality:</p><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Wolf_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Wolf";
-                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`
+                computerPilotDetails.innerHTML = `<p>Personality:</p><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`;
                 break;
             }
         case "Peppy":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Peppy";
-                PilotDetails.innerHTML = `<p>Personality</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`
+                PilotDetails.innerHTML = `<p>Personality</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Peppy_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Peppy";
-                computerPilotDetails.innerHTML = `<p>Personality</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`
+                computerPilotDetails.innerHTML = `<p>Personality:</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`;
                 break;
             }
         case "Slippy":
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Slippy_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Slippy";
-                pilotDetails.innerHTML = `<h4>Personality</h4><p>Intelligent,</p><p>Helpful,</p><p>Clumsy,</p>`
+                pilotDetails.innerHTML = `<p>Personality:</p><p>Intelligent,</p><p>Helpful,</p><p>Clumsy,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Slippy_full_length.png";
                 document.getElementById("computer-pilot-name").innerHTML = "Slippy";
-                computerPilotDetails.innerHTML = `<h4>Personality</h4><p>Intelligent,</p><p>Helpful,</p><p>Clumsy,</p>`
+                computerPilotDetails.innerHTML = `<p>Personality:</p><p>Intelligent,</p><p>Helpful,</p><p>Clumsy,</p>`;
                 break;
             }
     }
 };
-document.getElementById("codenameForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent form submission
+document.getElementById("codename-form").addEventListener("submit", function(event) {
+  //event.preventDefault(); // Prevent form submission
   
   // Get the codename input value
   let codename = document.getElementById("codename").value.trim();
