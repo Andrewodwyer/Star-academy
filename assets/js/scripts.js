@@ -98,6 +98,7 @@ function game(playerChoice) {
     playerMessage_p.textContent = `" I choose  ${playerChoice} ! "`; // text to be added on R, P, S selection
     compMessage_p.textContent = `" I choose ${computerChoice} ! "`;
     computerHand_img.src = `assets/images/circle_${computerChoice}_right.png`;
+    pilotCodename.innerText = `${codename.value}`;
     
     if (playersScore === winningScore || compScore === winningScore) {
         endGame();
@@ -105,9 +106,9 @@ function game(playerChoice) {
 }
 function endGame() {
     if (playersScore === winningScore) {
-        alert("You Win!");
+        alert(`${codename.value} You Win!`);
     } else {
-        alert("You loose!");
+        alert(`${codename.value} You loose!`);
     }
     playersScore = 0;
     compScore = 0;
@@ -132,24 +133,30 @@ function mainGame(){
     });
 }
 
-function playerCodename(){
-    pilotCodename.innerText = `${codename.value}`;
-}
+//function playerCodename(){
+  //  pilotCodename.innerText = `${codename.value}`;
+//}
+
+
+
 //Pilot Select
-const foxButton = document.getElementById("Fox");
-const falcobutton = document.getElementById("Falco");
-const wolfButton = document.getElementById("Wolf");
-const peppyButton = document.getElementById("Peppy");
-const slippyButton = document.getElementById("Slippy");
+//const foxButton = document.getElementById("Fox");
+//const falcobutton = document.getElementById("Falco");
+//const wolfButton = document.getElementById("Wolf");
+//const peppyButton = document.getElementById("Peppy");
+//const slippyButton = document.getElementById("Slippy");
 let playersPilot_img = document.getElementById("players-pilot");
 let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("pilot-name");
+mainGame();
+
 computerPilotRandom.addEventListener("click", function() {
     let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
     let randomNumber =  Math.floor(Math.random() * 5);
-    changePilot(pilotArray[randomNumber], false);
+    changePilot(pilotArray[randomNumber]);
 });
+
 function changePilot(pilot, isPlayer){
     if(isPlayer) {
       playerSelected = pilot;
@@ -242,4 +249,3 @@ function startGame() {
   const wrapper = document.getElementById("wrapper");
   wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`;
 }
-mainGame();
