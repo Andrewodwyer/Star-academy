@@ -4,12 +4,14 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("active"); 
     navMenu.classList.toggle("active"); 
-})
+});
+
 document.querySelectorAll(".nav-link").forEach(n => n.
     addEventListener("click", function() {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-    }))
+    }));
+
 // GAME PAGE
 // getters
 let codename = document.getElementById("codename"); //input id in form
@@ -119,18 +121,17 @@ function mainGame(){
     rockButton.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_rock_left.png';
         game("rock");
-    })
+    });
     paperButton.addEventListener('click', function() {
         game("paper");
         playerHand_img.src = 'assets/images/circle_paper_left.png';
-        //console.log("it works, you clicked paper");
-    })
+    });
     scissorsButton.addEventListener('click', function() {
         playerHand_img.src = 'assets/images/circle_scissors_left.png';
         game("scissors");
-        //console.log("it works, you clicked scissors");
-    })
+    });
 }
+
 function playerCodename(){
     pilotCodename.innerText = `${codename.value}`;
 }
@@ -160,7 +161,7 @@ function changePilot(pilot, isPlayer){
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Fox_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Fox";
-                PilotDetails.innerHTML = `<p>Personality:</p><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`;
+                pilotDetails.innerHTML = `<p>Personality:</p><p>Self-confident,</p><p>Determined,</p><p>Loyal,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Fox_full_length.png";
@@ -172,7 +173,7 @@ function changePilot(pilot, isPlayer){
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Falco_full_length1.png";
                 document.getElementById("pilot-name").innerHTML = "Falco";
-                PilotDetails.innerHTML = `<p>Personality:</p><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`;
+                pilotDetails.innerHTML = `<p>Personality:</p><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Falco_full_length1.png";
@@ -184,7 +185,7 @@ function changePilot(pilot, isPlayer){
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Wolf_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Wolf";
-                PilotDetails.innerHTML = `<p>Personality:</p><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`;
+                pilotDetails.innerHTML = `<p>Personality:</p><p>Merciless,</p><p>Cunning,</p><p>Rebellious,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Wolf_full_length.png";
@@ -196,7 +197,7 @@ function changePilot(pilot, isPlayer){
             if (isPlayer) {
                 document.getElementById("players-pilot").src = "assets/images/Peppy_full_length.png";
                 document.getElementById("pilot-name").innerHTML = "Peppy";
-                PilotDetails.innerHTML = `<p>Personality</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`;
+                pilotDetails.innerHTML = `<p>Personality</p><p>Wise,</p><p>High moral compass,</p><p>Level-headed,</p>`;
                 break;
             } else {
                 document.getElementById("computer-pilot").src = "assets/images/Peppy_full_length.png";
@@ -217,7 +218,8 @@ function changePilot(pilot, isPlayer){
                 break;
             }
     }
-};
+}
+
 document.getElementById("codename-form").addEventListener("submit", function(event) {
   //event.preventDefault(); // Prevent form submission
   
@@ -238,6 +240,6 @@ document.getElementById("codename-form").addEventListener("submit", function(eve
 function startGame() {
   console.log(playerSelected, computerSelected);
   const wrapper = document.getElementById("wrapper");
-  wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`
+  wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`;
 }
 mainGame();
