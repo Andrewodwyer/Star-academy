@@ -24,6 +24,8 @@ let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("computer-pilot-name");
 let codenameForm = document.getElementById("codename-form");
+let pilotDetails = document.getElementById("pilot-details");
+let computerPilotDetails = document.getElementById("computer-pilot-details");
 
 
 computerPilotRandom.addEventListener("click", function() {
