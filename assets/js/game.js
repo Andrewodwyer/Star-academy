@@ -156,6 +156,6 @@ computerSelected = sessionStorage.getItem('computerSelectedKey');
 
 computerSelectedImage.src = `assets/images/${computerSelected}_headshot.png`;
 playerSelectedImage.src = `assets/images/${playerSelected}_headshot.png`;
-sessionStorage.removeItem('playerSelectedKey');
-sessionStorage.removeItem('computerSelectedKey');
+//sessionStorage.removeItem('playerSelectedKey');
+//sessionStorage.removeItem('computerSelectedKey');
 mainGame();

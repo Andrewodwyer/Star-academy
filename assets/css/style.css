@@ -44,13 +44,11 @@ h4 {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: 1px; 
-    color: #363737;
 }
 
 p {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: smaller;
 }
 
 /* header*/
@@ -93,7 +91,7 @@ header {
 }
 
 .info > p {
-    font-size: 80%;
+    font-size: 90%;
 }
 /* center the button in a div*/
 .center {
@@ -111,7 +109,6 @@ header {
     color: #363737;
     border: .5px solid silver;
     border-radius: 5px;
-    font-size: 1.2rem;
     letter-spacing: .2em;
     cursor: pointer;
     transition-duration: 0.3s;
@@ -164,12 +161,10 @@ letter-spacing: .05rem;
     border: .5px solid silver;
     color: #363737;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 1.2rem;
     text-align: center;
-    padding: 0 25px;
     letter-spacing: .05rem;
-   /* width: 100%;*/
 }
 
 .transparent {
@@ -189,34 +184,37 @@ letter-spacing: .05rem;
 }
 
 label {
+    color: white;
     margin: auto 5px;
     font-size: 1rem;
 }
 
 .text-input {
-    background: transparent;
     color: #4b4b4b;
     width: 100%;
-    margin: 2px;
-    /*border: 1px solid #fafafa;*/
-    border-radius: 2px;
-    /*padding: 0 5px;*/
+    margin: 4px;
+    border: 1px solid #fafafa;
   }
 
 #player-container {
     height: 80%;
     width: 100%;
-    /*overflow: hidden;*/
     position: relative;
 }
 
 .pilot-container {
-    /*background-color: white;
-    border-radius: 5px;*/
     color: black;
-    /*display: flex;*/
     justify-content: center;
     margin:0 auto;
+}
+
+.choose-your-pilot {
+    Color: #363737;
+    background: white;
+    border: solid 1px white;
+    margin: 10px 0;
+    padding: 5px 20px;
+    text-align: center;
 }
 
 .pilot-name-background {
@@ -227,13 +225,6 @@ label {
     padding: 0 25px;
     text-align: center;
 }
-
-/*   position: absolute;
-    z-index: 99;
-    font-size: 300%;
-    left: 25%;
-    font-weight: 500;
-*/
 
 #controls {
     width: 80%;
@@ -257,7 +248,6 @@ label {
     flex-direction: column;
     align-items: center; /** Y-axis align **/
     justify-content: center; /** X-axis align **/
-    /*border: solid 2px whitesmoke;*/
     transition: all 0.3s ease-in-out; /* transition for movement between screen sizes */
   }
 
@@ -295,7 +285,6 @@ label {
 }
 
 .pilot-center-text {
-    /*padding: 10%;*/
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -325,6 +314,11 @@ label {
     color: black;
     display:block;
     margin:0 auto;
+}
+.game-name-form {
+    background: #5B7AB1;
+    width: 100vw;
+    border-bottom: solid 1px white;
 }
 
 .game-name h2 {
@@ -368,8 +362,7 @@ label {
     display:flex;
     flex: 1;
     position: relative;
-    /*justify-content: center;
-    align-items: center;*/
+
 }
 
 .game-pilot-name {
@@ -383,7 +376,6 @@ label {
 .box-style {
     text-align: center;
     border-radius: 10px;
-    /*height: 30px;*/
     font-size: 1rem;
 }
 
@@ -428,9 +420,6 @@ label {
     /*box-shadow: 0 0 15px #55D0C9;*/
     box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
     background: radial-gradient(#55ACD0, #2C586A);
-    /*width: 100px;*/
-    /*height: 100px; without the height you get a 3d effect*/
-    /*margin: 0 30px;*/
     padding: 5px;
     transition: all .03s ease; /*ease is to have a slowly change in transition*/ 
 }
@@ -453,7 +442,6 @@ label {
 /* to keep the image from taking up more then 50% of the screen */
 .image-size {
     width: 4rem;
-    /*max-width: 6rem;*/
     display: flex;
     flex: auto; /* Adjusts the image to cover the container */
     object-fit: cover; /* Adjusts the image to fit in the container */
@@ -476,6 +464,7 @@ label {
     display: flex;
     flex-grow: 1; Adjusts the image to cover the container */
 }
+
 /*div holding the selected choices, hands*/
 .win-or-loose {
     /*background-color: white;*/
@@ -499,11 +488,9 @@ label {
 }
 
 .text-box {
-    /*display: flex;*/
-    /*flex-direction: column;*/
+
     flex-grow: 1.5;
     width: 130px;
-    /*min-height: 260px; */
     align-self:center;
 }
 
@@ -749,62 +736,3 @@ a {
         font-size: 160%;
       }
 }
-
-/* menu 
-
-.menu {
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-}
-
-js
-.menu.active {
-    right: 0;
-}
-
-nav {
-    padding: 1rem;
-    display: flex;
-    background-color: grey;
-}
-
-.hamburger-menu {
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
-}
-
-.hamburger-menu span {
-    height: 5px;
-    width: 100%;
-    background-color:azure;
-    border: 2px solid black;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-}
-
-.hamburger-menu span:nth-child(1){
-    top: 25%;
-}
-
-.hamburger-menu span:nth-child(3){
-    top: 75%;
-}
-*/
