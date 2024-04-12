@@ -146,4 +146,7 @@ function mainGame(){
         game("scissors");
     });
 }
+
+document.getElementById('playerSelected').innerText = localStorage.getItem('playerSelected');
+document.getElementById('lastName').innerText = localStorage.getItem('computerSelected');
 mainGame();

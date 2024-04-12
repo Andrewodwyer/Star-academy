@@ -104,7 +104,7 @@ function changePilot(pilot, isPlayer) {
     }
 }
 
-codenameForm.addEventListener("submit", function(event){
+/*codenameForm.addEventListener("submit", function(event){
   event.preventDefault(); // Prevent form submission
   
   // Get the codename input value
@@ -121,14 +121,30 @@ codenameForm.addEventListener("submit", function(event){
     alert("Codename must be more than 4 letters and contain only letters!");
   }
 });
+*/
+
 function startGame() {
   console.log(playerSelected, computerSelected);
   const wrapper = document.getElementById("wrapper");
   wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`;
 }
 
+function startGame() {
+    localStorage.setItem("playerSelected, assets/images/${playerSelected}_headshot.png")
+    localStorage.setItem("computerSelected, assets/images/${computerSelected}_headshot.png")
+    window.location.href = "game.html";
+}
+
+function saveData() {
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    localStorage.setItem('firstName', firstName);
+    localStorage.setItem('lastName', lastName);
+    window.location.href = "secondPage.html";
+}
+
 //set localStorage.setItem(${playerSelected}, ${computerSelected});
 // localStorage.setItem( ${computerSelected});
 //get on R,P,S document.getElementById("player_img").innerHTML = localStorage.getItem("playerSelected");
 //document.getElementById("computer_img").innerHTML = localStorage.getItem("computerSelected");
-mainGame();
+//mainGame();
