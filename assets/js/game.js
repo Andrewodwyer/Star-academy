@@ -147,6 +147,12 @@ function mainGame(){
     });
 }
 
-document.getElementById('playerSelected').innerText = localStorage.getItem('playerSelected');
-document.getElementById('lastName').innerText = localStorage.getItem('computerSelected');
+localStorage.getItem('playerSelectedKey');
+console.log('playerSelectedKey');
+let playerImg = localStorage.getItem('playerSelectedKey');
+let player_img = document.getElementById("playerSelected_img");
+//let computerImg = localStorage.getItem('computerSelectedKey');
+//document.getElementById('playerSelected_img').src = playerImg;
+//playerImg.src = `assets/images/${playerSelected}_headshot.png`;
+//player_img.src = `assets/images/string(playerSelected)_headshot.png`;
 mainGame();

@@ -123,25 +123,34 @@ function changePilot(pilot, isPlayer) {
 });
 */
 
-function startGame() {
+/*function startGame() {
   console.log(playerSelected, computerSelected);
   const wrapper = document.getElementById("wrapper");
   wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`;
-}
+}*/
+
+let playerSelectedString = playerSelected.toString()
+//let playerSelectedValue =  string(playerSelected);
+//let computerSelectedValue = string(computerSelected);
+//console.log("playerSelectedValue")
 
 function startGame() {
-    localStorage.setItem("playerSelected, assets/images/${playerSelected}_headshot.png")
-    localStorage.setItem("computerSelected, assets/images/${computerSelected}_headshot.png")
+    localStorage.setItem('playerSelectedKey', playerSelectedValue);
+    localStorage.setItem('computerSelectedKey', computerSelectedValue);
     window.location.href = "game.html";
+    console.log(playerSelected, computerSelected);
+    //console.log("playerSelectedKey");
 }
+localStorage.setItem('playerSelected', playerSelectedString);
+//localStorage.setItem('computerSelected', JSON.stringify(assets/images/${computerSelected}_headshot.png));
 
-function saveData() {
+/*function saveData() {
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
     localStorage.setItem('firstName', firstName);
     localStorage.setItem('lastName', lastName);
     window.location.href = "secondPage.html";
-}
+}*/
 
 //set localStorage.setItem(${playerSelected}, ${computerSelected});
 // localStorage.setItem( ${computerSelected});
