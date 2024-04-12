@@ -120,6 +120,7 @@ function game(playerChoice) {
         endGame();
     }
 }
+
 function endGame() {
     if (playersScore === winningScore) {
         alert(`${codename.value} You Win!`);
@@ -150,8 +151,11 @@ function mainGame(){
 }
 
 playerSelected = sessionStorage.getItem('playerSelectedKey');
+
 computerSelected = sessionStorage.getItem('computerSelectedKey');
+
 computerSelectedImage.src = `assets/images/${computerSelected}_headshot.png`;
 playerSelectedImage.src = `assets/images/${playerSelected}_headshot.png`;
-
+sessionStorage.removeItem('playerSelectedKey');
+sessionStorage.removeItem('computerSelectedKey');
 mainGame();
