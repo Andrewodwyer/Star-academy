@@ -18,6 +18,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 //const wolfButton = document.getElementById("Wolf");
 //const peppyButton = document.getElementById("Peppy");
 //const slippyButton = document.getElementById("Slippy");
+var playerSelected = 'Foxasd';
+var computerSelected = 'Wolfasd';
 let playersPilot_img = document.getElementById("players-pilot");
 let pilotName = document.getElementById("pilot-name");
 let computerPilot_img = document.getElementById("computer-pilot");
@@ -26,20 +28,27 @@ let computerPilotName = document.getElementById("computer-pilot-name");
 let codenameForm = document.getElementById("codename-form");
 let pilotDetails = document.getElementById("pilot-details");
 let computerPilotDetails = document.getElementById("computer-pilot-details");
+//let playerSelected = changePilot()
 
 
 computerPilotRandom.addEventListener("click", function() {
     let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
     let randomNumber =  Math.floor(Math.random() * 5);
-    changePilot(pilotArray[randomNumber]);
+    computerSelected = pilotArray[randomNumber]
+    changePilot(computerSelected, false);
 });
+
+/*function changePilot(playerpilot) {
+    let computerChoice = getComputerChoice();
+    switch (playerChoice + computerChoice);}
+*/
 
 function changePilot(pilot, isPlayer) {
     if(isPlayer) {
       playerSelected = pilot;
     } else {
       computerSelected = pilot;
-    }  
+    }
     switch(pilot){
         case "Fox":
             if (isPlayer) {
@@ -129,19 +138,23 @@ function changePilot(pilot, isPlayer) {
   wrapper.innerHTML = `<h3>Player selected: ${playerSelected}</h3><h3>Computer selected: ${computerSelected}</h3>`;
 }*/
 
-let playerSelectedString = playerSelected.toString()
+
 //let playerSelectedValue =  string(playerSelected);
 //let computerSelectedValue = string(computerSelected);
 //console.log("playerSelectedValue")
 
+localStorage.setItem('playerSelectedKey', playerSelected);
+localStorage.setItem('computerSelectedKey', computerSelected);
+
 function startGame() {
-    localStorage.setItem('playerSelectedKey', playerSelectedValue);
-    localStorage.setItem('computerSelectedKey', computerSelectedValue);
+    console.log(playerSelected);
+    localStorage.setItem('playerSelectedKey', playerSelected);
+    localStorage.setItem('computerSelectedKey', computerSelected);
     window.location.href = "game.html";
     console.log(playerSelected, computerSelected);
     //console.log("playerSelectedKey");
 }
-localStorage.setItem('playerSelected', playerSelectedString);
+
 //localStorage.setItem('computerSelected', JSON.stringify(assets/images/${computerSelected}_headshot.png));
 
 /*function saveData() {

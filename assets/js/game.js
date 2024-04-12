@@ -49,6 +49,8 @@ let playerHand_img = document.getElementById("player-hand");
 let computerHand_img = document.getElementById("computer-hand");
 let pilotDetails = document.getElementById("pilot-details");
 let computerPilotDetails = document.getElementById("computer-pilot-details");
+let computerSelectedImage = document.getElementById("computerSelected_img");
+let playerSelectedImage= document.getElementById("playerSelected_img");
 let playerSelected = "Fox";
 let computerSelected = "Wolf";
 /**
@@ -147,10 +149,13 @@ function mainGame(){
     });
 }
 
-localStorage.getItem('playerSelectedKey');
-console.log('playerSelectedKey');
-let playerImg = localStorage.getItem('playerSelectedKey');
-let player_img = document.getElementById("playerSelected_img");
+//localStorage.getItem('playerSelectedKey');
+//localStorage.getItem('computerSelectedKey');
+//console.log('playerSelectedKey');
+playerSelected = localStorage.getItem('playerSelectedKey');
+computerSelected = localStorage.getItem('computerSelectedKey');
+computerSelectedImage.src = `assets/images/${computerSelected}_headshot.png`;
+playerSelectedImage.src = `assets/images/${playerSelected}_headshot.png`;
 //let computerImg = localStorage.getItem('computerSelectedKey');
 //document.getElementById('playerSelected_img').src = playerImg;
 //playerImg.src = `assets/images/${playerSelected}_headshot.png`;
