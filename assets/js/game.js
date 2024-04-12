@@ -149,15 +149,9 @@ function mainGame(){
     });
 }
 
-//localStorage.getItem('playerSelectedKey');
-//localStorage.getItem('computerSelectedKey');
-//console.log('playerSelectedKey');
-playerSelected = localStorage.getItem('playerSelectedKey');
-computerSelected = localStorage.getItem('computerSelectedKey');
+playerSelected = sessionStorage.getItem('playerSelectedKey');
+computerSelected = sessionStorage.getItem('computerSelectedKey');
 computerSelectedImage.src = `assets/images/${computerSelected}_headshot.png`;
 playerSelectedImage.src = `assets/images/${playerSelected}_headshot.png`;
-//let computerImg = localStorage.getItem('computerSelectedKey');
-//document.getElementById('playerSelected_img').src = playerImg;
-//playerImg.src = `assets/images/${playerSelected}_headshot.png`;
-//player_img.src = `assets/images/string(playerSelected)_headshot.png`;
+
 mainGame();
