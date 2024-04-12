@@ -14,8 +14,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.
 
 //Pilot Select
 
-var playerSelected = 'Foxasd';
-var computerSelected = 'Wolfasd';
+var playerSelected = 'Fox';
+var computerSelected = 'Wolf';
 let playersPilot_img = document.getElementById("players-pilot");
 let pilotName = document.getElementById("pilot-name");
 let computerPilot_img = document.getElementById("computer-pilot");
