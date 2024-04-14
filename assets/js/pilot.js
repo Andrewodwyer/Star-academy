@@ -13,6 +13,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.
     }));
 
 //Pilot Select
+//getters
 
 var playerSelected = 'Fox';
 var computerSelected = 'Wolf';
@@ -26,7 +27,9 @@ let pilotDetails = document.getElementById("pilot-details");
 let computerPilotDetails = document.getElementById("computer-pilot-details");
 
 
-
+/**
+ * randomly generates computer choice
+ */
 computerPilotRandom.addEventListener("click", function() {
     let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
     let randomNumber =  Math.floor(Math.random() * 5);
@@ -34,6 +37,12 @@ computerPilotRandom.addEventListener("click", function() {
     changePilot(computerSelected, false);
 });
 
+/**
+ * function for playerSelected result
+ * @param {} isPlayer - selected if the player is the pilot and a variable playerSelected
+ * @param {} pilot - switch statement with pilot list eg "Fox"
+ * else if the pilot is not, it is a variable computerSelected
+ */
 function changePilot(pilot, isPlayer) {
     if(isPlayer) {
       playerSelected = pilot;
@@ -105,15 +114,15 @@ function changePilot(pilot, isPlayer) {
 }
 
 
+// sets the playerSelected variable to session storage
+//sessionStorage.setItem('playerSelectedKey', playerSelected); // sets the playerSelected variable to session storage
+//sessionStorage.setItem('computerSelectedKey', computerSelected); // sets the computerSelected variable to session storage
 
-sessionStorage.setItem('playerSelectedKey', playerSelected);
-sessionStorage.setItem('computerSelectedKey', computerSelected);
-
+/**
+ * function startGame sets the playerSelected & computerSelected variable to session storage
+ */
 function startGame() {
-    console.log(playerSelected);
     sessionStorage.setItem('playerSelectedKey', playerSelected);
     sessionStorage.setItem('computerSelectedKey', computerSelected);
     window.location.href = "game.html";
-    console.log(playerSelected, computerSelected);
-
 }

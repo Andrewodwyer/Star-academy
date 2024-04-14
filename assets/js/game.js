@@ -12,7 +12,9 @@ document.querySelectorAll(".nav-link").forEach(n => n.
         navMenu.classList.remove("active");
     }));
 
-// Codename to start on typing
+/**
+ * Text in the input field shows in div with id="codename"
+ */
 document.addEventListener("DOMContentLoaded", function() {
     let codename = document.getElementById('codename');
     let pilotCodename = document.getElementById('pilot-codename');
@@ -53,8 +55,9 @@ let computerSelectedImage = document.getElementById("computerSelected_img");
 let playerSelectedImage= document.getElementById("playerSelected_img");
 let playerSelected = "Fox";
 let computerSelected = "Wolf";
+
 /**
- * Dont forget your docstring...
+ * randomly generates computer choice
  * @returns a string from an array of choices
  */
 function getComputerChoice(){
@@ -62,7 +65,10 @@ function getComputerChoice(){
     let randomNumber = Math.floor(Math.random() * 3); // round down (math.floor) as array starts at 0 
     return choices[randomNumber]; // random number links to the array
 }
-console.log(getComputerChoice()); // check to see if function getComputerChoice works
+
+/**
+ * function when the player wins, increase score, you win text, green light, setTimeOut after 1s
+ */
 function playerWins(playerChoice, computerChoice){
     playersScore++;
     playersScore_div.innerHTML = playersScore;
@@ -73,6 +79,10 @@ function playerWins(playerChoice, computerChoice){
     setTimeout(function() { playerChoice_div.classList.remove("green-highlight")}, 1000);
     setTimeout(function() { computerChoice_div.classList.remove("red-highlight")}, 1000);
 }
+
+/**
+ * function when the computer wins
+ */
 function computerWins(playerChoice, computerChoice){
     compScore++;
     compScore_div.innerHTML = compScore;
@@ -83,15 +93,22 @@ function computerWins(playerChoice, computerChoice){
     setTimeout(function() { playerChoice_div.classList.remove("red-highlight")}, 1000);
     setTimeout(function() { computerChoice_div.classList.remove("green-highlight")}, 1000);
 }
+
+/**
+ * function when the game is a draw, text draw, grey colour behind hand
+ */
 function draw(playerChoice, computerChoice){
     winner_h4.innerHTML = `IT'S A DRAW`;
-    playerChoice_div.classList.add('gray-highlight');
-    computerChoice_div.classList.add('gray-highlight');
-    setTimeout(function() { playerChoice_div.classList.remove("gray-highlight")}, 1000); // length of time 1 second
-    setTimeout(function() { computerChoice_div.classList.remove("gray-highlight")}, 1000);
+    playerChoice_div.classList.add('grey-highlight');
+    computerChoice_div.classList.add('grey-highlight');
+    setTimeout(function() { playerChoice_div.classList.remove("grey-highlight")}, 1000); // length of time 1 second
+    setTimeout(function() { computerChoice_div.classList.remove("grey-highlight")}, 1000);
     console.log("draw");
 }
-// game function, to see what player selects and their result
+
+/**
+ * game function, to see what player selects and their result, gameEnd within function
+ */
 function game(playerChoice) {
     let computerChoice = getComputerChoice();
     switch (playerChoice + computerChoice) {
@@ -121,6 +138,9 @@ function game(playerChoice) {
     }
 }
 
+/**
+ * Function to state when game ends, playerScore===winngingScore
+ */
 function endGame() {
     if (playersScore === winningScore) {
         alert(`${codename.value} You Win!`);
@@ -135,6 +155,10 @@ function endGame() {
     playerMessage_p.textContent = `" Are you ready ! "`;
     compMessage_p.textContent = `" Let's see what you got ! "`;
 }
+
+/**
+ * mainGame() player chooses rock, paper, scissor from images and their result for the game()
+ */
 function mainGame(){
     rockButton.addEventListener("click", function() {
         playerHand_img.src = 'assets/images/circle_rock_left.png';
@@ -150,12 +174,17 @@ function mainGame(){
     });
 }
 
+// saves the playerSelected to the session storage
 playerSelected = sessionStorage.getItem('playerSelectedKey');
 
+// saves the random computerSelected to the session storage
 computerSelected = sessionStorage.getItem('computerSelectedKey');
 
+// places computerSelected inside image source name using ${}
 computerSelectedImage.src = `assets/images/${computerSelected}_headshot.png`;
+// places playerSelected inside image source name using ${}
 playerSelectedImage.src = `assets/images/${playerSelected}_headshot.png`;
+
 //sessionStorage.removeItem('playerSelectedKey');
 //sessionStorage.removeItem('computerSelectedKey');
 mainGame();
