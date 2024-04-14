@@ -279,7 +279,7 @@ label {
 }
 
 /* to keep the image from taking up more then 50% of the screen */
-.restrain-image {
+.image-hold {
     display: flex;
     flex: 1 /* Adjusts the image to cover the container */
 }
