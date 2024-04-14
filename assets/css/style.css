@@ -316,9 +316,10 @@ label {
     margin:0 auto;
 }
 .game-name-form {
-    background: #5B7AB1;
+    background: #008DA8;
     width: 100vw;
-    border-bottom: solid 1px white;
+    border-bottom: solid 2px white;
+    border-radius: 0 10px 10px 0;
 }
 
 .game-name h2 {
