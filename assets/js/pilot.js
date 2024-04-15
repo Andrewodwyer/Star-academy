@@ -21,7 +21,7 @@ let pilotName = document.getElementById("pilot-name");
 let computerPilot_img = document.getElementById("computer-pilot");
 let computerPilotRandom = document.getElementById("computer-pilot-btn");
 let computerPilotName = document.getElementById("computer-pilot-name");
-let codenameForm = document.getElementById("codename-form");
+//let codenameForm = document.getElementById("codename-form");
 let pilotDetails = document.getElementById("pilot-details");
 let computerPilotDetails = document.getElementById("computer-pilot-details");
 
@@ -32,7 +32,7 @@ let computerPilotDetails = document.getElementById("computer-pilot-details");
 computerPilotRandom.addEventListener("click", function() {
     let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
     let randomNumber =  Math.floor(Math.random() * 5);
-    computerSelected = pilotArray[randomNumber]
+    computerSelected = pilotArray[randomNumber];
     changePilot(computerSelected, false);
 });
 
@@ -112,10 +112,6 @@ function changePilot(pilot, isPlayer) {
     }
 }
 
-
-// sets the playerSelected variable to session storage
-//sessionStorage.setItem('playerSelectedKey', playerSelected); // sets the playerSelected variable to session storage
-//sessionStorage.setItem('computerSelectedKey', computerSelected); // sets the computerSelected variable to session storage
 
 /**
  * function startGame sets the playerSelected & computerSelected variable to session storage
