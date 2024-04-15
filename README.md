@@ -25,26 +25,34 @@ The tool Figma was used for the Wireframe and Prototype. You can view my [figma 
 - To achieve this, I used a component-based approach. Inside the rock paper scissors game I devided the game section up into 3 main areas.
   - Information section: The game name, conditions to win and the input area for the player name/codename
   - The Scoreboard: 
-    - players chosen pilot, their choice in text, their score.
-    - images representing the players choice, text announcing the winner and the computers choice as an image.
-      - These images changed colour to highlight the winner, green for win, red for loose.
-    - computers pilot (randomly selected), its choice in text, its score.
-  - The 3 buttons for the player to choose from. Rock button, paper button and scissors button.
+  - The 3 buttons for the player to choose from. Rock button, paper button and scissors button. This player choice section is flex-wrap so can more if needed on very small devices
 These sections are designed to be realtive to the screen size so they would be visually appealing on any device.
 
 ### Mapping
 
-- This is a three page design layout. On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in orange under the game information.
-- This common scroll design will be intuitive to the user and will make them feel at ease. At the end of the page after gathering the information, the user sees a call to action, a “book now” button. At this stage, the user would have all the information they needed to know if they’ll like to book. 
-- The “book” page was separated, so the user would feel that they’re taking the next step. Feeling empowered in their decision. 
-- This "book" page contains a centred form. The form itself was designed to be responsive. On mobile devices the input fields are vertically places, one over another. On larger devices, a media query was added. The “First name” and “Last name” inputs are placed side by side. As are the “Email address & Phone number” input fields. As larger devices are landscape in view, this design utilises the space more effectively.
+- This is a three page design layout. On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in yellow/orange under the game information.
+- The second page is the character/pilot selection page. When planning out this page on the figma wireframe, I knew I needed a longer layout. A large highlighted pilot image and info beside then, a selection bar containing the headshots of the pilots to choose from (5 choices) and the random computer selected image your opponent. To achive this layout I want with a scroll design. This scroll layout will be intuitive to the user and will make them feel at ease. At the end of the page after making your choice and seeing the computer pilot, the user sees a call to action, a “Let's get going” button. 
+
+![Pilot Section](documentation/images/pilot-select-mobile.png)
+
+- The rock paper scissors game page was separated to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting.
+- The name of the game immediately focuses the player, following this is the iput area for the players name
+- As outline above, the gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw text result as text and lastly the computers random choice image.
+  - The pilot choice image changes with relation to their selection, Rock Paper or Scissors.
+  - The backgrounds of the images change colour to highlight the winner, green for win, red for loose.
+
+![Gameboard image](documentation/images/gameboard.png)
+
+- Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices. Thumbs are placed at the bottom of screen. Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
+
+![Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
 
 ### Colours & Font
 
-- The colour palette is made up of blues, greens and complemented with orange. A split complementary scheme, in desaturated tones to give a relaxed feeling that is pleasing to the eye.
+- The colour palette is made up of dark blues, greens and complemented with gold and orange. A split complementary scheme, in mid-strength tones to give a fun energetic feeling that is pleasing to the eye.
 - The use of white text on the darker values/tones and dark grey text on lighter values, means the text is easy is read.   
-- The Font used is Roboto and a websafe sans-serif font.
-- A Dark grey colour (#4b4b4b) was used on the majority of the text. The hero section uses an off white colour (whitesmoke) to help it stand out from the other text. By doing this, the user will see straight away the most important information.
+- The Font used is Inter with a weight of 200-400 and a websafe sans-serif font.
+- A Dark grey colour (#363737) was used on the majority of the text over white background. The pilot section uses white for the pilots name and pilot info to help it stand out from the other text. By using this 2 tone approach in the pilot section, the text ties in with the lighter blueprint background. 
 
 ## Features 
 
