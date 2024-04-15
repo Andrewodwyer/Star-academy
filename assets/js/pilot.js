@@ -29,7 +29,7 @@ let computerPilotDetails = document.getElementById("computer-pilot-details");
 /**
  * randomly generates computer choice
  */
-computerPilotRandom.addEventListener("click", function() {
+computerPilotRandom.addEventListener("click", function () {
     let pilotArray = ["Fox", "Falco", "Wolf", "Peppy", "Slippy"];
     let randomNumber =  Math.floor(Math.random() * 5);
     computerSelected = pilotArray[randomNumber];

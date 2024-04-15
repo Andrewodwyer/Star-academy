@@ -41,11 +41,11 @@ These sections are designed to be realtive to the screen size so they would be v
   - The pilot choice image changes with relation to their selection, Rock Paper or Scissors.
   - The backgrounds of the images change colour to highlight the winner, green for win, red for loose.
 
-![Gameboard image](documentation/images/gameboard.png)
+![Gameboard image](documentation/images/gameboard.png) ![Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
 
 - Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices. Thumbs are placed at the bottom of screen. Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
 
-![Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
+
 
 ### Colours & Font
 
