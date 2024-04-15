@@ -593,6 +593,8 @@ a {
     margin: auto;
 }
 
+/* Header and Nav-bar style */
+
 .navbar{
     width: 100%;
     min-height: 70px;
@@ -607,6 +609,10 @@ a {
     align-items: center;
     gap: 60px;
 }
+
+li > a:hover {
+    color: silver;  
+  }
 
 .hamburger{
     display: none;

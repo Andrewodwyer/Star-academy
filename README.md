@@ -43,8 +43,7 @@ These sections are designed to be realtive to the screen size so they would be v
 
 ![Gameboard image](documentation/images/gameboard.png) ![Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
 
-- Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices. Thumbs are placed at the bottom of screen. Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
-
+- Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
 
 
 ### Colours & Font
@@ -58,7 +57,7 @@ These sections are designed to be realtive to the screen size so they would be v
 
 ### Navigation Bar
 
-- The full responsive navigation bar includes links to the Home page, Our Tour section (#tour) and Book page and is identical on both pages to allow for easy navigation. The CC Ghost Tour logo will also take the user back to the Home page.
+- The full responsive navigation bar includes links to the Home page, and the game page. and is identical on both pages to allow for easy navigation. The CC Ghost Tour logo will also take the user back to the Home page.
 - This navigation bar will allow users to move between sections and pages without using the back button.
 
 ![Nav bar](documentation/images/header.png)
@@ -70,9 +69,9 @@ These sections are designed to be realtive to the screen size so they would be v
 - The image below shows the button without hover on the left and with hover on the right. As you can see, the gradient changes direction and the buttons sides expand. 
 - This subtle change is a visual cue that is in keeping with the use of gradients throughout the website.
 
-![button](documentation/images/btn_and_btn.hover.png)
+![button](documentation/images/header-nav-bar.png)
 
-- The nav links in the menu change colour to silver on hover. Giving a visual Feedback.
+- The nav links in the menu change colour to silver on hover. Giving a visual Feedback to the player.
 
 ### The landing page image
 
