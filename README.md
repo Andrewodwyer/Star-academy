@@ -1,30 +1,41 @@
-# CC Ghost Tour
+# StarFox Squadron
 
-This is a visual online presence for Cork City Ghost Tour.
+Target Audience 
+The target audience for this Rock Paper Scissors, Starfox themed game would be primarly be people with interest in starFox. Starfox Fans: This game would appeal to fans of the Starfox franchise, particularly those who enjoy the characters and their characteristics. They would likely be interested in any new game featuring their favourite characters. Fox, Falco, Wolf, Peppy and Slippy
+Others might be:
+- Casual Gamers: The simple gameplay mechanics of Rock Paper Scissors combined with the game idea of playing rock, paper, scissors to choose who takes command of the mission, could attract casual gamers looking for a quick and fun experience without a steep learning curve.
+- Families: The easy to navigate design means it would be accessible to people of all ages. A fun activity to enjoy if you had a few minutes to spare.
+-Nostalgia Seekers: People who have fond memories of playing older Starfox games might be drawn to this new iteration, especially if it incorporates elements that remind them of the classic titles.
+- Designers: This is a very visually appealing design. The layout, colour, typography and UX of this game would appeal to creative people.
+Overall, the game could have broad appeal, for anyone to engage with over multiple sessions due to it multi-layer aspect. The character selection & computer random selection and following this a rock paper scissor game that has a multitude of features. 
 
-The target audience for CC ghost tour would primarily be families. Both from the area and families visiting Cork as tourists, seeking family-friendly activities that provide cultural and historical insights. The aim of the tour is to strike a balance of spooky experience, with an 18th century Cork charm. Resulting in an uplifting fun event for the whole family. 
-
-CC Ghost Tour website will provide information on the type of ghost tours on offer, who will provide the tours, where it will take place and how to get in contact to book a tour. 
-
-![Image showing screenshots on different size screens](documentation/images/am-i-responsive.png)
+![Image showing screenshots on different size screens](documentation/images/am-I-responsive.png)
 
 ## UX & UI Design
 
 ### Wireframe and Prototype
 
-The tool Figma was used for the Wireframe and Prototype. You can view my [figma page here](https://www.figma.com/file/wqDQe6D5A4Dp42Iwlw0dXI/PROJECT-1-CORK-CITY-GHOST-TOURS?type=design&node-id=0-1&mode=design&t=72VgxDbLXxjmPx43-0)
+The tool Figma was used for the Wireframe and Prototype. You can view my [figma page here](https://www.figma.com/file/1tfeavw7rxnhvLsKXqHWaR/StarFox?type=design&node-id=0-1&mode=design&t=xgaCVeO8ZfCMJny2-0)
 
-![Figma Wireframe](documentation/images/Figma-Wireframe.png)
+![Figma Wireframe](documentation/images/Figma-wireframe-starfox.png)
 
 ### Responsive Design
 
 - This website is a mobile-first design. At the planning stage, emphasis was put into the design of a mobile website, followed by up-scaling for larger devices.
-- To achieve this, I used a component-based approach. The Hero, Tour and Guide sections are cards. The cards contain an image on the left and text on the right. These cards or blocks of content can float horizontally on desktops or vertically with flex box on a mobile. Components are considered good UI design as they can be used again on other sections of the project.
+- To achieve this, I used a component-based approach. Inside the rock paper scissors game I devided the game section up into 3 main areas.
+  - Information section: The game name, conditions to win and the input area for the player name/codename
+  - The Scoreboard: 
+    - players chosen pilot, their choice in text, their score.
+    - images representing the players choice, text announcing the winner and the computers choice as an image.
+      - These images changed colour to highlight the winner, green for win, red for loose.
+    - computers pilot (randomly selected), its choice in text, its score.
+  - The 3 buttons for the player to choose from. Rock button, paper button and scissors button.
+These sections are designed to be realtive to the screen size so they would be visually appealing on any device.
 
 ### Mapping
 
-- This is a two page design layout. On the home page, all the information regarding the tour is available and broken up in bite size pieces, so the user wouldn’t feel overwhelmed. This common scroll design will be intuitive to the user and will make them feel at ease. 
-- At the end of the page after gathering the information, the user sees a call to action, a “book now” button. At this stage, the user would have all the information they needed to know if they’ll like to book. 
+- This is a three page design layout. On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in orange under the game information.
+- This common scroll design will be intuitive to the user and will make them feel at ease. At the end of the page after gathering the information, the user sees a call to action, a “book now” button. At this stage, the user would have all the information they needed to know if they’ll like to book. 
 - The “book” page was separated, so the user would feel that they’re taking the next step. Feeling empowered in their decision. 
 - This "book" page contains a centred form. The form itself was designed to be responsive. On mobile devices the input fields are vertically places, one over another. On larger devices, a media query was added. The “First name” and “Last name” inputs are placed side by side. As are the “Email address & Phone number” input fields. As larger devices are landscape in view, this design utilises the space more effectively.
 

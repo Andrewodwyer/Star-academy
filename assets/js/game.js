@@ -103,7 +103,6 @@ function draw(playerChoice, computerChoice){
     computerChoice_div.classList.add('grey-highlight');
     setTimeout(function() { playerChoice_div.classList.remove("grey-highlight")}, 1000); // length of time 1 second
     setTimeout(function() { computerChoice_div.classList.remove("grey-highlight")}, 1000);
-    console.log("draw");
 }
 
 /**
