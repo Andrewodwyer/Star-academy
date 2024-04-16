@@ -180,9 +180,9 @@ playerSelected = sessionStorage.getItem('playerSelectedKey');
 computerSelected = sessionStorage.getItem('computerSelectedKey');
 
 // places computerSelected inside image source name using ${}
-computerSelectedImage.src = `assets/images/${computerSelected}_headshot.png`;
+computerSelectedImage.src = `assets/images/${computerSelected.toLowerCase()}_headshot.png`;
 // places playerSelected inside image source name using ${}
-playerSelectedImage.src = `assets/images/${playerSelected}_headshot.png`;
+playerSelectedImage.src = `assets/images/${playerSelected.toLowerCase()}_headshot.png`;
 
 //sessionStorage.removeItem('playerSelectedKey');
 //sessionStorage.removeItem('computerSelectedKey');
