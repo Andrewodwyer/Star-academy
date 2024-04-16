@@ -138,23 +138,6 @@ box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px
 
 - The next obvious next step would be to have a game or video showing the winner leading the mission.
 
-## Javasript
-
-- Endgame function:
-The game had no parameters to finish, it would go on and on indefinitely. To make the game more interesting it needed a finish line, an overall winner and loser. To accomplice this I created a function. It needed to do a number of things. It needed to stop when one person reached the score of 5, so I made a variable winningScore and set it = to 5. I used an if, else to see first if the playerScore was 5. If it was = to 5, an alert with a message “You Win!” was displayed. else alert “You Loose”. This function also had to reset all the scores, and text back to it’s original state. 
-
-- playerHand
-To change the players hand in the centre of the screen so you can see what you have selected, I make the id player-hand a variable playerHand_img (img to recognise it was an image) using the getElementById. I added this variable to the function "main" that is an addEventLister for button clicks. Each button, Rock, Paper and Scissors had separate buttons so it was a matter of adding the following line for each button eg, playerHand_img.src = ‘assets/images/circle_scissors_left.png' (scissors button in this case)
-.src to find it on the DOM
-
-- computerHand
-The computer-hand was more difficult to show, as this was a random number. I made a variable computerHand_img like I did with playerHand but this time I had to add computerHand_img.src to the game function.
-The line was similar to the playerHand 
-playerHand_img.src = ‘assets/images/circle_(scissors)_left.png’ however the middle section had to be changed each time. 
-I accomplished this by utilising ${computerChoice}. The line now reads like this:
-computerHand_img.src = `assets/images/circle_${computerChoice}_left.png`;
-Another option was the make the computer hand face the other way so it was positioned facing the players hand. I horizontally flipped the 3 hands in photoshop, named then _right and uploaded then, The javascript could now use those images. 
-
 
 ## Testing 
 
@@ -188,7 +171,22 @@ Actions and results.
 
 ### Javascript
 
-- Endgame, first to 5. The game reached 5 wins but the game function ended before the score was updated. It looked like it was only to 4.
+- Endgame function:
+The game had no parameters to finish, it would go on and on indefinitely. To make the game more interesting it needed a finish line, an overall winner and loser. To accomplice this I created a function. It needed to do a number of things. It needed to stop when one person reached the score of 5, so I made a variable winningScore and set it = to 5. I used an if, else to see first if the playerScore was 5. If it was = to 5, an alert with a message “You Win!” was displayed. else alert “You Loose”. This function also had to reset all the scores, and text back to it’s original state. 
+
+- playerHand
+To change the players hand in the centre of the screen so you can see what you have selected, I make the id player-hand a variable playerHand_img (img to recognise it was an image) using the getElementById. I added this variable to the function "main" that is an addEventLister for button clicks. Each button, Rock, Paper and Scissors had separate buttons so it was a matter of adding the following line for each button eg, playerHand_img.src = ‘assets/images/circle_scissors_left.png' (scissors button in this case)
+.src to find it on the DOM
+
+- computerHand
+The computer-hand was more difficult to show, as this was a random number. I made a variable computerHand_img like I did with playerHand but this time I had to add computerHand_img.src to the game function.
+The line was similar to the playerHand 
+playerHand_img.src = ‘assets/images/circle_(scissors)_left.png’ however the middle section had to be changed each time. 
+I accomplished this by utilising ${computerChoice}. The line now reads like this:
+computerHand_img.src = `assets/images/circle_${computerChoice}_left.png`;
+Another option was the make the computer hand face the other way so it was positioned facing the players hand. I horizontally flipped the 3 hands in photoshop, named then _right and uploaded then, The javascript could now use those images. 
+
+- Endgame() was first to ===5 but score didn't reach 5! The game reached 5 wins but the game function ended before the score was updated. It looked like it was only to 4.
   - To fix do this a needed to setTimeOut to the endgame() function. I started by having time out set to 3 seconds, however the score could of went up another point or 2 before reaching the 3 seconds. 200ms was what I used. Long enough for the score to increase to 5 (the winning score) but short enough that the game wouldn’t go past it.
 
 - Two page game design meant that it was better to have 2 js files. However this made it more difficult to send the chosen pilot to the game page so the player image would change depending on the pilot selected.
