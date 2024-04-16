@@ -48,7 +48,7 @@ These sections are designed to be realtive to the screen size so they would be v
 
 ### Mapping
 
-- This is a three page design layout. On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in yellow/orange under the game information.
+- This is a three page design layout. 
 - The second page is the character/pilot selection page. When planning out this page on the figma wireframe, I knew I needed a longer layout. A large highlighted pilot image and info beside then, a selection bar containing the headshots of the pilots to choose from (5 choices) and the random computer selected image your opponent. To achive this layout I want with a scroll design. This scroll layout will be intuitive to the user and will make them feel at ease. At the end of the page after making your choice and seeing the computer pilot, the user sees a call to action, a “Let's get going” button. 
 
 ![Pilot Section](documentation/images/pilot-select-mobile.png)
@@ -75,31 +75,29 @@ These sections are designed to be realtive to the screen size so they would be v
 
 ### Navigation Bar
 
-- The full responsive navigation bar includes links to the Home page, and the game page. and is identical on both pages to allow for easy navigation. The CC Ghost Tour logo will also take the user back to the Home page.
+- The full responsive navigation bar includes links to the Home page, and the game page. and is identical on both pages to allow for easy navigation. The red fox logo will also take the user back to the Home page.
 - This navigation bar will allow users to move between sections and pages without using the back button.
-
-![Nav bar](documentation/images/header.png)
 
 ### Button & links
 
-- The button was designed to stand out, to be easily visible from the rest of the page. The submit buttons in the "book" page has an "affordance"(Don Norman) with the text "send".
-- The orange colour is in contrast as it is a complementary colour to the blue and green on the page. 
-- The image below shows the button without hover on the left and with hover on the right. As you can see, the gradient changes direction and the buttons sides expand. 
-- This subtle change is a visual cue that is in keeping with the use of gradients throughout the website.
+- The button was designed to stand out, to be easily visible from the rest of the page. The yellow to orange buttons in the "home and pilot selection" pages have an "affordance"(Don Norman) with their text. Affordance in these cases have text of "start" and "push"
+- The yellow to orange colour is in contrast as it is a complementary colour to the blue and green on the page. 
+- The image below shows the button without hover on the left and with hover on the right. As you can see, the colour changes from yellow to orange.
+- This distinct colour change is a visual cue to the user.
 
-![button](documentation/images/header-nav-bar.png)
+![buttons for start and pilot page](documentation/images/yellow-to-orange-button.png)
 
 - The nav links in the menu change colour to silver on hover. Giving a visual Feedback to the player.
 
 ### The landing page image
 
-- The landing page consists of an appealing comic book style image of two skeletons looking over a cathedral at night. Next to the image is a h2 text block, that provides the user with the businesses unique selling point. The image will appeal to the younger member of the family while the text gives the parents (guardians) the sales pitch. 
+-On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in yellow/orange under the game information. The header of the game is a h3 and the information is in a p block of text. The information text will provide the user with a story, the concept and how the game will progress. The background image will appeal to both young and old. Fox in a spaceship comidy aspect for the kids and nostalgia aspect for the adults.
 
-![Landing page](documentation/images/main-page.png)
+![Landing page](documentation/images/Landing-page-and-info.png)
 
-- A colour gradient is used in the first section and this gradient is mirrored further down the page in the map section. The mirrored gradients complement each other and frame the tour cards between.
+- A light white transparent div holding the information text make this section flow easyly with the image.
 
-### Tour Description
+### Pilot Selection page
 
 - The tour description section will allow the user to see that this is a fun, entertaining tour, presented by knowledgeable, comedic guides that has a strong Cork manner.
 - The "meet your guides" section will give a better insight into two of the companies guides.
