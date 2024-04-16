@@ -1,12 +1,13 @@
 # StarFox Squadron
 A StarFox Themed, Rock Paper Scissors game created by Andrew O'Dwyer.
-Game concept:
+
+## Game concept:
 - Play as your favourite character in Starfox Squadron. Head out on your first mission with one teammate and play Rock, Paper, Scissors to see who takes command of the mission. 
 
 ![Image showing screenshots on different size screens](documentation/images/am-I-responsive.png)
 
 ## Project goals
-To make a game based on the popular Rock, paper, scissors game. The concept around the game was to build the rock, paper, scissors game into a StarFox themed character selection game. I wanted the game to have multilayer of interest. A character selection page, where the player can choose between a number of characters. The characters information would be displayed beside them giving the player more insight into their chosen character. Those chosen characters would then be brought onto the following Rock, Paper, Scissors game area. The game should feel nostalgic for older players and fun and quick and easy to play for younger players.
+The concept around the game was to build the rock, paper, scissors game into a StarFox themed character selection game. I wanted the game to have multiple layers of interest. A character selection page, where the player can choose between a number of characters. Characters information would be displayed beside them giving the player more insight into their chosen character. Those chosen pilots would then be brought onto the following Rock, Paper, Scissors game area. The game should feel nostalgic for older players and fun and easy to play for younger players.
 
 ## User Stories
 
@@ -14,7 +15,7 @@ To make a game based on the popular Rock, paper, scissors game. The concept arou
 - A quick unterstanding of the concept of the game.
 - The user want a natural flow in the game from intro to character select and the main game.
 - They want to be able to go back and choose another pilot when they have completed the rock, paper, scissors game.
-- They want to see their score, a visual reference id they won or lost and a conclusion to the game, ie, first to 5 wins.
+- They want to see their score, a visual reference if they won or lost and a conclusion to the game, ie, first to 5 wins.
 
 ### Site Owner Goals
 - The owner wants to make sure the game isn't too complicated.
@@ -23,13 +24,14 @@ To make a game based on the popular Rock, paper, scissors game. The concept arou
 
 
 ### Target Audience 
-The target audience for this Rock Paper Scissors, Starfox themed game would be primarly be people with interest in starFox. Starfox Fans: This game would appeal to fans of the Starfox franchise, particularly those who enjoy the characters and their characteristics. They would likely be interested in any new game featuring their favourite characters. Fox, Falco, Wolf, Peppy and Slippy
-Others might be:
-- Casual Gamers: The simple gameplay mechanics of Rock Paper Scissors combined with the game idea of playing rock, paper, scissors to choose who takes command of the mission, could attract casual gamers looking for a quick and fun experience without a steep learning curve.
-- Families: The easy to navigate design means it would be accessible to people of all ages. A fun activity to enjoy if you had a few minutes to spare.
--Nostalgia Seekers: People who have fond memories of playing older Starfox games might be drawn to this new iteration, especially if it incorporates elements that remind them of the classic titles.
-- Designers: This is a very visually appealing design. The layout, colour, typography and UX of this game would appeal to creative people.
-Overall, the game could have broad appeal, for anyone to engage with over multiple sessions due to it multi-layer aspect. The character selection & computer random selection and following this a rock paper scissor game that has a multitude of features. 
+The target audience for this Rock Paper Scissors, Starfox themed game would primarly be people with interest in starFox.
+- Starfox Fans: This game would appeal to fans of the Starfox franchise, particularly those who enjoy the characters and their characteristics. They would likely be interested in any new game featuring their favourite characters. Fox, Falco, Wolf, Peppy and Slippy
+- Others might be:
+  - Casual Gamers: The simple gameplay mechanics of Rock Paper Scissors combined with the game idea of playing rock, paper, scissors to choose who takes command of the mission, could attract casual gamers looking for a quick and fun experience without a steep learning curve.
+  - Families: The easy to navigate design means it would be accessible to people of all ages. A fun activity to enjoy if you had a few minutes to spare.
+  - Nostalgia Seekers: People who have fond memories of playing older Starfox games might be drawn to this new iteration, especially if it incorporates elements that remind them of the classic titles.
+  - Designers: This is a very visually appealing design. The layout, colour, typography and UX of this game would appeal to creative people.
+Overall, the game could have broad appeal, for anyone to engage with over multiple sessions due to it multi-layer aspect. The character selection, computer random selection and the rock paper scissor game has a multitude of features. 
 
 ## UX & UI Design
 
@@ -45,8 +47,8 @@ The tool Figma was used for the Wireframe and Prototype. You can view my [figma 
 - To achieve this, I used a component-based approach. Inside the rock paper scissors game I devided the game section up into 3 main areas.
   - Information section: The game name, conditions to win and the input area for the player name/codename
   - The Scoreboard: 
-  - The 3 buttons for the player to choose from. Rock button, paper button and scissors button. This player choice section is flex-wrap so can more if needed on very small devices
-These sections are designed to be realtive to the screen size so they would be visually appealing on any device.
+  - The 3 buttons for the player to choose from. Rock button, paper button and scissors button. This player choice section is flex-wrap so it can move if needed on very small devices.
+- These sections are designed to be relative to the screen size so they would be visually appealing on any device.
 
 ### Mapping
 
@@ -54,7 +56,7 @@ These sections are designed to be realtive to the screen size so they would be v
 - Page one index.html holds the information on what the game is about.
 - Page two contains the pilot section. The player will make a choice between 5 pilots. The chosen pilot will be displayed in full when the headshot it selected.
 There will be a button below for a random computer pilot and their full lenght display. Following this is a button to move to the next section. It gives a prompt to "Let's get going". A call to action.
-- The rock paper scissors game page was separated to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting. This is a classic, well know game with little to no learning curve. 3 buttons to choose from and a indication of the reults. I decided to have a limit to the game. A conclusion of first to 5 wins.
+- The rock paper scissors game page was separate to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting. This is a classic, well know game with little to no learning curve. 3 buttons to choose from and a indication of the reults. I decided to have a limit to the game. A conclusion of first to 5 wins.
 
 ### Colours & Font
 
@@ -87,11 +89,11 @@ Font: Inter 200, 300, 400 from google font https://fonts.google.com/
 
 ### The landing page image
 
--On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in yellow/orange under the game information. The header of the game is a h3 and the information is in a p block of text. The information text will provide the user with a story, the concept and how the game will progress. The background image will appeal to both young and old. Fox in a spaceship comidy aspect for the kids and nostalgia aspect for the adults.
+- On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in yellow/orange under the game information. The header of the game is a h3 and the information is in a p block of text. The information text will provide the user with a story, the concept and how the game will progress. The background image will appeal to both young and old. Fox in a spaceship comedic aspect for the kids and nostalgic aspect for the adults.
 
 ![Landing page](documentation/images/Landing-page-and-info.png)
 
-- A light white transparent div holding the information text make this section flow easyly with the image.
+- A light white transparent div holding the information text make this section flow easily with the image.
 
 ### Pilot Selection page
 
@@ -107,7 +109,7 @@ As described earlier in the mapping paragraph, this button empowers the user. Mo
 
 ### Rock paper Scissors game page
 
-- The name of the game immediately focuses the player, following this is the iput area for the players name.
+- The name of the game immediately focuses the player.
 - The information below "First to 5 wins!" gives the player their goal.
 - Codename input field. When the player enters their name/codename it appears in the pilot text section.
 - Design of this input form:
@@ -115,21 +117,21 @@ I have given the game-name-form class a border-radius on the right of top 2px an
 - The gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw result as text and lastly the computers random choice image.
   - The chosen hand image changes with relation to their selection, Rock Paper or Scissors.
   - The backgrounds of the hand images changes colour to highlight the winner, green for win, red for loose and grey for a draw.
-  - The pain red and green colours looked very flat so I used a radial-gradient to gave a more traffic light look. Lighter or brighter in the middle and darker as it goes out. I think this is more pleasing to the eye and not as jarring as the single colours.
+  - The plain red and green colours looked very flat so I used a radial-gradient to gave a more traffic light look. Lighter or brighter in the middle and darker as it goes out. I think this is more pleasing to the eye and not as jarring as the single colours.
 
 ![ Gameboard and Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
 
 - Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
-- Arcade buttons 
-I wanted to make the 3 buttons looks more 3 dimensional. To simulate an arcade button.
+- Arcade buttons:
+  -I wanted to make the 3 buttons looks more 3 dimensional. To simulate an arcade button.
 I created a inset border shadow for the blue area to give it a feeling it was extended. 
-Secondly, I wanted to give an impress that the button was giving out light. To do this I gave a light green glow around the border. The link of css was 
+Secondly, I wanted to give an impression that the button was giving out light. To do this I gave a light green glow around the border. The link of css was 
 box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
 
 
 ### The Footer
 
-- The footer contains the game copyright. Text in white over the games dark blue color.
+- The footer contains the game copyright. Text in white over the games dark blue colour.
 
 
 ### Features Left to Implement or Nice to have
@@ -189,12 +191,12 @@ Actions and results.
 - Endgame, first to 5. The game reached 5 wins but the game function ended before the score was updated. It looked like it was only to 4.
   - To fix do this a needed to setTimeOut to the endgame() function. I started by having time out set to 3 seconds, however the score could of went up another point or 2 before reaching the 3 seconds. 200ms was what I used. Long enough for the score to increase to 5 (the winning score) but short enough that the game wouldn’t go past it.
 
-- Two page game design meant that it was better to have 2 js files. However this made it more difficult to send the chosen pilot to the game page so the player image would change depending on the pilot selecred.
+- Two page game design meant that it was better to have 2 js files. However this made it more difficult to send the chosen pilot to the game page so the player image would change depending on the pilot selected.
   - It was suggested to use 2 js files, one for each part of the game, one to match with the pilot selection and another js file to match with the rock, paper, scissors game. 
   - I could then use Window localStorage to give a key and value to the pilots, so they can be used on the following page. The rock, paper, scissors game. 
   - I used sessionStorage over localStorage because the information stored would be gone when the page was closed.
 
-- Bug sending variable key and value to game page. 
+- sending variable key and value to game page. 
   - I declared a variable with var in a global scope so it could be used outside the function. 
 After this I was able to use playerSelected and computerSelected variable and their values after it went through the function changePilot.
 
@@ -230,35 +232,35 @@ There are no unfixed bus.
 ## Credits 
 
 - Code-institute:
-- I used two videos for instruction on how to create a Hamburger Menu: ![nav-menu 1](https://www.youtube.com/watch?v=aNDqzlAKmZc) ![nav-menu 2](https://www.youtube.com/watch?v=flItyHiDm7E). 
-![This is the Hamburger nav menu I used. How to Create a Responsive Hamburger Menu (Fixed Version) - HTML, CSS & JavaScript](https://www.youtube.com/watch?v=zuAmsj2EN54) Additional code was added to css and html to give it a unique look.
+- I used two videos for instruction on how to create a Hamburger Menu: [nav-menu 1](https://www.youtube.com/watch?v=aNDqzlAKmZc) [nav-menu 2](https://www.youtube.com/watch?v=flItyHiDm7E). 
+[This is the Hamburger nav menu I used. How to Create a Responsive Hamburger Menu (Fixed Version) - HTML, CSS & JavaScript](https://www.youtube.com/watch?v=zuAmsj2EN54) Additional code was added to css and html to give it a unique look.
 
 - Multiplayer section:
-  - ![Street fighter character selection](https://codepen.io/itslit/pen/RMMdZv)
-  - ![Character Selection](https://www.youtube.com/watch?v=ISeyrczkzGY)
-- ![Rock, Paper, Scissors tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=1485s)
-  - ![Second, Rock, Paper, Scissors game](https://www.youtube.com/watch?v=3uKdQx-SZ5A)
-  - ![Character Selection resource](https://stackoverflow.com/questions/21043301/add-character-selection-function-to-multiplayer-game)
-  - ![Multi Character selection game](https://www.youtube.com/watch?v=M6sA8fvMCuA)
-  - ![StreetFighter Character Select](https://codepen.io/ryanparag/pen/PJqryW)
+  - [Street fighter character selection](https://codepen.io/itslit/pen/RMMdZv)
+  - [Character Selection](https://www.youtube.com/watch?v=ISeyrczkzGY)
+- [Rock, Paper, Scissors tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=1485s)
+  - [Second, Rock, Paper, Scissors game](https://www.youtube.com/watch?v=3uKdQx-SZ5A)
+  - [Character Selection resource](https://stackoverflow.com/questions/21043301/add-character-selection-function-to-multiplayer-game)
+  - [Multi Character selection game](https://www.youtube.com/watch?v=M6sA8fvMCuA)
+  - [StreetFighter Character Select](https://codepen.io/ryanparag/pen/PJqryW)
 
 - Montor Support: Spencer Barriball
 - Tutor Support: Tutors at Code institute
 
-- JS scope ![variable scope](https://www.w3schools.com/js/js_scope.asp)
+- JS scope [variable scope](https://www.w3schools.com/js/js_scope.asp)
 - Dom eventListener ![eventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
-- ![Learn JavaScript DOM Traversal:](https://www.youtube.com/watch?v=v7rSSy8CaYE)
-- ![Learn DOM Manipulation In 18 Minutes](https://www.youtube.com/watch?v=y17RuWkWdn8)
-- ![Master JavaScript Loops - Guide to For, While, Do-While, Array, & Object Loops! Programming Tutorial](https://www.youtube.com/watch?v=Qchv8Htzgt4&t=329s)
-- ![textContent - Javascript DOM Tutorial For Beginners](https://www.youtube.com/watch?v=XW9ncbnfzZo)
-- ![Adding Image inside Button](https://www.codecademy.com/forum_questions/513d2cf2ba52df1c810038d5)
-- ![CSS background-image properties](https://www.w3schools.com/cssref/pr_background-image.php)
-- ![Flex and Flex-wrap](https://www.w3schools.com/cssref/pr_background-image.php)
-- ![CSS : centering absolute positioned text inside relative parent](https://stackoverflow.com/questions/18147642/css-centering-absolute-positioned-text-inside-relative-parent)
-- ![Local Storage & Session Storage](https://www.youtube.com/watch?v=-ZRDZyUjEEI)
-- ![Local Storage](https://www.youtube.com/watch?v=fYTTUBa-lPc&t=7s)
-- ![W3 School, window.localStorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
-- ![Name Input with JS](https://www.youtube.com/watch?v=KB6Yg5hNrqc)
+- [Learn JavaScript DOM Traversal:](https://www.youtube.com/watch?v=v7rSSy8CaYE)
+- [Learn DOM Manipulation In 18 Minutes](https://www.youtube.com/watch?v=y17RuWkWdn8)
+- [Master JavaScript Loops - Guide to For, While, Do-While, Array, & Object Loops! Programming Tutorial](https://www.youtube.com/watch?v=Qchv8Htzgt4&t=329s)
+- [textContent - Javascript DOM Tutorial For Beginners](https://www.youtube.com/watch?v=XW9ncbnfzZo)
+- [Adding Image inside Button](https://www.codecademy.com/forum_questions/513d2cf2ba52df1c810038d5)
+- [CSS background-image properties](https://www.w3schools.com/cssref/pr_background-image.php)
+- [Flex and Flex-wrap](https://www.w3schools.com/cssref/pr_background-image.php)
+- [CSS : centering absolute positioned text inside relative parent](https://stackoverflow.com/questions/18147642/css-centering-absolute-positioned-text-inside-relative-parent)
+- [Local Storage & Session Storage](https://www.youtube.com/watch?v=-ZRDZyUjEEI)
+- [Local Storage](https://www.youtube.com/watch?v=fYTTUBa-lPc&t=7s)
+- [W3 School, window.localStorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+- [Name Input with JS](https://www.youtube.com/watch?v=KB6Yg5hNrqc)
 - Don Norman's book "The design of everyday things"
 - W3schools: 
   - I used w3schools to plan the button and button:hover css layout & colour.
@@ -277,6 +279,6 @@ There are no unfixed bus.
 
 ### Media
 
-- Starfox Character information and images from ![starfox information](https://www.charactour.com/hub/characters/view/Slippy-Toad.Star-Fox) and ![starfox png](https://www.pngwing.com/en/search?q=star+Fox)
-- Favicon: from ![starfox png](https://www.pngwing.com/en/search?q=star+Fox)
+- Starfox Character information and images from [starfox information](https://www.charactour.com/hub/characters/view/Slippy-Toad.Star-Fox) and [starfox png](https://www.pngwing.com/en/search?q=star+Fox)
+- Favicon: from [starfox png](https://www.pngwing.com/en/search?q=star+Fox)
 - Photoshop was used for cropping and resizing of favicons and images. Most full shot images of the pilots had to be seperated from the background and changed to pngs
