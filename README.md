@@ -1,5 +1,7 @@
 # StarFox Squadron
-A StarFox Themed, Rock Paper Scissors game created by Andrew O'Dwyer
+A StarFox Themed, Rock Paper Scissors game created by Andrew O'Dwyer.
+Game concept:
+- Play as your favourite character in Starfox Squadron. Head out on your first mission with one teammate and play Rock, Paper, Scissors to see who takes command of the mission. 
 
 ![Image showing screenshots on different size screens](documentation/images/am-I-responsive.png)
 
@@ -61,7 +63,9 @@ There will be a button below for a random computer pilot and their full lenght d
 - The Font used is Inter with a weight of 200-400 and a websafe sans-serif font.
 - A Dark grey colour (#363737) was used on the majority of the text over white background. The pilot section uses white for the pilots name and pilot info to help it stand out from the other text. By using this 2 tone approach in the pilot section, the text ties in with the lighter blueprint background. 
 
-![Colour palette] (documentation/images/Colour palette.png)
+![Colour palette](documentation/images/Colour-palette.png)
+
+Font: Inter 200, 300, 400 from google font https://fonts.google.com/
 
 ## Features 
 
@@ -104,13 +108,23 @@ As described earlier in the mapping paragraph, this button empowers the user. Mo
 ### Rock paper Scissors game page
 
 - The name of the game immediately focuses the player, following this is the iput area for the players name.
+- The information below "First to 5 wins!" gives the player their goal.
+- Codename input field. When the player enters their name/codename it appears in the pilot text section.
+- Design of this input form:
+I have given the game-name-form class a border-radius on the right of top 2px and bottom 10px to give it a design that is similar to the nav bar curve. Placing these design features in a number of placed give the design a balanced and considered feel.
 - The gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw result as text and lastly the computers random choice image.
   - The chosen hand image changes with relation to their selection, Rock Paper or Scissors.
-  - The backgrounds of the hand images changes colour to highlight the winner, green for win, red for loose.
+  - The backgrounds of the hand images changes colour to highlight the winner, green for win, red for loose and grey for a draw.
+  - The pain red and green colours looked very flat so I used a radial-gradient to gave a more traffic light look. Lighter or brighter in the middle and darker as it goes out. I think this is more pleasing to the eye and not as jarring as the single colours.
 
 ![ Gameboard and Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
 
 - Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
+- Arcade buttons 
+I wanted to make the 3 buttons looks more 3 dimensional. To simulate an arcade button.
+I created a inset border shadow for the blue area to give it a feeling it was extended. 
+Secondly, I wanted to give an impress that the button was giving out light. To do this I gave a light green glow around the border. The link of css was 
+box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
 
 
 ### The Footer
@@ -118,9 +132,27 @@ As described earlier in the mapping paragraph, this button empowers the user. Mo
 - The footer contains the game copyright. Text in white over the games dark blue color.
 
 
-### Features Left to Implement
+### Features Left to Implement or Nice to have
 
-- I'd like to introduce a hover page. It will display after clicking the form submit button, to indicate the form was sent successfully.
+- The next obvious next step would be to have a game or video showing the winner leading the mission.
+
+## Javasript
+
+- Endgame function:
+The game had no parameters to finish, it would go on and on indefinitely. To make the game more interesting it needed a finish line, an overall winner and loser. To accomplice this I created a function. It needed to do a number of things. It needed to stop when one person reached the score of 5, so I made a variable winningScore and set it = to 5. I used an if, else to see first if the playerScore was 5. If it was = to 5, an alert with a message “You Win!” was displayed. else alert “You Loose”. This function also had to reset all the scores, and text back to it’s original state. 
+
+- playerHand
+To change the players hand in the centre of the screen so you can see what you have selected, I make the id player-hand a variable playerHand_img (img to recognise it was an image) using the getElementById. I added this variable to the function "main" that is an addEventLister for button clicks. Each button, Rock, Paper and Scissors had separate buttons so it was a matter of adding the following line for each button eg, playerHand_img.src = ‘assets/images/circle_scissors_left.png' (scissors button in this case)
+.src to find it on the DOM
+
+- computerHand
+The computer-hand was more difficult to show, as this was a random number. I made a variable computerHand_img like I did with playerHand but this time I had to add computerHand_img.src to the game function.
+The line was similar to the playerHand 
+playerHand_img.src = ‘assets/images/circle_(scissors)_left.png’ however the middle section had to be changed each time. 
+I accomplished this by utilising ${computerChoice}. The line now reads like this:
+computerHand_img.src = `assets/images/circle_${computerChoice}_left.png`;
+Another option was the make the computer hand face the other way so it was positioned facing the players hand. I horizontally flipped the 3 hands in photoshop, named then _right and uploaded then, The javascript could now use those images. 
+
 
 ## Testing 
 
@@ -139,28 +171,40 @@ As described earlier in the mapping paragraph, this button empowers the user. Mo
 
 ### Browser Testing
 
-- The site has been tested on the following browsers: Chrome, Safari, firefox & Edge. The layout and functionality was consistent throughout the testing. links, navigation and form submit all work as intended.
+- The site has been tested on the following browsers: Chrome, Safari, firefox & Edge. The layout and functionality was consistent throughout the testing. links, navigation text input all work as intended.
 
 ### Manual testing
 
 Actions and results. 
-- On click, CC Ghost Tour text/logo brings you to the home page.
+- On click, StarFox/logo brings you to the home page.
 - Navbar buttons: when clicked, they take you to different sections or pages. 
-- Book/submit button: when clicked, it will show the code institute form submitted
-- Name, email, phone, date & your message inputs are all required on the form in booking page: If not filled out correctly, it prompt user to do so before allowing them to submit the form. 
-- Social link icons (X, instagram, facebook, you-tube): when clicked, opens pages for those particular social networks.
-All work correctly.
+- All buttons ("Start", "push", "Let's get going" and "rock" "paper" "scissor" buttons): work as intended.
+- Input form for name/codename on rock paper scissors game page shows the players name in the element above the text area.
+- The endgame function works, sending an alert to state if the player won or lost. The alert will also show the players name if they have put it in the input field.
 
-### Fixed Bugs
+## Fixed Bugs
 
-- Input field height in contact section. I wanted one row input field for the name and email boxes but I wanted 4 row for the message. This was done by adding  textarea instead of input element. textarea is not self closing and this took me a few tries to work out. Secondly I wanted each of the first 4 fields to be the same height. The auto height I felt was too small so I added a class to make the input fields 25px high and another css rule to make the textarea field 150px high. 
-- Centre Form. I was having trouble making the form in the contact page centred on the page. The resolve was to add margin:auto; to the booking-form and also padding:5% to the outer div class=“transparent-colour”. The padding gave breathing space around the booking form.
-- I wanted to stack the sections and divs on mobile, so the images showed first and then the text box. This was for devices with screen width less than 769, so the text could be easily read. 
-When the screen went over 769px, the divs would be placed side by side in the section (container/card). The image div on left and text div on right. This was the design for the hero section and the “our tours” section. 
-The div that followed, named “meet your guides” has two “our-guides” divs. These are stacked like the first two for mobile. However on larger screens, they would move to be in a row. The “our-guide” divs would be side by side.
-This was solved using flex-direction:column in the “guide-section” section and flex-direction:row as a media query in the “our-guides” div.
-Two containers (both having a class=“our-guides”) with an attribute of flex-direction: row. 
-I added a class=“image-and-text” to these divs containing the image and text cards. The outer “meet your guides” container had a flex property of column, so the “our-guides” section showed side by side.
+### Javascript
+
+- Endgame, first to 5. The game reached 5 wins but the game function ended before the score was updated. It looked like it was only to 4.
+  - To fix do this a needed to setTimeOut to the endgame() function. I started by having time out set to 3 seconds, however the score could of went up another point or 2 before reaching the 3 seconds. 200ms was what I used. Long enough for the score to increase to 5 (the winning score) but short enough that the game wouldn’t go past it.
+
+- Two page game design meant that it was better to have 2 js files. However this made it more difficult to send the chosen pilot to the game page so the player image would change depending on the pilot selecred.
+  - It was suggested to use 2 js files, one for each part of the game, one to match with the pilot selection and another js file to match with the rock, paper, scissors game. 
+  - I could then use Window localStorage to give a key and value to the pilots, so they can be used on the following page. The rock, paper, scissors game. 
+  - I used sessionStorage over localStorage because the information stored would be gone when the page was closed.
+
+- Bug sending variable key and value to game page. 
+  - I declared a variable with var in a global scope so it could be used outside the function. 
+After this I was able to use playerSelected and computerSelected variable and their values after it went through the function changePilot.
+
+### CSS style Bug
+
+Flex reverse issue for computer div on rock paper scissors game:
+- Score-box had a margin-right of 5px to bring it away from the edge for the players-cards. I used the same class (.player-cards) for the computer div (.comp). I flex reversed the player div for the aesthetics. With flex reverse, margin-right didn’t bring the number away for the edge. My resolve was to scrap margin-right and to just use margin of 5px around the number instead.
+
+text-box sizing issue
+- I used flex-grow of 1.5 on .text-box to increase the size of the text area in comparison to the image on left and score on right. However without a specific size, the whole .players-card div got too large on larger screens. I used width of 130px to resolve the issue.
 
 ### Unfixed Bugs
 
@@ -180,15 +224,41 @@ There are no unfixed bus.
 - Alternatively, To get access to the deployed site, click on the “Code” tab of the repository.
 - On the right-hand side under “environments” click on “GitHub-pages”
 - In the newly opened pages, click on “view deployment”
-[live site](https://andrewodwyer.github.io/Cork-City-Ghost-Tours/)
+[live site](https://andrewodwyer.github.io/Star-academy/index.html)
 
 
 ## Credits 
 
 - Code-institute:
-  - The navigation bar and footer originally code was originally sourced from the Love Running Project at Code Institute. The form on the booking Page was also inspired by the Love Running project. However, none of these remain in their original form. Additional code was added to css and html.
+- I used two videos for instruction on how to create a Hamburger Menu: ![nav-menu 1](https://www.youtube.com/watch?v=aNDqzlAKmZc) ![nav-menu 2](https://www.youtube.com/watch?v=flItyHiDm7E). 
+![This is the Hamburger nav menu I used. How to Create a Responsive Hamburger Menu (Fixed Version) - HTML, CSS & JavaScript](https://www.youtube.com/watch?v=zuAmsj2EN54) Additional code was added to css and html to give it a unique look.
+
+- Multiplayer section:
+  - ![Street fighter character selection](https://codepen.io/itslit/pen/RMMdZv)
+  - ![Character Selection](https://www.youtube.com/watch?v=ISeyrczkzGY)
+- ![Rock, Paper, Scissors tutorial](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=1485s)
+  - ![Second, Rock, Paper, Scissors game](https://www.youtube.com/watch?v=3uKdQx-SZ5A)
+  - ![Character Selection resource](https://stackoverflow.com/questions/21043301/add-character-selection-function-to-multiplayer-game)
+  - ![Multi Character selection game](https://www.youtube.com/watch?v=M6sA8fvMCuA)
+  - ![StreetFighter Character Select](https://codepen.io/ryanparag/pen/PJqryW)
+
 - Montor Support: Spencer Barriball
 - Tutor Support: Tutors at Code institute
+
+- JS scope ![variable scope](https://www.w3schools.com/js/js_scope.asp)
+- Dom eventListener ![eventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+- ![Learn JavaScript DOM Traversal:](https://www.youtube.com/watch?v=v7rSSy8CaYE)
+- ![Learn DOM Manipulation In 18 Minutes](https://www.youtube.com/watch?v=y17RuWkWdn8)
+- ![Master JavaScript Loops - Guide to For, While, Do-While, Array, & Object Loops! Programming Tutorial](https://www.youtube.com/watch?v=Qchv8Htzgt4&t=329s)
+- ![textContent - Javascript DOM Tutorial For Beginners](https://www.youtube.com/watch?v=XW9ncbnfzZo)
+- ![Adding Image inside Button](https://www.codecademy.com/forum_questions/513d2cf2ba52df1c810038d5)
+- ![CSS background-image properties](https://www.w3schools.com/cssref/pr_background-image.php)
+- ![Flex and Flex-wrap](https://www.w3schools.com/cssref/pr_background-image.php)
+- ![CSS : centering absolute positioned text inside relative parent](https://stackoverflow.com/questions/18147642/css-centering-absolute-positioned-text-inside-relative-parent)
+- ![Local Storage & Session Storage](https://www.youtube.com/watch?v=-ZRDZyUjEEI)
+- ![Local Storage](https://www.youtube.com/watch?v=fYTTUBa-lPc&t=7s)
+- ![W3 School, window.localStorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+- ![Name Input with JS](https://www.youtube.com/watch?v=KB6Yg5hNrqc)
 - Don Norman's book "The design of everyday things"
 - W3schools: 
   - I used w3schools to plan the button and button:hover css layout & colour.
@@ -200,17 +270,13 @@ There are no unfixed bus.
 - Stackoverflow:
   - I got a better understanding of flexbox from stackoverflow.
 [setting distance in flex](https://stackoverflow.com/questions/20626685/how-do-i-set-distance-between-flexbox-items)
-  - Setting alt text in background images in CSS
-[using title instead of alt](https://stackoverflow.com/questions/4216035/css-background-image-alt-attribute)  
+
 ### Content 
 
 - The text for the Home page was written by the developer, Andrew O'Dwyer.
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-- Favicon: from icons8.com https://icons8.com/icons/set/favicon-ghost I was able to get a stock ghost icon and change the colours to suit my colour palette.
-- Photoshop was used for cropping and resizing
 
 ### Media
 
-- The images used on the home page are AI generated in bing, powered by chatgpt Dall-e. https://www.bing.com/images/create/?ref=hn
-- The 18th century map used for the booking page was taken from https://www.linkedin.com/pulse/corporation-cork-city-ireland-agreed-make-provision-scheme-holohan
-- These images were then resized using https://imageresizer.com/
+- Starfox Character information and images from ![starfox information](https://www.charactour.com/hub/characters/view/Slippy-Toad.Star-Fox) and ![starfox png](https://www.pngwing.com/en/search?q=star+Fox)
+- Favicon: from ![starfox png](https://www.pngwing.com/en/search?q=star+Fox)
+- Photoshop was used for cropping and resizing of favicons and images. Most full shot images of the pilots had to be seperated from the background and changed to pngs
