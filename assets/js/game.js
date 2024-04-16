@@ -76,8 +76,8 @@ function playerWins(playerChoice, computerChoice){
     winner_h4.innerHTML = `YOU WIN`;
     playerChoice_div.classList.add("green-highlight");
     computerChoice_div.classList.add("red-highlight");
-    setTimeout(function() { playerChoice_div.classList.remove("green-highlight")}, 1000);
-    setTimeout(function() { computerChoice_div.classList.remove("red-highlight")}, 1000);
+    setTimeout(function() { playerChoice_div.classList.remove("green-highlight")}, 500);
+    setTimeout(function() { computerChoice_div.classList.remove("red-highlight")}, 500);
 }
 
 /**
@@ -90,8 +90,8 @@ function computerWins(playerChoice, computerChoice){
     winner_h4.innerHTML = `YOU LOOSE`;
     playerChoice_div.classList.add('red-highlight');
     computerChoice_div.classList.add('green-highlight'); //global variable
-    setTimeout(function() { playerChoice_div.classList.remove("red-highlight")}, 1000);
-    setTimeout(function() { computerChoice_div.classList.remove("green-highlight")}, 1000);
+    setTimeout(function() { playerChoice_div.classList.remove("red-highlight")}, 500);
+    setTimeout(function() { computerChoice_div.classList.remove("green-highlight")}, 500);
 }
 
 /**
@@ -101,8 +101,8 @@ function draw(playerChoice, computerChoice){
     winner_h4.innerHTML = `IT'S A DRAW`;
     playerChoice_div.classList.add('grey-highlight');
     computerChoice_div.classList.add('grey-highlight');
-    setTimeout(function() { playerChoice_div.classList.remove("grey-highlight")}, 1000); // length of time 1 second
-    setTimeout(function() { computerChoice_div.classList.remove("grey-highlight")}, 1000);
+    setTimeout(function() { playerChoice_div.classList.remove("grey-highlight")}, 500); // length of time 1 second
+    setTimeout(function() { computerChoice_div.classList.remove("grey-highlight")}, 500);
 }
 
 /**

@@ -44,7 +44,7 @@ The tool Figma was used for the Wireframe and Prototype. You can view my [figma 
 ### Responsive Design
 
 - This website is a mobile-first design. At the planning stage, emphasis was put into the design of a mobile website, followed by up-scaling for larger devices.
-- To achieve this, I used a component-based approach. Inside the rock paper scissors game I devided the game section up into 3 main areas.
+- To achieve this, I used a component-based approach. Inside the rock paper scissors game I divided the game section up into 3 main areas.
   - Information section: The game name, conditions to win and the input area for the player name/codename
   - The Scoreboard: 
   - The 3 buttons for the player to choose from. Rock button, paper button and scissors button. This player choice section is flex-wrap so it can move if needed on very small devices.
@@ -55,8 +55,8 @@ The tool Figma was used for the Wireframe and Prototype. You can view my [figma 
 - This is a three page design layout. The info page, the pilot selection page and the rock paper scissors game page.
 - Page one index.html holds the information on what the game is about.
 - Page two contains the pilot section. The player will make a choice between 5 pilots. The chosen pilot will be displayed in full when the headshot it selected.
-There will be a button below for a random computer pilot and their full lenght display. Following this is a button to move to the next section. It gives a prompt to "Let's get going". A call to action.
-- The rock paper scissors game page was separate to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting. This is a classic, well know game with little to no learning curve. 3 buttons to choose from and a indication of the reults. I decided to have a limit to the game. A conclusion of first to 5 wins.
+There will be a button below for a random computer pilot and their full length display. Following this is a button to move to the next section. It gives a prompt to "Let's get going". A call to action.
+- The rock paper scissors game page was separate to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting. This is a classic, well know game with little to no learning curve. 3 buttons to choose from and a indication of the results. I decided to have a limit to the game. A conclusion of first to 5 wins.
 
 ### Colours & Font
 
@@ -89,7 +89,7 @@ Font: Inter 200, 300, 400 from google font https://fonts.google.com/
 
 ### The landing page image
 
-- On the home page, is a hero or background image of a classic starfox scene. Infront of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is lighlighted in yellow/orange under the game information. The header of the game is a h3 and the information is in a p block of text. The information text will provide the user with a story, the concept and how the game will progress. The background image will appeal to both young and old. Fox in a spaceship comedic aspect for the kids and nostalgic aspect for the adults.
+- On the home page, is a hero or background image of a classic starfox scene. In front of this to the bottom of the screen is the information section. A short outline of the games concept. A call to action button "start" is highlighted in yellow/orange under the game information. The header of the game is a h3 and the information is in a p block of text. The information text will provide the user with a story, the concept and how the game will progress. The background image will appeal to both young and old. Fox in a spaceship comedic aspect for the kids and nostalgic aspect for the adults.
 
 ![Landing page](documentation/images/Landing-page-and-info.png)
 
@@ -102,7 +102,7 @@ Font: Inter 200, 300, 400 from google font https://fonts.google.com/
   - A large highlighted pilot image and information beside them. 
   - A selection bar containing the headshots of the pilots to choose from (5 choices).
   - A random computer selected image of your opponent. 
-- To achive this layout I went with a scroll design. This scroll layout will be intuitive to the user and will make them feel at ease. At the end of the page after making your choice and seeing the computer pilot, the user sees a call to action, a “Let's get going” button. 
+- To achieve this layout I went with a scroll design. This scroll layout will be intuitive to the user and will make them feel at ease. At the end of the page after making your choice and seeing the computer pilot, the user sees a call to action, a “Let's get going” button. 
 As described earlier in the mapping paragraph, this button empowers the user. Moving them forward.
 
 ![Pilot Section](documentation/images/pilot-select-mobile.png)
@@ -114,16 +114,16 @@ As described earlier in the mapping paragraph, this button empowers the user. Mo
 - Codename input field. When the player enters their name/codename it appears in the pilot text section.
 - Design of this input form:
 I have given the game-name-form class a border-radius on the right of top 2px and bottom 10px to give it a design that is similar to the nav bar curve. Placing these design features in a number of placed give the design a balanced and considered feel.
-- The gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw result as text and lastly the computers random choice image.
+- The game-board was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw result as text and lastly the computers random choice image.
   - The chosen hand image changes with relation to their selection, Rock Paper or Scissors.
   - The backgrounds of the hand images changes colour to highlight the winner, green for win, red for loose and grey for a draw.
   - The plain red and green colours looked very flat so I used a radial-gradient to gave a more traffic light look. Lighter or brighter in the middle and darker as it goes out. I think this is more pleasing to the eye and not as jarring as the single colours.
 
 ![ Gameboard and Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
 
-- Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
+- Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challenging to see what the computer choose.
 - Arcade buttons:
-  -I wanted to make the 3 buttons looks more 3 dimensional. To simulate an arcade button.
+  -I wanted to make the 3 buttons look more 3 dimensional. To simulate an arcade button.
 I created a inset border shadow for the blue area to give it a feeling it was extended. 
 Secondly, I wanted to give an impression that the button was giving out light. To do this I gave a light green glow around the border. The link of css was 
 box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px 0px inset, rgb(255, 255, 255) -3.2px -3.2px 8px 0px inset;
@@ -142,11 +142,11 @@ box-shadow: 0 0 10px rgba(85, 208, 201, 0.7), rgb(200, 208, 231) 3.2px 3.2px 8px
 ## Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C Validator] ![index page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Findex.html) ![pilot page] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fpilot.html) ![game page] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fgame.html)
+  - No errors were returned when passing through the official [W3C Validator] [index page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Findex.html) [pilot page] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fpilot.html) [game page] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fgame.html)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) Validator] (https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fpilot.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JS
-  - No errors were found ![jshint] (https://jshint.com/)
+  - No errors were found [jshint] (https://jshint.com/)
 - Accessibility
   - The colour and font used make it very easy to read the text while still pleasing to the eye.
   - I used Lighthouse in DevTools to confirm that every page scores well.
