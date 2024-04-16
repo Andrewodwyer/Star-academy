@@ -123,9 +123,11 @@ As described earlier in the mapping paragraph, this button empowers the user. Mo
 ## Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C Validator] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FCork-City-Ghost-Tours%2Findex.html)
+  - No errors were returned when passing through the official [W3C Validator] ![index page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Findex.html) ![pilot page] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fpilot.html) ![game page] (https://validator.w3.org/nu/?doc=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fgame.html)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) Validator] (https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandrewodwyer.github.io%2FCork-City-Ghost-Tours%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official [(Jigsaw) Validator] (https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandrewodwyer.github.io%2FStar-academy%2Fpilot.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- JS
+  - No errors were found ![jshint] (https://jshint.com/)
 - Accessibility
   - The colour and font used make it very easy to read the text while still pleasing to the eye.
   - I used Lighthouse in DevTools to confirm that every page scores well.
