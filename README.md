@@ -48,21 +48,11 @@ These sections are designed to be realtive to the screen size so they would be v
 
 ### Mapping
 
-- This is a three page design layout. 
-- The second page is the character/pilot selection page. When planning out this page on the figma wireframe, I knew I needed a longer layout. A large highlighted pilot image and info beside then, a selection bar containing the headshots of the pilots to choose from (5 choices) and the random computer selected image your opponent. To achive this layout I want with a scroll design. This scroll layout will be intuitive to the user and will make them feel at ease. At the end of the page after making your choice and seeing the computer pilot, the user sees a call to action, a “Let's get going” button. 
-
-![Pilot Section](documentation/images/pilot-select-mobile.png)
-
-- The rock paper scissors game page was separated to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting.
-- The name of the game immediately focuses the player, following this is the iput area for the players name
-- As outline above, the gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw result as text and lastly the computers random choice image.
-  - The pilot choice image changes with relation to their selection, Rock Paper or Scissors.
-  - The backgrounds of the images changes colour to highlight the winner, green for win, red for loose.
-
-![ Gameboard and Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
-
-- Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
-
+- This is a three page design layout. The info page, the pilot selection page and the rock paper scissors game page.
+- Page one index.html holds the information on what the game is about.
+- Page two contains the pilot section. The player will make a choice between 5 pilots. The chosen pilot will be displayed in full when the headshot it selected.
+There will be a button below for a random computer pilot and their full lenght display. Following this is a button to move to the next section. It gives a prompt to "Let's get going". A call to action.
+- The rock paper scissors game page was separated to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting. This is a classic, well know game with little to no learning curve. 3 buttons to choose from and a indication of the reults. I decided to have a limit to the game. A conclusion of first to 5 wins.
 
 ### Colours & Font
 
@@ -99,45 +89,32 @@ These sections are designed to be realtive to the screen size so they would be v
 
 ### Pilot Selection page
 
-- The tour description section will allow the user to see that this is a fun, entertaining tour, presented by knowledgeable, comedic guides that has a strong Cork manner.
-- The "meet your guides" section will give a better insight into two of the companies guides.
-- This section has a transition when moving from mobile to larger screens. The two cards turn horizontal on larger screens and move in from the left.
-
-![Tour Description](documentation/images/Tour-Description.png)
-
-- These sections are cards (image and text containers) with a drop shadow. The drop shadow effect gives a dynamic feel to the site.
-
-![cards](documentation/images/flex-display-mobile-on-left.png)
-
-- The Route section, will emphasis that this is an 18th century period tour. Giving the user a visual idea of the layout of the city
-
-![Route on 18th century map](documentation/images/Route-on-18th-century-map.png)
-
-### Call to Action
-
-The last section on the main page is the "Get in Touch" or call to action.
-It gives a prompt to "Get in Touch" and contains a "Book Now" button.
+- The second page is the character/pilot selection page. When planning out this page on the figma wireframe, I knew I needed the following:
+  - A long layout design to hold all sections. 
+  - A large highlighted pilot image and information beside them. 
+  - A selection bar containing the headshots of the pilots to choose from (5 choices).
+  - A random computer selected image of your opponent. 
+- To achive this layout I went with a scroll design. This scroll layout will be intuitive to the user and will make them feel at ease. At the end of the page after making your choice and seeing the computer pilot, the user sees a call to action, a “Let's get going” button. 
 As described earlier in the mapping paragraph, this button empowers the user. Moving them forward.
 
-![Call to Action](documentation/images/Get-in-Touch-section.png)
+![Pilot Section](documentation/images/pilot-select-mobile.png)
+
+### Rock paper Scissors game page
+
+- The name of the game immediately focuses the player, following this is the iput area for the players name.
+- The gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw result as text and lastly the computers random choice image.
+  - The chosen hand image changes with relation to their selection, Rock Paper or Scissors.
+  - The backgrounds of the hand images changes colour to highlight the winner, green for win, red for loose.
+
+![ Gameboard and Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
+
+- Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
+
 
 ### The Footer
 
-- The footer section includes links to the relevant social media sites for CC Ghost Tour. The links will open to a new tab, allowing easy navigation for the user. 
-- These well know icons/logos are familiar to the user and encourages them to see more on those platforms.
-- The footer also contains the business address and the copyright.
+- The footer contains the game copyright. Text in white over the games dark blue color.
 
-![Footer](documentation/images/footer.png)
-
-### Book Page
-
-This page will allow the user to send contact details in order to make a booking.
-- This form asks for the following. First Name, Last name, Email Address, Phone number, Booking Date & Your message. 
-- All fields are required and a valid email address (including @,) needs to be entered.
-- After filling in all the required forms, the user will be prompted to submit the form with the “Send” button.
-- Behind the form is the map and a transparent green overlay.
-
-![Book](documentation/images/Form.png)
 
 ### Features Left to Implement
 
