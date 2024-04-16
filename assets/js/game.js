@@ -1,4 +1,5 @@
 //HAMBURGER MENU
+// hamburger influenced by youtube video as referenced in readme
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", function() {
@@ -37,7 +38,6 @@ let compScore = 0;
 const winningScore = 5;
 let playersScore_div = document.getElementById("players-score"); //_div to show its in a div
 let compScore_div = document.getElementById("comp-score");
-//const scoreBox_div = document.querySelector(".score-box");
 let winner_h4 = document.querySelector(".announce-winner > h4"); //_h4 to show its in a h4
 let playerMessage_p = document.querySelector(".player-message > p"); // >p because in a p inside an id element
 let compMessage_p = document.querySelector(".comp-message > p");
@@ -46,11 +46,8 @@ const paperButton = document.getElementById("paper");
 const scissorsButton = document.getElementById("scissors");
 let playerChoice_div = document.getElementById("players-hand"); // user in playerWins & computerWins & draw functions,
 let computerChoice_div = document.getElementById("computers-hand"); // global variables
-//let computerChoice = getComputerChoice();
 let playerHand_img = document.getElementById("player-hand");
 let computerHand_img = document.getElementById("computer-hand");
-//let pilotDetails = document.getElementById("pilot-details");
-//let computerPilotDetails = document.getElementById("computer-pilot-details");
 let computerSelectedImage = document.getElementById("computerSelected_img");
 let playerSelectedImage= document.getElementById("playerSelected_img");
 let playerSelected = "Fox";
@@ -67,7 +64,7 @@ function getComputerChoice(){
 }
 
 /**
- * function when the player wins, increase score, you win text, green light, setTimeOut after 1s
+ * function when the player wins, increase score, you win text, green light, setTimeOut after 500ms
  */
 function playerWins(playerChoice, computerChoice){
     playersScore++;
@@ -108,6 +105,7 @@ function draw(playerChoice, computerChoice){
 /**
  * game function, to see what player selects and their result, gameEnd within function
  */
+// game function was influenced by youtube video as referenced in readme but code is my own
 function game(playerChoice) {
     let computerChoice = getComputerChoice();
     switch (playerChoice + computerChoice) {

@@ -630,10 +630,10 @@ li > a:hover {
 
 #home{
     margin-top: 70px; /* placing the section under the header */
-    /*border: 1px solid white;*/
     height: 100vh;
 }
 
+/* hamburger influenced by youtube video as referenced in readme */
 /* for nav hamburger under 768px. for mobile*/
 @media(max-width:768px){
     /* menu changes to links instead of burgermenu at 768px */

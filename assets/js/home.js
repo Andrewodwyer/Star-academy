@@ -1,4 +1,5 @@
 //HAMBURGER MENU
+// hamburger influenced by youtube video as referenced in readme
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", function() {

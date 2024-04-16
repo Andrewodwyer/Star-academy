@@ -231,7 +231,7 @@ There are no unfixed bus.
 
 - Code-institute:
 - I used two videos for instruction on how to create a Hamburger Menu: [nav-menu 1](https://www.youtube.com/watch?v=aNDqzlAKmZc) [nav-menu 2](https://www.youtube.com/watch?v=flItyHiDm7E). 
-[This is the Hamburger nav menu I used. How to Create a Responsive Hamburger Menu (Fixed Version) - HTML, CSS & JavaScript](https://www.youtube.com/watch?v=zuAmsj2EN54) Additional code was added to css and html to give it a unique look.
+[Hamburger menu](https://www.youtube.com/watch?v=zuAmsj2EN54) Additional code was added to css and html to give it a unique look.
 
 - Multiplayer section:
   - [Street fighter character selection](https://codepen.io/itslit/pen/RMMdZv)
