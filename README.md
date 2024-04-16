@@ -61,6 +61,8 @@ There will be a button below for a random computer pilot and their full lenght d
 - The Font used is Inter with a weight of 200-400 and a websafe sans-serif font.
 - A Dark grey colour (#363737) was used on the majority of the text over white background. The pilot section uses white for the pilots name and pilot info to help it stand out from the other text. By using this 2 tone approach in the pilot section, the text ties in with the lighter blueprint background. 
 
+![Colour palette] (documentation/images/Colour palette.png)
+
 ## Features 
 
 ### Navigation Bar
