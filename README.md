@@ -1,6 +1,26 @@
 # StarFox Squadron
+A StarFox Themed, Rock Paper Scissors game created by Andrew O'Dwyer
 
-Target Audience 
+![Image showing screenshots on different size screens](documentation/images/am-I-responsive.png)
+
+## Project goals
+To make a game based on the popular Rock, paper, scissors game. The concept around the game was to build the rock, paper, scissors game into a StarFox themed character selection game. I wanted the game to have multilayer of interest. A character selection page, where the player can choose between a number of characters. The characters information would be displayed beside them giving the player more insight into their chosen character. Those chosen characters would then be brought onto the following Rock, Paper, Scissors game area. The game should feel nostalgic for older players and fun and quick and easy to play for younger players.
+
+## User Stories
+
+- They want a game that is easy to navigate, from home/info section to game section and back again.
+- A quick unterstanding of the concept of the game.
+- The user want a natural flow in the game from intro to character select and the main game.
+- They want to be able to go back and choose another pilot when they have completed the rock, paper, scissors game.
+- They want to see their score, a visual reference id they won or lost and a conclusion to the game, ie, first to 5 wins.
+
+### Site Owner Goals
+- The owner wants to make sure the game isn't too complicated.
+- A game that feel competitive so it will be shared and talked about
+- A design that is visually appealing, that reflect the style of the origional StarFox game.
+
+
+### Target Audience 
 The target audience for this Rock Paper Scissors, Starfox themed game would be primarly be people with interest in starFox. Starfox Fans: This game would appeal to fans of the Starfox franchise, particularly those who enjoy the characters and their characteristics. They would likely be interested in any new game featuring their favourite characters. Fox, Falco, Wolf, Peppy and Slippy
 Others might be:
 - Casual Gamers: The simple gameplay mechanics of Rock Paper Scissors combined with the game idea of playing rock, paper, scissors to choose who takes command of the mission, could attract casual gamers looking for a quick and fun experience without a steep learning curve.
@@ -8,8 +28,6 @@ Others might be:
 -Nostalgia Seekers: People who have fond memories of playing older Starfox games might be drawn to this new iteration, especially if it incorporates elements that remind them of the classic titles.
 - Designers: This is a very visually appealing design. The layout, colour, typography and UX of this game would appeal to creative people.
 Overall, the game could have broad appeal, for anyone to engage with over multiple sessions due to it multi-layer aspect. The character selection & computer random selection and following this a rock paper scissor game that has a multitude of features. 
-
-![Image showing screenshots on different size screens](documentation/images/am-I-responsive.png)
 
 ## UX & UI Design
 
@@ -37,11 +55,11 @@ These sections are designed to be realtive to the screen size so they would be v
 
 - The rock paper scissors game page was separated to the pilot selection. It's a natural progression in most character selection games. Something the user will be expecting.
 - The name of the game immediately focuses the player, following this is the iput area for the players name
-- As outline above, the gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw text result as text and lastly the computers random choice image.
+- As outline above, the gameboard was comprised of the players pilot, their selection in words ("I choose Rock") and their score. Between the 2 character block are the results. The results section holds the players choice as an image, the win, loose, draw result as text and lastly the computers random choice image.
   - The pilot choice image changes with relation to their selection, Rock Paper or Scissors.
-  - The backgrounds of the images change colour to highlight the winner, green for win, red for loose.
+  - The backgrounds of the images changes colour to highlight the winner, green for win, red for loose.
 
-![Gameboard image](documentation/images/gameboard.png) ![Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
+![ Gameboard and Rock Paper Scissors button location](documentation/images/position-of-buttons.png)
 
 - Rock Paper Scissors Buttons. I placed the 3 button choices at the bottom of the page. This was done in part for quick selection on mobile devices and Secondly if the buttons where in the middle of the screen, it would be challanging to see what the computer choose.
 
