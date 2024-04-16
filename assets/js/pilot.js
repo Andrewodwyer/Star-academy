@@ -63,12 +63,12 @@ function changePilot(pilot, isPlayer) {
             }
         case "Falco":
             if (isPlayer) {
-                playersPilot_img.src = "assets/images/Falco_full_length1.png";
+                playersPilot_img.src = "assets/images/Falco_full_length.png";
                 pilotName.innerHTML = "Falco";
                 pilotDetails.innerHTML = `<h3 class="text-white">Personality:</h3><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`;
                 break;
             } else {
-                computerPilot_img.src = "assets/images/Falco_full_length1.png";
+                computerPilot_img.src = "assets/images/Falco_full_length.png";
                 computerPilotName.innerHTML = "Falco";
                 computerPilotDetails.innerHTML = `<h3 class="text-white">Personality:</h3><p>Arrogant,</p><p>Abrasive,</p><p>Sarcastic,</p>`;
                 break;
