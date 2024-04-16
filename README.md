@@ -133,7 +133,7 @@ As described earlier in the mapping paragraph, this button empowers the user. Mo
   - I used Lighthouse in DevTools to confirm that every page scores well.
   - The left image in the picture below is the lighthouse score given for desktop. The right image is the score given for mobile.
 
-![lighthouse score](documentation/images/Lighthouse-score.png)
+![lighthouse score](documentation/images/lighthouse-score.png)
 
 ### Browser Testing
 
