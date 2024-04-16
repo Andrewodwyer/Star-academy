@@ -4,12 +4,13 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("active"); 
     navMenu.classList.toggle("active"); 
-})
+});
+
 document.querySelectorAll(".nav-link").forEach(n => n.
     addEventListener("click", function() {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-    }))
+    }));
 
 //Pilot Select
 //getters
@@ -114,10 +115,10 @@ function changePilot(pilot, isPlayer) {
 
 
 /**
- * function startGame sets the playerSelected & computerSelected variable to session storage
- */
-function startGame() {
-    sessionStorage.setItem('playerSelectedKey', playerSelected);
-    sessionStorage.setItem('computerSelectedKey', computerSelected);
-    window.location.href = "game.html";
-}
+*playerSelected & computerSelected variable to session storage
+*/
+
+sessionStorage.setItem('playerSelectedKey', playerSelected); //playerSelected variable to session storage
+sessionStorage.setItem('computerSelectedKey', computerSelected); //computerSelected variable to session storage
+window.location.href = "game.html";
+
