@@ -144,11 +144,10 @@ letter-spacing: .05rem;
     background-position: center;
     background-attachment: fixed;
 }
-
+/* transparent background colour in pilot section*/
 .transparent-color {
     background-color: rgba(221, 221, 221, 0.393);
     padding: 5%;
-    /*height: 92vh;*/
 }
 
 .pilot-selection-text {
@@ -163,6 +162,7 @@ letter-spacing: .05rem;
     letter-spacing: .05rem;
 }
 
+/*orange button colour*/
 .pilot-selection-text:hover {
     background-image: linear-gradient(#D95105, #F7873F);
     color: white; 
@@ -170,6 +170,7 @@ letter-spacing: .05rem;
     border-right: 1px solid #DF9A5C;
 }
 
+/*transparent background*/
 .transparent {
     background-color: rgba(255, 255, 255, .5);
 }
@@ -210,6 +211,7 @@ label {
     margin:0 auto;
 }
 
+/*text named the same in pilot page*/
 .choose-your-pilot {
     Color: #363737;
     background: white;
@@ -219,6 +221,7 @@ label {
     text-align: center;
 }
 
+/*colour of background and text of selected pilots name in pilot page*/
 .pilot-name-background {
     Color: white;
     background: #5C74A4;
@@ -228,6 +231,7 @@ label {
     text-align: center;
 }
 
+/* pilot game, div holding headshots of all 5 images*/
 #controls {
     width: 80%;
     display: flex;
@@ -236,7 +240,7 @@ label {
     align-items: center;
     margin: 1rem auto;
 }
-
+/* text instruction and pilot name*/
 .character-img {
     width: 6rem;
     display: flex;
@@ -244,14 +248,16 @@ label {
     object-fit: cover; /* Adjusts the image to fit in the container */
 }
 
+/* pilot area including text info, pilot name, picture and pilot info*/ 
 .pilot-picture-info {
     display: flex;
     flex-direction: column;
     align-items: center; /** Y-axis align **/
     justify-content: center; /** X-axis align **/
     transition: all 0.3s ease-in-out; /* transition for movement between screen sizes */
-  }
+}
 
+/*in pilot section, large image beside text*/
 .left-image-on-card {
     flex: 1;
     margin: auto;
@@ -261,6 +267,7 @@ label {
     height: 30vh;
 }
 
+/*in pilot section, text beside large image*/
 .right-text-on-card {
     display: flex;
     flex: 1;
@@ -274,6 +281,7 @@ label {
     text-align: center;
 }
 
+/*in game section, image and text*/
 .image-and-text {
     display: flex;
     flex-direction: row;
@@ -285,6 +293,7 @@ label {
     flex: 1 /* Adjusts the image to cover the container */
 }
 
+/*text over pilot info "personality" in pilot section*/
 .pilot-center-text {
     text-align: center;
     display: flex;
@@ -292,7 +301,7 @@ label {
     align-self:center;
 }
 
-/* rock, paper, scissors buttons*/
+/* pilot select buttons*/
 .pilot-btn {
     border: solid 2px whitesmoke;
     padding: 2px;
@@ -359,6 +368,7 @@ label {
     display: flex;
 }
 
+/*players picture in game page*/
 .players {
     display:flex;
     flex: 1;
@@ -366,6 +376,7 @@ label {
 
 }
 
+/* codename from input field*/
 .game-pilot-name {
     Color: white;
     background: #5C74A4;
@@ -488,12 +499,12 @@ label {
 }
 
 .text-box {
-
     flex-grow: 1.5;
     width: 130px;
     align-self:center;
 }
 
+/* number box*/
 .score-box {
     flex: 1;
     align-self: center;
@@ -502,15 +513,14 @@ label {
     margin: 5px;
 }
 
+/* winning text result "You Win" in game page*/
 .winning-text {
-   /*flex: 1;*/
     width: 6rem;
     color: white;
     font-weight: 500;
 }
 
 .center-text {
-    /*padding: 5px;*/
     text-align: center;
 }
 .text-white {
