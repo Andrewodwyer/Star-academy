@@ -211,6 +211,4 @@ computerSelectedImage.src = `assets/images/${computerSelected.toLowerCase()}_hea
 // places playerSelected inside image source name using ${}
 playerSelectedImage.src = `assets/images/${playerSelected.toLowerCase()}_headshot.png`;
 
-//sessionStorage.removeItem('playerSelectedKey');
-//sessionStorage.removeItem('computerSelectedKey');
 mainGame();

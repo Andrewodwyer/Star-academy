@@ -541,10 +541,10 @@ label {
 /*hidden pop-up*/
 
 .pop-up-box {
+    position: absolute;
     width: 70%;
     background-color: rgba(255, 255, 255, .98);
     border-radius: 5px;
-    position: absolute;
     top: 5%;
     left: 50%;
     transform: translate(-50%,-50%)scale(0.1);
@@ -569,7 +569,6 @@ label {
 
 .pop-up-box h4 {
     font-weight: 200;
-    /*font-size: smaller;*/
     margin: 10px 0;
 }
 
