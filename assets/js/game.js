@@ -136,7 +136,7 @@ function game(playerChoice) {
     pilotCodename.innerText = `${codename.value}`;
     
     if (playersScore === winningScore || compScore === winningScore) {
-        setTimeout(endGame, 500);
+        setTimeout(endGame, 300);
     }
 }
 
