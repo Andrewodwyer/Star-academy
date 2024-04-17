@@ -52,6 +52,11 @@ let computerSelectedImage = document.getElementById("computerSelected_img");
 let playerSelectedImage= document.getElementById("playerSelected_img");
 let playerSelected = "Fox";
 let computerSelected = "Wolf";
+let popupBox = document.getElementById("pop-up-box"); //popupbox div for end of game
+let popupBoxMessageName = document.getElementById("pop-up-message-name"); //name of winner in popup
+let popupBoxResult = document.getElementById("pop-up-result"); // win/loose message in popup
+let popupBoxCommandMessage = document.getElementById("pop-up-command-text"); // win/loose message in popup
+
 
 /**
  * randomly generates computer choice
@@ -131,8 +136,22 @@ function game(playerChoice) {
     pilotCodename.innerText = `${codename.value}`;
     
     if (playersScore === winningScore || compScore === winningScore) {
-        setTimeout(endGame, 100);
+        setTimeout(endGame, 500);
     }
+}
+
+/**
+ * Function to open pop-up-box
+ */
+function openPopupBox(){
+    popupBox.classList.add("open-popup-box");
+}
+
+/**
+ * Function to close pop-up-box
+ */
+function closePopupBox(){
+    popupBox.classList.remove("open-popup-box"); //removes the added class used to make popup-box visable
 }
 
 /**
@@ -140,9 +159,18 @@ function game(playerChoice) {
  */
 function endGame() {
     if (playersScore === winningScore) {
-        alert(`${codename.value} You Win!`);
+        //alert(`${codename.value} You Win!`);
+        openPopupBox();
+        popupBoxMessageName.innerHTML = `${codename.value}`;
+        popupBoxResult.innerHTML = `You Win!`;
+        popupBoxCommandMessage.innerHTML = `You'll lead the mission`;
+
     } else {
-        alert(`${codename.value} You loose!`);
+        //alert(`${codename.value} You loose!`);
+        openPopupBox();
+        popupBoxMessageName.innerHTML = `${codename.value}`;
+        popupBoxResult.innerHTML = `You loose!`;
+        popupBoxCommandMessage.innerHTML = `${computerSelected} takes command`;
     }
     playersScore = 0;
     compScore = 0;
@@ -151,6 +179,7 @@ function endGame() {
     winner_h4.innerHTML = `LET'S PLAY`;
     playerMessage_p.textContent = `" Are you ready ! "`;
     compMessage_p.textContent = `" Let's see what you got ! "`;
+
 }
 
 /**

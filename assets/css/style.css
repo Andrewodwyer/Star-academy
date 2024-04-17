@@ -484,16 +484,19 @@ label {
     border: 2px solid silver;
 }
 
+/*win background result*/
 .green-highlight{
     background: radial-gradient(#13c11c, #0b870d);
     border-radius: 50%;
 }
 
+/* loose background result*/
 .red-highlight{
     background: radial-gradient(#f83b3b, #c3170a);
     border-radius: 50%;
 }
 
+/* draw background result*/
 .grey-highlight{
     background: radial-gradient(#CFCFCF, #9C9B9B);
     border-radius: 50%;
@@ -535,6 +538,54 @@ label {
     object-fit: cover; /* Adjusts the image to cover the container */
 }
 
+/*hidden pop-up*/
+
+.pop-up-box {
+    width: 70%;
+    background-color: rgba(255, 255, 255, .98);
+    border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 10px;
+    color: #363737;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup-box{
+    visibility: visible;
+    top: 45%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.pop-up-box img{
+    width: 100px;
+    margin-top: -50%;
+    border-radius: 50%;
+}
+
+.pop-up-box h4 {
+    font-weight: 200;
+    /*font-size: smaller;*/
+    margin: 10px 0;
+}
+
+.pop-up-box button{
+    padding: 5px 10px;
+    margin: 10px;
+    background-image: linear-gradient(#FFE9A8, #FFBF00);
+    box-shadow: 0 0 10px #FFDC73, rgba(200, 208, 231, .5) 2.2px 2.2px 4px 0px inset, rgba(255, 255, 255, .5) -2.2px -2.2px 4px 0px inset;
+    color: #363737;
+    border: .5px solid silver;
+    border-radius: 5px;
+    letter-spacing: .2em;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
 
 
 /* footer */
@@ -736,12 +787,21 @@ li > a:hover {
 
 } 
 
+/*Larger devices (1024px and up)*/
+@media screen and (min-width: 1024px) {
+
+    .pop-up-box {
+        width: 50%;
+    }
+}
+
 /*Larger devices (1440px and up)*/
 @media screen and (min-width: 1440px) {
 
     h1, h2, h3, h4 {
         font-size: 140%;
     }
+
 }
 
 @media(min-width:1600px){
