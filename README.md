@@ -212,7 +212,7 @@ There are no unfixed bus.
 
 ## Deployment
 
-- Log in to GitHub and select CC ghost tour repository.
+- Log in to GitHub and select star academy repository.
 - From this repository, navigate to "Settings" (This is at the top of the page).
 - when in settings, navigate to pages from the left-hand menu.
 - In source select “Deploy from a Branch” in the drop down menu.
